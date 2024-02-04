@@ -1,7 +1,7 @@
 # Õppemäng Prügivägi
 
 ## Projekti kirjeldus, eesmärk ning umbkaudne tegevusplaan
-Projekt on 2D õppemäng prügisorteerimise kohta. Mäng õpetab lastele prügi korrektselt sorteerima.
+Projekt on 2D õppemäng prügisorteerimise kohta. Mängu peategelane on pesukaru Ragnar, kes õpetab mängijale prügi sorteerima.
 
 ## Tiimiliikmete rollid
 - Piret Buldas (Projektijuht, Arendaja abi, Disaini abi)
