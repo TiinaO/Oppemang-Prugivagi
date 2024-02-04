@@ -15,7 +15,7 @@
 | 4 | Meeskonnaliige haihtub | Haihtunud meeskonnaliikme vastutusalas olevad tegevused jäävad tegemata | Leppida kokku, kes tegevused üle võtab/võtavad ja anda õppejõududele muudatusest teada | ... | ... |
 | 5 | Meeskonnaliige jääb haigeks | Haigestunud meeskonnaliikme vastutusalas olevad tegevused jäävad tegemata | Leppida kokku, kes tegevused üle võtab/võtavad ja anda õppejõududele muudatusest teada | 3 | ... |
 | 6 | Projektijuht haihtub | Projektijuhi roll täitmata ja juhtimata projekt hakkab logisema | Leppida projekti esimestes etappides kokku, kes on valmis vajadusel projektijuhi rolli üle võtma | ... | ... |
-| 7 | Projektijuht haigestub | Projektijuhi roll täitmata |  Leppida projekti esimestes etappides kokku, kes on valmis vajadusel projektijuhi rolli ajutiselt või püsivalt üle võtma | ... | ... |
+| 7 | Projektijuht haigestub | Projektijuhi roll täitmata | Leppida projekti esimestes etappides kokku, kes on valmis vajadusel projektijuhi rolli ajutiselt või püsivalt üle võtma | ... | ... |
 | 8 | Ajahalduse probleemid | Tähtaegadest ei peeta kinni ja oht ainest läbi kukkuda | Pidada rangelt tähtaegadest kinni ja vajadusel teavitada õppejõude probleemidest | ... | ... |
 
 
@@ -28,4 +28,7 @@ Notes ja mõeldud riskid, mis ei ole veel tabelisse jõudnud (need hiljem kustut
 - ~~projektijuht haihtub~~
 - ~~projektijuht jääb haigeks~~
 - ~~ajahaldus~~
+- kommunikatsiooniprobleemid
+- motivatsioonilangus - tegevusena panna paika reeglid/teha kokkulepete nimekiri, et kui kellelgi hakkab lappama minema, siis kohe kasvõi esialgu projektijuhiga rääkida
+- kriis: midagi ei suju, keegi midagi ei tee, suhtlust ei ole. Tegevusena kaasata praktikajuhendajad ja harutada koos see pundar lahti
 
