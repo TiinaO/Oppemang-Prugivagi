@@ -11,7 +11,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 1 | Mängumootorit keeruline kasutada  | Mängu arendus jääb toppama väheste oskuste tõttu | Alustada lihtsamatest funktsionaalsustest ja leida keerukatele lahendustele varuvariandina lihtsamaid alternatiive | ... | ... | 
 | 2 | Keerulise teostusega disain | Disainiprotsess jääb toppama liigselt keeruka teostusega disaini tõttu | Vaadata plaanile realistlikult otsa ja hinnata oma oskuseid | ... | ... |
-| 3 | Disaineritel erinevad stiilid | Mängu visuaalne pool ebaühtlane ja mõjub mängijale eemaletõukavalt | Luua _vision board_ ja pidada kokku lepitud stiilist kinni | ... | ... |
+| 3 | Disaineritel erinevad stiilid | Mängu visuaalne pool ebaühtlane ja mõjub mängijale eemaletõukavalt | Luua _mood board_ ja pidada kokku lepitud stiilist kinni | ... | ... |
 | 4 | Meeskonnaliige haihtub | Haihtunud meeskonnaliikme vastutusalas olevad tegevused jäävad tegemata | Leppida kokku, kes tegevused üle võtab/võtavad ja anda õppejõududele muudatusest teada | ... | ... |
 | 5 | Meeskonnaliige jääb haigeks | Haigestunud meeskonnaliikme vastutusalas olevad tegevused jäävad tegemata | Leppida kokku, kes tegevused üle võtab/võtavad ja anda õppejõududele muudatusest teada | 3 | ... |
 | 6 | Projektijuht haihtub | Projektijuhi roll täitmata ja juhtimata projekt hakkab logisema | Leppida projekti esimestes etappides kokku, kes on valmis vajadusel projektijuhi rolli üle võtma | ... | ... |
