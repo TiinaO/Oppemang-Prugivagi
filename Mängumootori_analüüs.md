@@ -1,4 +1,4 @@
-# Info, mis otuse tegemisel mängivad olulist rolli
+# Info, mis otsuse tegemisel mängivad olulist rolli
 Meie eesmärk on luua 2D mäng ja arvestada tuleb sellega, et me oleme algajad. Otsustasime valida kaks mängumootorit ja uurida kumb on meie jaoks sobilikum. Valitud mängumootoriteks on Godot ja Unity. Uurisime kummagi eeliseid teineteise suhtes.
 
 # Godot
