@@ -20,6 +20,7 @@ Projekt on 2D õppemäng prügisorteerimise kohta. Mäng õpetab lastele prügi 
 ## Riskianalüüs
 
 ## Mängumootori analüüs
+Analüüs on toodud [lehel](Mängumootori_analüüs.md). 
 
 ## Inspiratsioonitahvel
 
