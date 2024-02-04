@@ -17,6 +17,9 @@
 | 6 | Projektijuht haihtub | Projektijuhi roll täitmata ja juhtimata projekt hakkab logisema | Leppida projekti esimestes etappides kokku, kes on valmis vajadusel projektijuhi rolli üle võtma | ... | ... |
 | 7 | Projektijuht haigestub | Projektijuhi roll täitmata | Leppida projekti esimestes etappides kokku, kes on valmis vajadusel projektijuhi rolli ajutiselt või püsivalt üle võtma | ... | ... |
 | 8 | Ajahalduse probleemid | Tähtaegadest ei peeta kinni ja oht ainest läbi kukkuda | Pidada rangelt tähtaegadest kinni ja vajadusel teavitada õppejõude probleemidest | ... | ... |
+| 9 | Meeskonnaliikmete vaheline konflikt | Meeskonnaliikmete vahel on pidevalt konfliktid ning ei saada üleüldiselt omavahel läbi | Projektijuhi ülesanne on probleem lahendada näiteks tööülesannnete ümberjaotamisega, et konfliktis meeskonnaliikmed ei peaks nii palju kokku puutuma. | ... | ... |
+| 10 | Motivatsioonikadu | Meeskonnaliikmetel kaob motivatsioon projektiga tegeleda | Projektijuhi ülesanne on motiveerida oma tiimiliikmeid ja monitoorida tiimiliikmete motiveeritust. Juhul kui motivatsioonikadu puudutab projektijuhti, siis tulevad appi juhendajad ning teised tiimiliikmed. | ... | ... |
+| 11 | Segadus | Meeskonnaliikmetel ei ole selge, millega nad tegelema peavad | Tööülesandeid jagatakse iganädalaselt, vajadusel aitavad teised tiimiliikmed hädasolija uuesti õigele teele. Ülesannetel aitab silma peal hoida GitHubi projektihaldus. | ... | ... |
 
 
 Notes ja mõeldud riskid, mis ei ole veel tabelisse jõudnud (need hiljem kustutada, kui tabel on valmis):
