@@ -1,4 +1,4 @@
-# Oppemang
+# Õppemäng Prügivägi
 
 ## Projekti kirjeldus, eesmärk ning umbkaudne tegevusplaan
 Projekt on 2D õppemäng prügisorteerimise kohta. Mäng õpetab lastele prügi korrektselt sorteerima.
