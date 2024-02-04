@@ -18,6 +18,7 @@ Projekt on 2D õppemäng prügisorteerimise kohta. Mängu peategelane on pesukar
 - [Iiris Prosa](https://github.com/TLUHK-RIF22/Oppemang/issues/15)  
 
 ## Riskianalüüs
+Riskianalüüs asub [siin](Riskianaluus.md)
 
 ## Mängumootori analüüs
 Analüüs on toodud [lehel](Mängumootori_analüüs.md). 
