@@ -5,7 +5,7 @@ Meie eesmärk on luua 2D mäng ja arvestada tuleb sellega, et me oleme algajad. 
 ## Godot plussid
 Godot eelised Unity'ga võrreldes:
 
-1. **Ava lähtekoodiga (Open Source):** Godot on täielikult avatud lähtekoodiga, mis tähendab, et kõik selle lähtekood on avalikult kättesaadav ja kasutajad saavad seda vajadusel muuta. Unity on suletud lähtekoodiga, mis tähendab, et selle sisemist toimimist ei saa avatud lähtekoodiga uurida.
+1. **Avatud lähtekoodiga (Open Source):** Godot on täielikult avatud lähtekoodiga, mis tähendab, et kõik selle lähtekood on avalikult kättesaadav ja kasutajad saavad seda vajadusel muuta. Unity on suletud lähtekoodiga, mis tähendab, et selle sisemist toimimist ei saa avatud lähtekoodiga uurida.
 
 2. **Puudub litsentsitasu:** Godot on tasuta kasutamiseks nii isiklikel kui ka ärieesmärkidel. Unity puhul võib suuremate projektide jaoks olla vajalik tasuline litsents.
 
