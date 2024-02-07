@@ -18,7 +18,7 @@ Godot eelised Unity'ga võrreldes:
 6. **Mitmeplatvormiline tugi:** Mõlemad mootorid toetavad mitmeid platvorme, kuid Godot võimaldab teil juba arendusprotsessi käigus projekti erinevaid platvorme testimiseks ja eksportimiseks.
 
 ## Godot miinused
-Godot puudused Unityäga võrreldes:
+Godot puudused Unity'ga võrreldes:
 
 Godot on võrreldes Unityga suhteliselt noor mängumootor ning sellest tulenevalt:
 
