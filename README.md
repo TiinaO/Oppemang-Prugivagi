@@ -24,7 +24,7 @@ Riskianalüüs asub [siin](Riskianaluus.md)
 Analüüs on toodud [lehel](Mängumootori_analüüs.md). 
 
 ## Inspiratsioonitahvel
-TODO
+https://www.figma.com/file/jnsVthyNQYT1DgylOYtEHX/Pr%C3%BCgiv%C3%A4gi?type=design&node-id=1%3A2&mode=design&t=OXQXSQaDSlG24q5O-1
 
 ## Stiiliraamat
 Stiiliraamat asub [siin](Stiiliraamat.md)
