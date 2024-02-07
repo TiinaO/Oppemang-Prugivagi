@@ -2,7 +2,7 @@
 
 ## Sissejuhatus
 
-**Prügivägi** on hariv mäng I kooliastmele, mis keskendub prügi sorteerimisele. Mängu eesmärk on õpetada mängijatele õiget prügi sorteerimist läbi lõbusate ja kaasahaaravate mängumehaanikate. Peategelaseks on nutikas pesukaru, kes juhatab mängijaid läbi erinevate tasemete, õpetades neile prügisorteerimise tähtsust.
+**Prügivägi** on hariv mäng I-II kooliastmele, mis keskendub prügi sorteerimisele. Mängu eesmärk on õpetada mängijatele õiget prügi sorteerimist läbi lõbusate ja kaasahaaravate mängumehaanikate. Peategelaseks on nutikas pesukaru, kes juhatab mängijaid läbi erinevate tasemete, õpetades neile prügisorteerimise tähtsust.
 
 ## Visuaalne identiteet
 
