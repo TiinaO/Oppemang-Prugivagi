@@ -53,11 +53,11 @@ Unity puudused Godot'iga võrreldes:
 
 
 # Kokkuvõte
-Oleme valinud enda 2D mängu loomiseks Godoti, kuna sa on algajasõbralikum, ei nõua litsentsi ja väiksema mahuga ning sobib ka seadmele, millel on piiratud riistvararesursid.
+Oleme valinud enda 2D mängu loomiseks Godoti, kuna see on algajasõbralikum, ei nõua litsentsi, on väiksema mahuga ning sobib ka seadmele, millel on piiratud riistvararessursid.
 
 
 # Allikad
-1.  TalTech bakalaureuse lõtutöö teemal [MÕISTATUSMÄNGU MIGRATSIOON PAINDLIKUMALE MOBIILIMÄNGUDE ARENDAMISE PLATVORMILE](https://digikogu.taltech.ee/et/Download/7340ddca-3e50-4497-a79f-c76abdf35cd5)
+1.  TalTech bakalaureuse lõputöö teemal [MÕISTATUSMÄNGU MIGRATSIOON PAINDLIKUMALE MOBIILIMÄNGUDE ARENDAMISE PLATVORMILE](https://digikogu.taltech.ee/et/Download/7340ddca-3e50-4497-a79f-c76abdf35cd5)
 2. Artikkel [Godot vs Unity (for making your first game)](https://gamedevbeginner.com/godot-vs-unity-for-making-your-first-game/#:~:text=So%20if%20we%20compare%20Godot's,%2C%20essentially%2C%20a%203D%20engine.)
 3. Artikkel [Unity vs Godot – A Game Engine Analysis](https://gamedevacademy.org/unity-vs-godot/)
 4. Artikkel [Godot vs Unity 2022: Which Game Engine is Best for You?](https://pinglestudio.com/blog/full-cycle-development/godot-vs-unity-2022)
