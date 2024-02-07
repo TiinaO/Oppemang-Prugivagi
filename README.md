@@ -25,3 +25,6 @@ Analüüs on toodud [lehel](Mängumootori_analüüs.md).
 
 ## Inspiratsioonitahvel
 TODO
+
+## Stiiliraamat
+Stiiliraamat asub [siin](Stiiliraamat.md)
