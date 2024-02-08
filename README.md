@@ -31,3 +31,6 @@ Stiiliraamat asub [siin](Stiiliraamat.md)
 
 ## Roadmap
 Roadmap on leitav [siit](https://github.com/orgs/TLUHK-RIF22/projects/1/views/4). Täpsema vaate jaoks lülitada sisse markerite alt milestone valik. 
+
+## Sprindikoosolekud
+Sprindikoosolekute protokollid on leitavad siit issue alt: [link issue-le](https://github.com/TLUHK-RIF22/Oppemang-Prugivagi/issues/16).
