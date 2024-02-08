@@ -18,19 +18,19 @@ Projekt on 2D õppemäng prügisorteerimise kohta. Mängu peategelane on pesukar
 - [Iiris Prosa](https://github.com/TLUHK-RIF22/Oppemang/issues/15)  
 
 ## Riskianalüüs
-Riskianalüüs asub [siin](Riskianaluus.md)
+Riskianalüüs asub [siin](Riskianaluus.md).
 
 ## Mängumootori analüüs
 Analüüs on toodud [lehel](Mängumootori_analüüs.md). 
 
 ## Inspiratsioonitahvel
-Inspiratsioonitahvel asub [siin](https://www.figma.com/file/jnsVthyNQYT1DgylOYtEHX/Pr%C3%BCgiv%C3%A4gi?type=design&node-id=1%3A2&mode=design&t=OXQXSQaDSlG24q5O-1)
+Inspiratsioonitahvel asub [siin](https://www.figma.com/file/jnsVthyNQYT1DgylOYtEHX/Pr%C3%BCgiv%C3%A4gi?type=design&node-id=1%3A2&mode=design&t=OXQXSQaDSlG24q5O-1).
 
 ## Stiiliraamat
-Stiiliraamat asub [siin](Stiiliraamat.md)
+Stiiliraamat asub [siin](Stiiliraamat.md).
 
 ## Roadmap
 Roadmap on leitav [siit](https://github.com/orgs/TLUHK-RIF22/projects/1/views/4). Täpsema vaate jaoks lülitada sisse markerite alt milestone valik. 
 
 ## Sprindikoosolekud
-Sprindikoosolekute protokollid on leitavad siit issue alt: [link issue-le](https://github.com/TLUHK-RIF22/Oppemang-Prugivagi/issues/16).
+Sprindikoosolekute protokollid on leitavad [siit](https://github.com/TLUHK-RIF22/Oppemang-Prugivagi/issues/16).
