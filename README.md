@@ -1,7 +1,7 @@
 # Õppemäng Prügivägi
 
 ## Projekti kirjeldus, eesmärk ning umbkaudne tegevusplaan
-Projekt on 2D õppemäng prügisorteerimise kohta. Mängu peategelane on pesukaru Ragnar, kes õpetab mängijale prügi sorteerima. Lisaks ülikoolis toimuvatele loengutele on planeeritud iganädalased sprindikoosolekud, kus käime läbi kõik tehtud ja tegemata üleanded, mured, rõõmud ja küsimused ning jagame eesootavaks perioodiks uued ülesanded. Sprindikoosolekud toimuvad üldiselt pühapäeviti kell 18.00, kuid kui kellelgi meeskonnaliikmetest pole võimalik osaleda, siis leiame uue sobiva aja. Koosolekuteks koguneme Discordi serveri lounge'is.
+Projekt on 2D õppemäng prügisorteerimise kohta. Mängu peategelane on pesukaru Ragnar, kes õpetab mängijale prügi sorteerima. Valisime sellise mängu, sest prügisorteeerimine on väga aktuaalne probleem. Lisaks ülikoolis toimuvatele loengutele on planeeritud iganädalased sprindikoosolekud, kus käime läbi kõik tehtud ja tegemata üleanded, mured, rõõmud ja küsimused ning jagame eesootavaks perioodiks uued ülesanded. Sprindikoosolekud toimuvad üldiselt pühapäeviti kell 18.00, kuid kui kellelgi meeskonnaliikmetest pole võimalik osaleda, siis leiame uue sobiva aja. Koosolekuteks koguneme Discordi serveri lounge'is.
 
 ## Tiimiliikmete rollid
 - Piret Buldas (Projektijuht, Arendaja abi, Disaini abi)
