@@ -10,7 +10,7 @@
 
 - **Pastelne roheline**: `#98FB98`
   - *Hele pastelne roheline*: Esindab loodust ja taaskasutust.
-  - *Tumedam pastelne roheline*: `#A67B5B` - Lisab sügavust ja kontrasti.
+  - *Tumedam pastelne roheline*: `#76C476` - Lisab sügavust ja kontrasti.
 
 - **Pastelne pruun**: `#C19A6B`
   - *Hele pastelne pruun*: Sobib maapinna, puude või muude looduslike struktuuride kujutamiseks.
