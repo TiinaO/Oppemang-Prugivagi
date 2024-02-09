@@ -34,3 +34,6 @@ Roadmap on leitav [siit](https://github.com/orgs/TLUHK-RIF22/projects/1/views/4)
 
 ## Sprindikoosolekud
 Sprindikoosolekute protokollid on leitavad [siit](https://github.com/TLUHK-RIF22/Oppemang-Prugivagi/issues/16).
+
+## Esitlus
+Esitlus on [siin](https://docs.google.com/presentation/d/1FNDq-ludxh7MIkb_ZgneZNzCugznYQzS-bj7LpwJtlQ/edit?usp=share_link)
