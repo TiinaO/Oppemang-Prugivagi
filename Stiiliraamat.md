@@ -63,10 +63,6 @@ Mäng sisaldab erinevaid prügisorteerimise mehaanikaid, mis muutuvad keerukamak
 
 Taustamuusika ja heliefektid, mis toetavad mängu keskkonnasõbralikku teemat.
 
-## Turundusmaterjalid ja pakend
-
-Mängu turundamiseks loome mitmesuguseid visuaale, sealhulgas reklaamplakateid ja sotsiaalmeedia postitusi.
-
 ---
 
 *Uuendatud: 05.02.2024*
