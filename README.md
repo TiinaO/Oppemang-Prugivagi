@@ -47,3 +47,6 @@ Fail on leitav [siit](https://github.com/TLUHK-RIF22/Oppemang-Prugivagi/blob/bd1
 
 ## Graafikakavand
 Graafikakavand asub [siin](https://www.figma.com/file/jnsVthyNQYT1DgylOYtEHX/Pr%C3%BCgiv%C3%A4gi?type=design&node-id=1%3A2&mode=design&t=OXQXSQaDSlG24q5O-1).
+
+## Mängu struktuur
+Struktuur on leitav [siit](Struktuur.md). 
