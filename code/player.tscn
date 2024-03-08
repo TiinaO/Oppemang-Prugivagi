@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dlecfimsiqrgx"]
+[gd_scene load_steps=14 format=3 uid="uid://cy76ekqvrmpuq"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_dks43"]
 [ext_resource type="Texture2D" uid="uid://b1ouqyoctju6m" path="res://pic/Pesukaru-idle1.png" id="1_lckaf"]
@@ -11,6 +11,10 @@
 [ext_resource type="Texture2D" uid="uid://du6c82qwx2fij" path="res://pic/Pesukaru-astub2.png" id="8_itrs7"]
 [ext_resource type="Texture2D" uid="uid://d3xlrtgdvmx60" path="res://pic/Pesukaru-astub3.png" id="9_8glhd"]
 [ext_resource type="Texture2D" uid="uid://1dvpnv4vyucg" path="res://pic/Pesukaru-astub4.png" id="10_4qshn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j0wci"]
+radius = 1.02e+07
+height = 3.3302e+07
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pls3h"]
 animations = [{
@@ -60,23 +64,26 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j0wci"]
-radius = 1.02e+07
-height = 3.3302e+07
-
 [node name="Player" type="Area2D"]
-position = Vector2(613, 324)
+position = Vector2(625, 348)
 script = ExtResource("1_dks43")
 metadata/_edit_group_ = true
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1, 0.25)
-scale = Vector2(0.992063, 0.998452)
-sprite_frames = SubResource("SpriteFrames_pls3h")
-animation = &"idle"
+[node name="Camera2D" type="Camera2D" parent="."]
+visible = false
+zoom = Vector2(4.23, 4.23)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-18.15, -20.51)
 scale = Vector2(1e-05, 1e-05)
 shape = SubResource("CapsuleShape2D_j0wci")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, 0.25)
+scale = Vector2(0.992063, 0.998452)
+sprite_frames = SubResource("SpriteFrames_pls3h")
+animation = &"idle"
+frame_progress = 0.829659
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
