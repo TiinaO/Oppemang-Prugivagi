@@ -1,0 +1,42 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1710618348
+hud.tscn::PackedScene::2977047021840240706::1710610011::0::1::::<><>::
+icon.svg::CompressedTexture2D::4447271388651699986::1710610011::1710612057::1::::<><>::
+karakter.gd::GDScript::-1::1710610011::0::1::::<>CharacterBody2D<>::
+Main.gd::GDScript::-1::1710610011::0::1::::<>Node<>::
+player.gd::GDScript::-1::1710610011::0::1::::<>Area2D<>::
+PauseMenu.gd::GDScript::-1::1710618637::0::1::::<>Control<>::
+TitleScreen.gd::GDScript::-1::1710613506::0::1::::<>Control<>::
+::res://assets/::1710615125
+::res://assets/main_menu/::1710615126
+characters.png::CompressedTexture2D::837082567955295544::1710615125::1710615126::1::::<><>::
+label_continue.png::CompressedTexture2D::5610372463571922850::1710615125::1710615126::1::::<><>::
+label_new_game.png::CompressedTexture2D::4935700229719483325::1710615125::1710615126::1::::<><>::
+label_options.png::CompressedTexture2D::1262907316161303451::1710615125::1710615126::1::::<><>::
+title.png::CompressedTexture2D::1949258742243295820::1710615125::1710615126::1::::<><>::
+version.png::CompressedTexture2D::3689945143356682530::1710615125::1710615126::1::::<><>::
+::res://Fonts/::1710614210
+Andika-Bold.ttf::FontFile::2255428834768390315::1710614205::1710614210::1::::<><>::
+Andika-BoldItalic.ttf::FontFile::4059434911171316337::1710614205::1710614210::1::::<><>::
+Andika-Italic.ttf::FontFile::2442872394405928073::1710614205::1710614210::1::::<><>::
+Andika-Regular.ttf::FontFile::6051747444481135171::1710614205::1710614210::1::::<><>::
+::res://pic/::1710612065
+1. level.png::CompressedTexture2D::7455643262208320393::1710610011::1710612065::1::::<><>::
+1. level_911x512px_testiks.png::CompressedTexture2D::4254486658382563913::1710610011::1710612057::1::::<><>::
+Pesukaru-astub1.png::CompressedTexture2D::5116516617980864367::1710610011::1710612057::1::::<><>::
+Pesukaru-astub2.png::CompressedTexture2D::8627216443278905269::1710610011::1710612057::1::::<><>::
+Pesukaru-astub3.png::CompressedTexture2D::9172729614081746979::1710610011::1710612057::1::::<><>::
+Pesukaru-astub4.png::CompressedTexture2D::1832405628198791946::1710610011::1710612057::1::::<><>::
+Pesukaru-idle1.png::CompressedTexture2D::4241476101700891954::1710610011::1710612057::1::::<><>::
+Pesukaru-idle2.png::CompressedTexture2D::4896047776136057882::1710610011::1710612057::1::::<><>::
+Pesukaru-idle3.png::CompressedTexture2D::3884504049330154171::1710610011::1710612057::1::::<><>::
+Pesukaru-idle4.png::CompressedTexture2D::5488073587587134426::1710610011::1710612057::1::::<><>::
+Pesukaru-korjab1.png::CompressedTexture2D::5067089932205195510::1710610011::1710612057::1::::<><>::
+Pesukaru-korjab2.png::CompressedTexture2D::4535264818992337311::1710610011::1710612057::1::::<><>::
+::res://Scenes/::1710617954
+main.tscn::PackedScene::2883176418489933656::1710618650::0::1::::<><>::res://Main.gd<>uid://dehtmcwtkal74::::res://pic/1. level.png<>uid://cy76ekqvrmpuq::::res://Scenes/player.tscn<>uid://7est3nogtc6n::::res://Fonts/Andika-Bold.ttf<>res://Scenes/Quit.gd
+MainMenu.tscn::PackedScene::8529732051148270852::1710617954::0::1::::<><>::uid://21iah0ectliy::::res://assets/main_menu/title.png<>uid://cl6yardjst12m::::res://assets/main_menu/label_continue.png<>uid://cck5i5qvieqjl::::res://assets/main_menu/label_new_game.png<>uid://r805thw3e4u6::::res://assets/main_menu/label_options.png<>uid://bsto4ffm730io::::res://assets/main_menu/version.png<>uid://l6qvlq8x0jb1::::res://assets/main_menu/characters.png
+player.tscn::PackedScene::6525323623707995524::1710618650::0::1::::<><>::res://player.gd<>uid://b1ouqyoctju6m::::res://pic/Pesukaru-idle1.png<>uid://cb0xgro0cmxew::::res://pic/Pesukaru-idle2.png<>uid://bvlxhjtk2wpa6::::res://pic/Pesukaru-idle3.png<>uid://ckgp1gk04lhwk::::res://pic/Pesukaru-idle4.png<>uid://cegsh35g8sqn3::::res://pic/Pesukaru-korjab1.png<>uid://b5u6fcgwmqlsp::::res://pic/Pesukaru-korjab2.png<>uid://ce5qjta64k4wp::::res://pic/Pesukaru-astub1.png<>uid://du6c82qwx2fij::::res://pic/Pesukaru-astub2.png<>uid://d3xlrtgdvmx60::::res://pic/Pesukaru-astub3.png<>uid://1dvpnv4vyucg::::res://pic/Pesukaru-astub4.png
+Quit.gd::GDScript::-1::1710617954::0::1::::<>Control<>::
+title_screen.tscn::PackedScene::6875571891532909605::1710618650::0::1::::<><>::res://TitleScreen.gd<>uid://7est3nogtc6n::::res://Fonts/Andika-Bold.ttf
+::res://Scripts/::1710613006

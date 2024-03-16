@@ -41,6 +41,9 @@ func _process(delta):
 	# Set rotation based on the angle of movement with a +90 degree offset
 	$AnimatedSprite2D.rotation_degrees = rad_to_deg(angle) + 90
 	
+	if Input.is_action_pressed("exit"):
+		get_tree().change_scene_to_file("res://Scenes/pause_menu.tscn")
+	
 func start(pos):
 	position = pos
 	show()

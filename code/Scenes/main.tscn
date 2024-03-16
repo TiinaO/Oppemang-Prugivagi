@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://bhcvq2q6mbmlk"]
+[gd_scene load_steps=9 format=3 uid="uid://bhcvq2q6mbmlk"]
 
-[ext_resource type="Script" path="res://Main.gd" id="1_kbc0k"]
-[ext_resource type="Texture2D" uid="uid://dehtmcwtkal74" path="res://pic/1. level.png" id="2_26btd"]
-[ext_resource type="PackedScene" uid="uid://cy76ekqvrmpuq" path="res://player.tscn" id="3_xbiva"]
+[ext_resource type="Script" path="res://Scripts/Main.gd" id="1_5r7mh"]
+[ext_resource type="Texture2D" uid="uid://dehtmcwtkal74" path="res://pic/1. level.png" id="2_43mjm"]
+[ext_resource type="PackedScene" uid="uid://cy76ekqvrmpuq" path="res://Scenes/player.tscn" id="3_2tolr"]
+[ext_resource type="FontFile" uid="uid://7est3nogtc6n" path="res://Fonts/Andika-Bold.ttf" id="4_uho8k"]
+[ext_resource type="Script" path="res://Scenes/Quit.gd" id="5_xhx8a"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_tkgwe"]
 rough = true
@@ -27,16 +29,19 @@ radius = 362.0
 height = 1452.0
 
 [node name="Main" type="Node"]
-script = ExtResource("1_kbc0k")
+script = ExtResource("1_5r7mh")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -34.0
-offset_top = -41.0
-offset_right = 7396.0
-offset_bottom = 4139.0
-texture = ExtResource("2_26btd")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_43mjm")
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
 
-[node name="Player" parent="." instance=ExtResource("3_xbiva")]
+[node name="Player" parent="." instance=ExtResource("3_2tolr")]
 position = Vector2(143, 922)
 
 [node name="ScoreTimer" type="Timer" parent="."]
@@ -63,6 +68,24 @@ polygon = PackedVector2Array(28, -1, 28, 251, 253, 260, 239, 804, 246, 839, 374,
 position = Vector2(1866, 876)
 shape = SubResource("CapsuleShape2D_yttsx")
 
+[node name="Quit" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -3680.0
+offset_top = -4168.0
+offset_right = -3200.0
+offset_bottom = -3864.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("4_uho8k")
+theme_override_font_sizes/font_size = 100
+text = "QUIT"
+script = ExtResource("5_xhx8a")
+
 [connection signal="hit" from="Player" to="." method="game_over"]
 [connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]
 [connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
+[connection signal="pressed" from="Quit" to="Quit" method="_on_pressed"]
