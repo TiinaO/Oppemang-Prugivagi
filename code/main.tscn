@@ -1,0 +1,68 @@
+[gd_scene load_steps=7 format=3 uid="uid://bhcvq2q6mbmlk"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_kbc0k"]
+[ext_resource type="Texture2D" uid="uid://dehtmcwtkal74" path="res://pic/1. level.png" id="2_26btd"]
+[ext_resource type="PackedScene" uid="uid://cy76ekqvrmpuq" path="res://player.tscn" id="3_xbiva"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_tkgwe"]
+rough = true
+
+[sub_resource type="GDScript" id="GDScript_7l403"]
+script/source = "extends StaticBody2D
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass
+
+# Called when a body enters the Wall's collision area.
+func _on_Wall_body_entered(body):
+	if body.is_in_group(\"character\"):
+		# Handle collision with the character
+		print(\"Character collided with the wall!\")
+
+"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yttsx"]
+radius = 362.0
+height = 1452.0
+
+[node name="Main" type="Node"]
+script = ExtResource("1_kbc0k")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -34.0
+offset_top = -41.0
+offset_right = 7396.0
+offset_bottom = 4139.0
+texture = ExtResource("2_26btd")
+
+[node name="Player" parent="." instance=ExtResource("3_xbiva")]
+position = Vector2(143, 922)
+
+[node name="ScoreTimer" type="Timer" parent="."]
+
+[node name="StartTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="StartPosition" type="Marker2D" parent="."]
+position = Vector2(131, 911)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+disable_mode = 1
+collision_layer = 271
+collision_mask = 15
+physics_material_override = SubResource("PhysicsMaterial_tkgwe")
+script = SubResource("GDScript_7l403")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(-2, -2)
+polygon = PackedVector2Array(28, -1, 28, 251, 253, 260, 239, 804, 246, 839, 374, 881, 997, 876, 1006, 264, 1209, 259, 1201, 81, 1200, -7)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1866, 876)
+shape = SubResource("CapsuleShape2D_yttsx")
+
+[connection signal="hit" from="Player" to="." method="game_over"]
+[connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]
+[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
