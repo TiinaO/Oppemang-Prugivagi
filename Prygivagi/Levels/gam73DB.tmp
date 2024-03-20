@@ -1,0 +1,106 @@
+[gd_scene load_steps=13 format=3 uid="uid://oywimvfqjqgv"]
+
+[ext_resource type="Texture2D" uid="uid://ci6xjhmq4hoxq" path="res://Assets/Põrand 1.png" id="1_8vkjp"]
+[ext_resource type="PackedScene" uid="uid://bv5x6ikcd0rwv" path="res://Characters/player_cat.tscn" id="1_dc041"]
+[ext_resource type="PackedScene" uid="uid://ds2dh18soge7b" path="res://Levels/camera.tscn" id="2_ua8y1"]
+[ext_resource type="Texture2D" uid="uid://depcreadtetor" path="res://Assets/Rectangle 51.png" id="4_lieuk"]
+[ext_resource type="Script" path="res://Levels/apple.gd" id="5_7jd03"]
+[ext_resource type="Texture2D" uid="uid://bce2s3jvtbe21" path="res://Assets/Õun.png" id="6_u6jcx"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sp00a"]
+texture = ExtResource("1_8vkjp")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_hpt71"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_sp00a")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nr6a1"]
+size = Vector2(513, 29)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_itphy"]
+size = Vector2(39, 894)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7x734"]
+size = Vector2(41, 727)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tlrgd"]
+radius = 50.2494
+
+[node name="GameLevel" type="Node2D"]
+position = Vector2(16, 12)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_hpt71")
+format = 2
+layer_0/name = "floor"
+layer_0/tile_data = PackedInt32Array(-262148, 0, 0, -196612, 0, 0, -131076, 0, 0, -65540, 0, 0, -4, 0, 0, 65532, 0, 0, 131068, 0, 0, 196604, 0, 0, 262140, 0, 0, 327676, 0, 0, 393212, 0, 0, 458748, 0, 0, 524284, 0, 0, -262147, 0, 0, -196611, 0, 0, -131075, 0, 0, -65539, 0, 0, -3, 0, 0, 65533, 0, 0, 131069, 0, 0, 196605, 0, 0, 262141, 0, 0, 327677, 0, 0, 393213, 0, 0, 458749, 0, 0, 524285, 0, 0, -262146, 0, 0, -196610, 0, 0, -131074, 0, 0, -65538, 0, 0, -2, 0, 0, 65534, 0, 0, 131070, 0, 0, 196606, 0, 0, 262142, 0, 0, 327678, 0, 0, 393214, 0, 0, 458750, 0, 0, 524286, 0, 0, -262145, 0, 0, -196609, 0, 0, -131073, 0, 0, -65537, 0, 0, -1, 0, 0, 65535, 0, 0, 131071, 0, 0, 196607, 0, 0, 262143, 0, 0, 327679, 0, 0, 393215, 0, 0, 458751, 0, 0, 524287, 0, 0, -327680, 0, 0, -262144, 0, 0, -196608, 0, 0, -131072, 0, 0, -65536, 0, 0, 0, 0, 0, 65536, 0, 0, 131072, 0, 0, 196608, 0, 0, 262144, 0, 0, 327680, 0, 0, 393216, 0, 0, 458752, 0, 0, -327679, 0, 0, -262143, 0, 0, -196607, 0, 0, -131071, 0, 0, -65535, 0, 0, 1, 0, 0, 65537, 0, 0, 131073, 0, 0, 196609, 0, 0, 262145, 0, 0, 327681, 0, 0, 393217, 0, 0, 458753, 0, 0, -327678, 0, 0, -262142, 0, 0, -196606, 0, 0, -131070, 0, 0, -65534, 0, 0, 2, 0, 0, 65538, 0, 0, 131074, 0, 0, 196610, 0, 0, 262146, 0, 0, 327682, 0, 0, 393218, 0, 0, 458754, 0, 0, -327677, 0, 0, -262141, 0, 0, -196605, 0, 0, -131069, 0, 0, -65533, 0, 0, 3, 0, 0, 65539, 0, 0, 131075, 0, 0, 196611, 0, 0, 262147, 0, 0, 327683, 0, 0, 393219, 0, 0, 458755, 0, 0)
+layer_1/name = "furniture"
+layer_1/tile_data = PackedInt32Array()
+layer_2/name = "garbage"
+layer_2/tile_data = PackedInt32Array()
+
+[node name="PlayerCat" parent="." instance=ExtResource("1_dc041")]
+position = Vector2(-1, -8)
+
+[node name="camera" parent="PlayerCat" instance=ExtResource("2_ua8y1")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(-3, -336.5)
+scale = Vector2(0.713115, 0.151685)
+texture = ExtResource("4_lieuk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-0.5, -336.5)
+shape = SubResource("RectangleShape2D_nr6a1")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
+position = Vector2(-3, 524)
+scale = Vector2(0.713115, 0.151685)
+texture = ExtResource("4_lieuk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(-0.5, 528)
+shape = SubResource("RectangleShape2D_nr6a1")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D3"]
+position = Vector2(-280, 97)
+scale = Vector2(0.0655738, 5)
+texture = ExtResource("4_lieuk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(-276.5, 98)
+shape = SubResource("RectangleShape2D_itphy")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D4"]
+position = Vector2(279, 10.5)
+scale = Vector2(0.0628416, 4.05056)
+texture = ExtResource("4_lieuk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2(278.5, 8.5)
+shape = SubResource("RectangleShape2D_7x734")
+
+[node name="apple" type="Area2D" parent="."]
+script = ExtResource("5_7jd03")
+
+[node name="Sprite2D" type="Sprite2D" parent="apple"]
+position = Vector2(129, -136)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("6_u6jcx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="apple"]
+position = Vector2(129, -135)
+scale = Vector2(0.2, 0.2)
+shape = SubResource("CircleShape2D_tlrgd")
+
+[connection signal="area_entered" from="apple" to="PlayerCat" method="_on_apple_area_entered"]
