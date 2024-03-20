@@ -34,7 +34,7 @@ Enne enda haru pushimist on mõistlik main haru sisu tõmmata enda harusse. Sell
 
 **Stabiilsema peamise haru hoidmine:** Kui teete muudatusi oma harul ja testite neid põhjalikult, tagab peamisele harule lükkamine, et kõik uued muudatused on kontrollitud ja stabiilsed.
 
-## Harudega tegelemin GIT Bashiga
+## Harudega tegelemine GIT Bashiga
 Git bash commandid
 Tuleb olla projekti kaustas, selle jaoks on võimalik minna soovitud kasuta kasutades ```cd path\to\directory```
 ```
