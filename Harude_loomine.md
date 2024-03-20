@@ -21,7 +21,7 @@ Branch on loodud.
 2. Lisa commitimise info
 3. Vajuta commit to branchi_nimi
 4. Kui sa ei ole branchi veel giti pushinud, siis esimene asi, mida teha saad, on publish branch (see viib kõik commititud muudatused vastavasse harru ja muudab selle ka veebis nähtavaks)
-5. Kui teed veel muudatusi, siis korda samme 1-3 aga nüüd on võimalik vajutada nuppu 
+5. Kui teed veel muudatusi, siis korda samme 1-3 aga nüüd on võimalik vajutada nuppu Push origin ![push](/Images_for_readme/image-4.png)
 
 
 
