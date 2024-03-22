@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://oywimvfqjqgv"]
+[gd_scene load_steps=10 format=3 uid="uid://oywimvfqjqgv"]
 
 [ext_resource type="Texture2D" uid="uid://ci6xjhmq4hoxq" path="res://Assets/Põrand 1.png" id="1_8vkjp"]
 [ext_resource type="PackedScene" uid="uid://bv5x6ikcd0rwv" path="res://Characters/player_raccoon.tscn" id="1_dc041"]
 [ext_resource type="Texture2D" uid="uid://c3kyeblobd2cc" path="res://Assets/Tilemap256x256grid.png" id="2_a0yw1"]
 [ext_resource type="PackedScene" uid="uid://ds2dh18soge7b" path="res://Levels/camera.tscn" id="2_ua8y1"]
 [ext_resource type="PackedScene" uid="uid://d4kqyvwmbta3j" path="res://Levels/apple.tscn" id="5_i8vko"]
+[ext_resource type="PackedScene" uid="uid://cr5hyyge47l3w" path="res://Pausemenu/pausemenu.tscn" id="6_mn7t4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sp00a"]
 texture = ExtResource("1_8vkjp")
@@ -2650,3 +2651,7 @@ scale = Vector2(4, 4)
 [node name="apple5" parent="." instance=ExtResource("5_i8vko")]
 position = Vector2(-346, -128)
 scale = Vector2(4, 4)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Pause_menu" parent="CanvasLayer" instance=ExtResource("6_mn7t4")]
