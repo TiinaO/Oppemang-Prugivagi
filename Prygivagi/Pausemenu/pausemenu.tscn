@@ -13,6 +13,7 @@
 
 [sub_resource type="SystemFont" id="SystemFont_klkt6"]
 font_names = PackedStringArray("Impact")
+subpixel_positioning = 0
 
 [node name="Pause_menu" type="Control"]
 process_mode = 3

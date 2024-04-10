@@ -935,10 +935,6 @@ position = Vector2(-1, -8)
 
 [node name="camera" parent="PlayerRaccoon" instance=ExtResource("2_ua8y1")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Pause_menu" parent="CanvasLayer" instance=ExtResource("6_mn7t4")]
-
 [node name="UserInterface" type="CanvasLayer" parent="."]
 
 [node name="GameUI" type="Control" parent="UserInterface"]
@@ -964,3 +960,7 @@ theme_override_fonts/font = ExtResource("5_2r3b6")
 theme_override_font_sizes/font_size = 60
 text = "0"
 metadata/_edit_group_ = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Pause_menu" parent="CanvasLayer" instance=ExtResource("6_mn7t4")]
