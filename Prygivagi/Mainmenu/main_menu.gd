@@ -1,16 +1,55 @@
+class_name MainMenu
 extends Control
 
-func _on_new_game_button_pressed():
+@onready var click_sfx:AudioStreamPlayer = $ClickButtonSfx
+@onready var options_button = $MarginContainer/HBoxContainer/VBoxContainer/Options_Button as Button
+@onready var options_menu = $Options as OptsionsMenu
+
+@onready var tutorials_button = $MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button as Button
+@onready var instructions_page = $InstructionsPage as InstructionsPage
+
+@onready var start_button = $MarginContainer/HBoxContainer/VBoxContainer/New_game_Button as Button
+
+@onready var exit_button = $MarginContainer/HBoxContainer/VBoxContainer/Exit_Button as Button
+@onready var margin_container = $MarginContainer as MarginContainer
+
+func _ready():
+	handle_connecting_signals()
+
+func on_new_game_pressed() -> void:
+	click_sfx.play()
 	get_tree().change_scene_to_file("res://Levels/game_level.tscn")
 
+func on_options_pressed() -> void:
+	margin_container.visible = false
+	click_sfx.play()
+	options_menu.set_process(true)
+	options_menu.visible = true
 
-func _on_exit_button_pressed():
+func on_tutorials_pressed() -> void:
+	click_sfx.play()
+	margin_container.visible = false
+	instructions_page.set_process(true)
+	instructions_page.visible = true
+
+func on_exit_pressed() -> void:
+	
 	get_tree().quit()
 
+func on_exit_options_pressed() -> void:
+	margin_container.visible = true
+	options_menu.set_process(false)
+	options_menu.visible = false
 
-func _on_tutorials_button_pressed():
-	get_tree().change_scene_to_file("res://Instructions/instructions_page.tscn")
+func on_exit_instructions_pressed() -> void:
+	margin_container.visible = true
+	instructions_page.set_process(false)
+	instructions_page.visible = false
 
-
-func _on_options_button_pressed():
-	get_tree().change_scene_to_file("res://Options/options.tscn")
+func handle_connecting_signals() -> void:
+	start_button.button_down.connect(on_new_game_pressed)
+	exit_button.button_down.connect(on_exit_pressed)
+	options_button.button_down.connect(on_options_pressed)
+	tutorials_button.button_down.connect(on_tutorials_pressed)
+	options_menu.exit_options_menu.connect(on_exit_options_pressed)
+	instructions_page.exit_instructions_page.connect(on_exit_instructions_pressed)

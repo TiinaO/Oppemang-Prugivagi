@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://m4tsue86clpx"]
+[gd_scene load_steps=11 format=3 uid="uid://m4tsue86clpx"]
 
 [ext_resource type="Script" path="res://Mainmenu/main_menu.gd" id="1_miivc"]
 [ext_resource type="Texture2D" uid="uid://dw83uahxvgqvd" path="res://Assets/Background/Main_menu_background.png" id="1_ptcvs"]
@@ -6,6 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://drsjqe6fcj8mu" path="res://Assets/Menu/Property 1=Default(2).png" id="4_8xw84"]
 [ext_resource type="Texture2D" uid="uid://bkm3c5qgg73o6" path="res://Assets/Menu/Property 1=Default(1).png" id="5_oabs3"]
 [ext_resource type="Texture2D" uid="uid://cah0nw3nj2ogb" path="res://Assets/Menu/Property 1=Default.png" id="6_lujms"]
+[ext_resource type="AudioStream" uid="uid://dfk72j81q7ym5" path="res://Audio/click_mouse_button.wav" id="7_1y2q1"]
+[ext_resource type="PackedScene" uid="uid://dlh5o1brjrpdv" path="res://Options/options.tscn" id="8_bxm1b"]
+[ext_resource type="PackedScene" uid="uid://dgh05vmajtinm" path="res://Instructions/instructions_page.tscn" id="9_j2sjn"]
 
 [sub_resource type="SystemFont" id="SystemFont_klkt6"]
 font_names = PackedStringArray("Impact")
@@ -113,6 +116,17 @@ layout_mode = 2
 [node name="Sprite2D3" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Exit_Button"]
 position = Vector2(246, 54)
 texture = ExtResource("6_lujms")
+
+[node name="ClickButtonSfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_1y2q1")
+
+[node name="Options" parent="." instance=ExtResource("8_bxm1b")]
+visible = false
+layout_mode = 1
+
+[node name="InstructionsPage" parent="." instance=ExtResource("9_j2sjn")]
+visible = false
+layout_mode = 1
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/New_game_Button" to="." method="_on_new_game_button_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Options_Button" to="." method="_on_options_button_pressed"]

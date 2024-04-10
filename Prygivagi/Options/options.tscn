@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dlh5o1brjrpdv"]
+[gd_scene load_steps=6 format=3 uid="uid://dlh5o1brjrpdv"]
 
 [ext_resource type="Script" path="res://Options/options.gd" id="1_dmqds"]
 [ext_resource type="Texture2D" uid="uid://dw83uahxvgqvd" path="res://Assets/Background/Main_menu_background.png" id="1_nqc4o"]
+[ext_resource type="AudioStream" uid="uid://dfk72j81q7ym5" path="res://Audio/click_mouse_button.wav" id="3_kjn1u"]
+[ext_resource type="Texture2D" uid="uid://cah0nw3nj2ogb" path="res://Assets/Menu/Property 1=Default.png" id="3_yerbi"]
 
 [sub_resource type="SystemFont" id="SystemFont_v2qxh"]
 font_names = PackedStringArray("Impact")
@@ -66,15 +68,21 @@ layout_mode = 2
 theme_override_constants/separation = 24
 alignment = 1
 
-[node name="Separator2" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-
 [node name="Back" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(496, 104)
 layout_mode = 2
+size_flags_vertical = 10
 text = "TAGASI"
 
 [node name="New_game" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Back"]
 position = Vector2(248, 51)
+texture = ExtResource("3_yerbi")
+
+[node name="Separator3" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ClickButtonSfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_kjn1u")
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]

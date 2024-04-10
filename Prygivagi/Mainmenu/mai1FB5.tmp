@@ -1,25 +1,24 @@
-[gd_scene load_steps=8 format=3 uid="uid://cr5hyyge47l3w"]
+[gd_scene load_steps=9 format=3 uid="uid://m4tsue86clpx"]
 
-[ext_resource type="Script" path="res://Pausemenu/pausemenu.gd" id="1_4pj2e"]
-[ext_resource type="Texture2D" uid="uid://dw83uahxvgqvd" path="res://Assets/Background/Main_menu_background.png" id="2_1axdu"]
-[ext_resource type="Texture2D" uid="uid://cw8sg7i77ymjl" path="res://Assets/Menu/Property 1=Default(3).png" id="4_gwjae"]
-[ext_resource type="Texture2D" uid="uid://drsjqe6fcj8mu" path="res://Assets/Menu/Property 1=Default(2).png" id="5_vnspw"]
-[ext_resource type="Texture2D" uid="uid://bkm3c5qgg73o6" path="res://Assets/Menu/Property 1=Default(1).png" id="6_rtw0l"]
-[ext_resource type="Texture2D" uid="uid://cah0nw3nj2ogb" path="res://Assets/Menu/Property 1=Default.png" id="7_dbm12"]
+[ext_resource type="Script" path="res://Mainmenu/main_menu.gd" id="1_miivc"]
+[ext_resource type="Texture2D" uid="uid://dw83uahxvgqvd" path="res://Assets/Background/Main_menu_background.png" id="1_ptcvs"]
+[ext_resource type="Texture2D" uid="uid://fnqlr2p5vyqg" path="res://Assets/Menu/Property 1=Default(4).png" id="2_0iifj"]
+[ext_resource type="Texture2D" uid="uid://drsjqe6fcj8mu" path="res://Assets/Menu/Property 1=Default(2).png" id="4_8xw84"]
+[ext_resource type="Texture2D" uid="uid://bkm3c5qgg73o6" path="res://Assets/Menu/Property 1=Default(1).png" id="5_oabs3"]
+[ext_resource type="Texture2D" uid="uid://cah0nw3nj2ogb" path="res://Assets/Menu/Property 1=Default.png" id="6_lujms"]
+[ext_resource type="AudioStream" uid="uid://dfk72j81q7ym5" path="res://Audio/click_mouse_button.wav" id="7_1y2q1"]
 
 [sub_resource type="SystemFont" id="SystemFont_klkt6"]
 font_names = PackedStringArray("Impact")
 
-[node name="Pause_menu" type="Control"]
-process_mode = 3
-visible = false
+[node name="Main_menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_4pj2e")
+script = ExtResource("1_miivc")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -28,7 +27,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_1axdu")
+texture = ExtResource("1_ptcvs")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -71,41 +70,40 @@ alignment = 1
 [node name="Separator2" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Separator3" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Continue_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="New_game_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(496, 104)
 layout_mode = 2
 
-[node name="Continue2" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Continue_Button"]
+[node name="New_game" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/New_game_Button"]
 position = Vector2(248, 51)
-texture = ExtResource("4_gwjae")
+texture = ExtResource("2_0iifj")
 
 [node name="Separator4" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
 [node name="Options_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+visible = false
 self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(496, 104)
 layout_mode = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Options_Button"]
 position = Vector2(247, 53)
-texture = ExtResource("5_vnspw")
+texture = ExtResource("4_8xw84")
 
 [node name="Separator5" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
 [node name="Tutorials_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+visible = false
 self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(496, 104)
 layout_mode = 2
 
 [node name="Sprite2D2" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button"]
 position = Vector2(247, 52)
-texture = ExtResource("6_rtw0l")
+texture = ExtResource("5_oabs3")
 
 [node name="Separator6" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -117,11 +115,12 @@ layout_mode = 2
 
 [node name="Sprite2D3" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Exit_Button"]
 position = Vector2(246, 54)
-texture = ExtResource("7_dbm12")
+texture = ExtResource("6_lujms")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="ClickButtonSfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_1y2q1")
 
-[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Continue_Button" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/New_game_Button" to="." method="_on_new_game_button_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Options_Button" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button" to="." method="_on_tutorials_button_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Exit_Button" to="." method="_on_exit_button_pressed"]

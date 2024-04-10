@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dgh05vmajtinm"]
+[gd_scene load_steps=6 format=3 uid="uid://dgh05vmajtinm"]
 
 [ext_resource type="Script" path="res://Instructions/instructions_page.gd" id="1_b5kfm"]
 [ext_resource type="Texture2D" uid="uid://dw83uahxvgqvd" path="res://Assets/Background/Main_menu_background.png" id="1_jwc7u"]
 [ext_resource type="Texture2D" uid="uid://cah0nw3nj2ogb" path="res://Assets/Menu/Property 1=Default.png" id="2_2sypq"]
+[ext_resource type="AudioStream" uid="uid://dfk72j81q7ym5" path="res://Audio/click_mouse_button.wav" id="4_0yfka"]
 
 [sub_resource type="SystemFont" id="SystemFont_fmw7h"]
 font_names = PackedStringArray("Impact")
@@ -54,6 +55,22 @@ text = "Juhend"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Back" type="Button" parent="MarginContainer/VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(496, 104)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
+text = "TAGASI"
+
+[node name="New_game" type="Sprite2D" parent="MarginContainer/VBoxContainer/Back"]
+position = Vector2(248, 51)
+texture = ExtResource("2_2sypq")
+
+[node name="Separator3" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 alignment = 1
@@ -66,14 +83,20 @@ alignment = 1
 [node name="Separator2" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Back" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="Back2" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+visible = false
 self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(496, 104)
 layout_mode = 2
+size_flags_vertical = 10
 text = "TAGASI"
 
-[node name="New_game" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Back"]
+[node name="New_game" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Back2"]
 position = Vector2(248, 51)
 texture = ExtResource("2_2sypq")
 
-[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]
+[node name="ClickButtonSfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_0yfka")
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Back2" to="." method="_on_back_pressed"]

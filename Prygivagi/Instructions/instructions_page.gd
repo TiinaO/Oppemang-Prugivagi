@@ -1,14 +1,16 @@
+class_name InstructionsPage
 extends Control
 
-# Called when the node enters the scene tree for the first time.
+@onready var back_button = $MarginContainer/VBoxContainer/Back as Button
+@onready var click_sfx:AudioStreamPlayer = $ClickButtonSfx as AudioStreamPlayer
+
+signal exit_instructions_page
+
 func _ready():
-	pass # Replace with function body.
+	back_button.button_down.connect(on_back_pressed)
+	set_process(false) # So button cannot do anything immediately
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-
-func _on_back_pressed():
-	get_tree().change_scene_to_file("res://Mainmenu/main_menu.tscn")
+func on_back_pressed() -> void:
+	exit_instructions_page.emit()
+	click_sfx.play()
+	set_process(false)
