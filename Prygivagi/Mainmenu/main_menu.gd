@@ -35,7 +35,10 @@ func on_tutorials_pressed() -> void:
 	instructions_page.visible = true
 
 func on_exit_pressed() -> void:
-	get_tree().quit()
+	margin_container.set_process(false)
+	confirm_popup.set_process(true)
+	confirm_popup.visible = true
+	#get_tree().quit()
 
 func on_exit_options_pressed() -> void:
 	margin_container.visible = true
@@ -47,6 +50,11 @@ func on_exit_instructions_pressed() -> void:
 	instructions_page.set_process(false)
 	instructions_page.visible = false
 
+func on_exit_popup_pressed() -> void:
+	confirm_popup.set_process(false)
+	confirm_popup.visible = false
+	margin_container.set_process(true)
+
 func handle_connecting_signals() -> void:
 	start_button.button_down.connect(on_new_game_pressed)
 	exit_button.button_down.connect(on_exit_pressed)
@@ -54,3 +62,5 @@ func handle_connecting_signals() -> void:
 	tutorials_button.button_down.connect(on_tutorials_pressed)
 	options_menu.exit_options_menu.connect(on_exit_options_pressed)
 	instructions_page.exit_instructions_page.connect(on_exit_instructions_pressed)
+	confirm_popup.exit_confirm_popup.connect(on_exit_popup_pressed)
+	confirm_popup.exit_confirm_popup_with_x.connect(on_exit_popup_pressed)
