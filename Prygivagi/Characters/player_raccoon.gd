@@ -1,7 +1,6 @@
 extends CharacterBody2D
 
 @export var move_speed: float = 400
-var is_playing_action = false
 
 func _physics_process(_delta):
 		
@@ -17,18 +16,14 @@ func _physics_process(_delta):
 		$AnimatedSprite2D.play("move")
 		var target_direction = Vector2(-input_direction.y, input_direction.x) #Pööra -90 kraadi
 		look_at(global_position + target_direction)
-		is_playing_action = false
 	else:
 		self.velocity = Vector2.ZERO
-		if not is_playing_action:
-			$AnimatedSprite2D.play("idle")
+		$AnimatedSprite2D.play("idle")
 
 	move_and_slide()
 	
 func play_action_animation():
-	is_playing_action = true
+	print("test")
 	$AnimatedSprite2D.play("action")
-	await get_tree().create_timer(0.2).timeout
-	is_playing_action = false
 
 

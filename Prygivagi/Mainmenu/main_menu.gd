@@ -20,7 +20,6 @@ func _ready():
 
 func on_new_game_pressed() -> void:
 	click_sfx.play()
-	print("uus mäng")
 	get_tree().change_scene_to_file("res://Levels/game_level.tscn")
 
 func on_options_pressed() -> void:

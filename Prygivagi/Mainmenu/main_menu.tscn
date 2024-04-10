@@ -133,7 +133,7 @@ layout_mode = 1
 visible = false
 layout_mode = 1
 
-[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/New_game_Button" to="." method="on_new_game_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Options_Button" to="." method="on_options_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button" to="." method="on_tutorials_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Exit_Button" to="." method="on_exit_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/New_game_Button" to="." method="_on_new_game_button_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Options_Button" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button" to="." method="_on_tutorials_button_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Exit_Button" to="." method="_on_exit_button_pressed"]

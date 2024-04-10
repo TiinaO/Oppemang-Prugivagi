@@ -1,0 +1,88 @@
+[gd_scene load_steps=14 format=3 uid="uid://cy76ekqvrmpuq"]
+
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_dks43"]
+[ext_resource type="Texture2D" uid="uid://b1ouqyoctju6m" path="res://pic/Pesukaru-idle1.png" id="1_lckaf"]
+[ext_resource type="Texture2D" uid="uid://cb0xgro0cmxew" path="res://pic/Pesukaru-idle2.png" id="2_r3okb"]
+[ext_resource type="Texture2D" uid="uid://bvlxhjtk2wpa6" path="res://pic/Pesukaru-idle3.png" id="3_hvyin"]
+[ext_resource type="Texture2D" uid="uid://ckgp1gk04lhwk" path="res://pic/Pesukaru-idle4.png" id="4_ro54q"]
+[ext_resource type="Texture2D" uid="uid://cegsh35g8sqn3" path="res://pic/Pesukaru-korjab1.png" id="5_gbug7"]
+[ext_resource type="Texture2D" uid="uid://b5u6fcgwmqlsp" path="res://pic/Pesukaru-korjab2.png" id="6_sjn45"]
+[ext_resource type="Texture2D" uid="uid://ce5qjta64k4wp" path="res://pic/Pesukaru-astub1.png" id="7_vruu7"]
+[ext_resource type="Texture2D" uid="uid://du6c82qwx2fij" path="res://pic/Pesukaru-astub2.png" id="8_itrs7"]
+[ext_resource type="Texture2D" uid="uid://d3xlrtgdvmx60" path="res://pic/Pesukaru-astub3.png" id="9_8glhd"]
+[ext_resource type="Texture2D" uid="uid://1dvpnv4vyucg" path="res://pic/Pesukaru-astub4.png" id="10_4qshn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j0wci"]
+radius = 1.02e+07
+height = 3.3302e+07
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pls3h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lckaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_r3okb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hvyin")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ro54q")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_gbug7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_sjn45")
+}],
+"loop": true,
+"name": &"pickup",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_vruu7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_itrs7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8glhd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_4qshn")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Player" type="Area2D"]
+position = Vector2(625, 348)
+script = ExtResource("1_dks43")
+metadata/_edit_group_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4.23, 4.23)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-18.15, -20.51)
+scale = Vector2(1e-05, 1e-05)
+shape = SubResource("CapsuleShape2D_j0wci")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, 0.25)
+scale = Vector2(0.992063, 0.998452)
+sprite_frames = SubResource("SpriteFrames_pls3h")
+animation = &"idle"
+frame_progress = 0.829659
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

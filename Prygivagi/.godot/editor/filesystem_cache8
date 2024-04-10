@@ -1,109 +1,107 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712774501
-export_presets.cfg::TextFile::-1::1711352652::0::1::::<><>::
-icon.svg::CompressedTexture2D::1219636454829313979::1710969143::1711098127::1::::<><>::
-::res://Assets/::1712774132
-1. level.png::CompressedTexture2D::8913313344255380603::1712768135::1712774132::1::::<><>::
-Andika-Bold.ttf::FontFile::3847452259890037709::1712495860::1712495860::1::::<><>::
-Arvutilaud.png::CompressedTexture2D::1564322306302353573::1712768135::1712774132::1::::<><>::
-Group 1.png::CompressedTexture2D::6061650421313811989::1712768135::1711098127::1::::<><>::
-Inventory-1.png::CompressedTexture2D::3395976484644756753::1712768135::1711098128::1::::<><>::
-Inventory.png::CompressedTexture2D::4400275476684551264::1712768135::1711098128::1::::<><>::
-Kapp sokkidega.png::CompressedTexture2D::8260645127137641894::1712768135::1712774132::1::::<><>::
-Konteiner BIOJÄÄTMED.png::CompressedTexture2D::9072254879817156369::1712768135::1712774132::1::::<><>::
-Konteiner KLAAS.png::CompressedTexture2D::2471628928469311994::1712768135::1712774132::1::::<><>::
-Konteiner METALL JA PLASTIK-1.png::CompressedTexture2D::6029365054864708477::1712768135::1711098128::1::::<><>::
-Konteiner METALL JA PLASTIK.png::CompressedTexture2D::624942241910945419::1712768135::1712774132::1::::<><>::
-Konteiner PAPP JA PABER.png::CompressedTexture2D::501733023250981433::1712768135::1712774132::1::::<><>::
-Paber.png::CompressedTexture2D::5435067149902095831::1712768135::1711098128::1::::<><>::
-Porand.png::CompressedTexture2D::5063624073675631433::1710969142::1712492424::1::::<><>::
-Prototüüp - SORTEERIMINE.png::CompressedTexture2D::2036707583247221625::1712768135::1712774132::1::::<><>::
-Prototüüp - TUBA.png::CompressedTexture2D::4068179490000578251::1712768135::1712774132::1::::<><>::
-Prügi-1.png::CompressedTexture2D::2988857690787965003::1712768135::1711098128::1::::<><>::
-Prügi-2.png::CompressedTexture2D::1920217901327252208::1712768135::1711098128::1::::<><>::
-Prügi.png::CompressedTexture2D::4576523465967213607::1712768135::1711098128::1::::<><>::
-Pudel.png::CompressedTexture2D::1665768990673717397::1712768135::1711098127::1::::<><>::
-Põrand 1.png::CompressedTexture2D::5399760776812203614::1712768135::1712774132::1::::<><>::
-Põrand 2.png::CompressedTexture2D::8713779363031166259::1712768135::1712774131::1::::<><>::
-Põrand.png::CompressedTexture2D::5063624073675631433::1712768135::1712768135::1::::<><>::
-Ragnar.png::CompressedTexture2D::4931744664787230148::1712768135::1711098127::1::::<><>::
-Rectangle 8.png::CompressedTexture2D::1169716655783294931::1712768135::1711098127::1::::<><>::
-Rectangle 47.png::CompressedTexture2D::7385058959617814170::1712768135::1711098127::1::::<><>::
-Rectangle 49.png::CompressedTexture2D::3262056105953173472::1712768135::1712774132::1::::<><>::
-Rectangle 50.png::CompressedTexture2D::5979862663733464916::1712768135::1712774132::1::::<><>::
-Rectangle 51.png::CompressedTexture2D::7471135094679522409::1712768135::1711098127::1::::<><>::
-Rectangle 52.png::CompressedTexture2D::1182872512377113719::1712768135::1711098127::1::::<><>::
-Rectangle 53.png::CompressedTexture2D::5692180178056794279::1712768135::1711098127::1::::<><>::
-Rectangle 54.png::CompressedTexture2D::8324447548084054555::1712768135::1711098127::1::::<><>::
-Rectangle 55.png::CompressedTexture2D::570232526874813619::1712768135::1711098127::1::::<><>::
-Tilemap256x256grid.png::CompressedTexture2D::6760237187947501530::1710969142::1711098131::1::::<><>::
-Tuba.png::CompressedTexture2D::7927690555990069676::1712768135::1712774132::1::::<><>::
-Voodi.png::CompressedTexture2D::4415270215688101584::1712768135::1712774132::1::::<><>::
-Õun.png::CompressedTexture2D::2536728870617010520::1712768135::1711098127::1::::<><>::
-Öökapp esemega 1.png::CompressedTexture2D::1497022726041484445::1712768135::1711098127::1::::<><>::
-Öökapp esemega 2.png::CompressedTexture2D::5193293252014853195::1712768135::1711098127::1::::<><>::
-::res://Assets/Background/::1711098127
-Main_menu_background.png::CompressedTexture2D::8773276880562510893::1711096752::1711098127::1::::<><>::
-::res://Assets/GUI/::1711098127
-Inventory.png::CompressedTexture2D::4032881169365192543::1710969142::1711098127::1::::<><>::
-Punktid.png::CompressedTexture2D::8377129853520170366::1711096752::1711098127::1::::<><>::
-::res://Assets/Menu/::1712774131
-Ei.png::CompressedTexture2D::2445676236796087602::1712768135::1712774131::1::::<><>::
-Exit.png::CompressedTexture2D::8412707988457405516::1712768135::1712774131::1::::<><>::
-Exit_1.png::CompressedTexture2D::2428491534695740359::1712768135::1712774131::1::::<><>::
-Exit_32.png::CompressedTexture2D::4260138001150727347::1712768135::1712774131::1::::<><>::
-Jah.png::CompressedTexture2D::1467440872882418389::1712768135::1712774131::1::::<><>::
-Juhised.png::CompressedTexture2D::3450708199517321052::1711096752::1711098127::1::::<><>::
-Jätka.png::CompressedTexture2D::1492288893954369534::1711096752::1711098127::1::::<><>::
-Property 1=Default(1).png::CompressedTexture2D::3114786901206709131::1711096752::1711098127::1::::<><>::
-Property 1=Default(2).png::CompressedTexture2D::8390206476348885752::1711096752::1711098127::1::::<><>::
-Property 1=Default(3).png::CompressedTexture2D::6386225708543406637::1711096752::1711098127::1::::<><>::
-Property 1=Default(4).png::CompressedTexture2D::378773179939303086::1711096752::1711098127::1::::<><>::
-Property 1=Default.png::CompressedTexture2D::4788834351176537741::1711096752::1711098127::1::::<><>::
-Seaded.png::CompressedTexture2D::6761511547062782912::1711096752::1711098127::1::::<><>::
-Tekstikast.png::CompressedTexture2D::8583641927658695390::1712768135::1712774131::1::::<><>::
-Uus_mang.png::CompressedTexture2D::1014831560566935572::1711096752::1711098127::1::::<><>::
-Välju.png::CompressedTexture2D::1321448578256468263::1711096752::1711098127::1::::<><>::
-::res://Audio/::1712774133
-button_click.wav::AudioStreamWAV::5748322004670847852::1712768135::1712774133::1::::<><>::
-click_mouse_button.wav::AudioStreamWAV::7532841731906707222::1712768135::1712774133::1::::<><>::
-slider_click.wav::AudioStreamWAV::6204780435602403360::1712768135::1712774133::1::::<><>::
-::res://Characters/::1712774473
-Pesukaru IDLE1Pesukaru-idle.png::CompressedTexture2D::3267060844371590885::1710970796::1711098127::1::::<><>::
-Pesukaru IDLE2Pesukaru-idle.png::CompressedTexture2D::9181590222152638617::1710970796::1711098127::1::::<><>::
-Pesukaru IDLE3Pesukaru-idle.png::CompressedTexture2D::3348922635990532132::1710970796::1711098127::1::::<><>::
-Pesukaru IDLE4Pesukaru-idle.png::CompressedTexture2D::571614407690320226::1710970796::1711098127::1::::<><>::
-Pesukaru KORJAB1.png::CompressedTexture2D::1743260361842037770::1710969142::1711098127::1::::<><>::
-Pesukaru KORJAB2.png::CompressedTexture2D::2173041148026700533::1710969142::1711098127::1::::<><>::
-Pesukaru TOP2Pesukaru-astub.png::CompressedTexture2D::4721484462776810012::1710969142::1711098127::1::::<><>::
-Pesukaru TOP parem samm.png::CompressedTexture2D::4759881007098372063::1710969142::1711098127::1::::<><>::
-Pesukaru TOP parem sammPesukaru-astub.png::CompressedTexture2D::4640568743034777081::1710969142::1711098127::1::::<><>::
-Pesukaru TOP vasak sammPesukaru-astub.png::CompressedTexture2D::3492799394945672656::1710969142::1711098127::1::::<><>::
-Pesukaru TOPPesukaru-astub.png::CompressedTexture2D::3701387620602276914::1710969142::1711098127::1::::<><>::
-player_raccoon.gd::GDScript::-1::1712494843::0::1::::<>CharacterBody2D<>::
-player_raccoon.tscn::PackedScene::3923770018888983037::1712774473::0::1::::<><>::res://Characters/player_raccoon.gd<>uid://y3pijpgnqq1g::::res://Characters/Pesukaru KORJAB1.png<>uid://57vw11o0hmyn::::res://Characters/Pesukaru KORJAB2.png<>uid://bmsuardbmv36p::::res://Characters/Pesukaru IDLE1Pesukaru-idle.png<>uid://d32vpjvuyifw0::::res://Characters/Pesukaru IDLE2Pesukaru-idle.png<>uid://bnyijcd0a8dbo::::res://Characters/Pesukaru IDLE3Pesukaru-idle.png<>uid://ie5n2c2onwgw::::res://Characters/Pesukaru IDLE4Pesukaru-idle.png<>uid://b8jefoerrg6uy::::res://Characters/Pesukaru TOP2Pesukaru-astub.png<>uid://b7d6qvrurtr3v::::res://Characters/Pesukaru TOP parem sammPesukaru-astub.png<>uid://bp065pp10qgqi::::res://Characters/Pesukaru TOP vasak sammPesukaru-astub.png<>uid://bsy8kwhgudvpi::::res://Characters/Pesukaru TOPPesukaru-astub.png
-::res://ConfirmActionPopup/::1712768135
+::res://::1712780110
+export_presets.cfg::TextFile::-1::1712768135::0::1::::<><>::
+icon.svg::CompressedTexture2D::1219636454829313979::1712768135::1712778910::1::::<><>::
+::res://Assets/::1712780075
+1. level tilemap.png::CompressedTexture2D::7051865894423918769::1712491506::1712779825::1::::<><>::
+1. level.png::CompressedTexture2D::8913313344255380603::1712768135::1712778912::1::::<><>::
+Andika-Bold.ttf::FontFile::3847452259890037709::1712778125::1712779582::1::::<><>::
+Arvutilaud.png::CompressedTexture2D::1564322306302353573::1712768135::1712778911::1::::<><>::
+Group 1.png::CompressedTexture2D::6061650421313811989::1712768135::1712778911::1::::<><>::
+Inventory-1.png::CompressedTexture2D::3395976484644756753::1712768135::1712778911::1::::<><>::
+Inventory.png::CompressedTexture2D::4400275476684551264::1712768135::1712778911::1::::<><>::
+Kapp sokkidega.png::CompressedTexture2D::8260645127137641894::1712768135::1712778911::1::::<><>::
+Konteiner BIOJÄÄTMED.png::CompressedTexture2D::9072254879817156369::1712768135::1712778911::1::::<><>::
+Konteiner KLAAS.png::CompressedTexture2D::2471628928469311994::1712768135::1712778911::1::::<><>::
+Konteiner METALL JA PLASTIK-1.png::CompressedTexture2D::6029365054864708477::1712768135::1712778911::1::::<><>::
+Konteiner METALL JA PLASTIK.png::CompressedTexture2D::624942241910945419::1712768135::1712778911::1::::<><>::
+Konteiner PAPP JA PABER.png::CompressedTexture2D::501733023250981433::1712768135::1712778911::1::::<><>::
+Paber.png::CompressedTexture2D::5435067149902095831::1712768135::1712778911::1::::<><>::
+Porand.png::CompressedTexture2D::5063624073675631433::1712778125::1712778125::1::::<><>::
+Prototüüp - SORTEERIMINE.png::CompressedTexture2D::2036707583247221625::1712768135::1712778912::1::::<><>::
+Prototüüp - TUBA.png::CompressedTexture2D::4068179490000578251::1712768135::1712778912::1::::<><>::
+Prügi-1.png::CompressedTexture2D::2988857690787965003::1712768135::1712778911::1::::<><>::
+Prügi-2.png::CompressedTexture2D::1920217901327252208::1712768135::1712778911::1::::<><>::
+Prügi.png::CompressedTexture2D::4576523465967213607::1712768135::1712778911::1::::<><>::
+Pudel.png::CompressedTexture2D::1665768990673717397::1712768135::1712778910::1::::<><>::
+Põrand 1.png::CompressedTexture2D::5399760776812203614::1712768135::1712778910::1::::<><>::
+Põrand 2.png::CompressedTexture2D::8713779363031166259::1712768135::1712778910::1::::<><>::
+Põrand.png::CompressedTexture2D::5063624073675631433::1712768135::1712778910::1::::<><>::
+Ragnar.png::CompressedTexture2D::4931744664787230148::1712768135::1712778910::1::::<><>::
+Rectangle 8.png::CompressedTexture2D::1169716655783294931::1712768135::1712778910::1::::<><>::
+Rectangle 47.png::CompressedTexture2D::7385058959617814170::1712768135::1712778910::1::::<><>::
+Rectangle 49.png::CompressedTexture2D::3262056105953173472::1712768135::1712778910::1::::<><>::
+Rectangle 50.png::CompressedTexture2D::5979862663733464916::1712768135::1712778910::1::::<><>::
+Rectangle 51.png::CompressedTexture2D::7471135094679522409::1712768135::1712778910::1::::<><>::
+Rectangle 52.png::CompressedTexture2D::1182872512377113719::1712768135::1712778910::1::::<><>::
+Rectangle 53.png::CompressedTexture2D::5692180178056794279::1712768135::1712778910::1::::<><>::
+Rectangle 54.png::CompressedTexture2D::8324447548084054555::1712768135::1712778910::1::::<><>::
+Rectangle 55.png::CompressedTexture2D::570232526874813619::1712768135::1712778910::1::::<><>::
+Tilemap256x256grid.png::CompressedTexture2D::6760237187947501530::1712768135::1712778919::1::::<><>::
+Tuba.png::CompressedTexture2D::7927690555990069676::1712768135::1712778911::1::::<><>::
+Voodi.png::CompressedTexture2D::4415270215688101584::1712768135::1712778910::1::::<><>::
+Õun.png::CompressedTexture2D::2536728870617010520::1712768135::1712778911::1::::<><>::
+Öökapp esemega 1.png::CompressedTexture2D::1497022726041484445::1712768135::1712778911::1::::<><>::
+Öökapp esemega 2.png::CompressedTexture2D::5193293252014853195::1712768135::1712778911::1::::<><>::
+::res://Assets/Background/::1712780075
+Main_menu_background.png::CompressedTexture2D::8773276880562510893::1712768135::1712778911::1::::<><>::
+::res://Assets/GUI/::1712780075
+Inventory.png::CompressedTexture2D::4032881169365192543::1712768135::1712778911::1::::<><>::
+Punktid.png::CompressedTexture2D::8377129853520170366::1712768135::1712778911::1::::<><>::
+::res://Assets/Menu/::1712780075
+Ei.png::CompressedTexture2D::2445676236796087602::1712768135::1712778911::1::::<><>::
+Exit.png::CompressedTexture2D::8412707988457405516::1712768135::1712778911::1::::<><>::
+Exit_1.png::CompressedTexture2D::2428491534695740359::1712768135::1712778911::1::::<><>::
+Exit_32.png::CompressedTexture2D::4260138001150727347::1712768135::1712778911::1::::<><>::
+Jah.png::CompressedTexture2D::1467440872882418389::1712768135::1712778911::1::::<><>::
+Juhised.png::CompressedTexture2D::3450708199517321052::1712768135::1712778911::1::::<><>::
+Jätka.png::CompressedTexture2D::1492288893954369534::1712768135::1712778911::1::::<><>::
+Property 1=Default(1).png::CompressedTexture2D::3114786901206709131::1712768135::1712778911::1::::<><>::
+Property 1=Default(2).png::CompressedTexture2D::8390206476348885752::1712768135::1712778911::1::::<><>::
+Property 1=Default(3).png::CompressedTexture2D::6386225708543406637::1712768135::1712778911::1::::<><>::
+Property 1=Default(4).png::CompressedTexture2D::378773179939303086::1712768135::1712778911::1::::<><>::
+Property 1=Default.png::CompressedTexture2D::4788834351176537741::1712768135::1712778911::1::::<><>::
+Seaded.png::CompressedTexture2D::6761511547062782912::1712768135::1712778911::1::::<><>::
+Tekstikast.png::CompressedTexture2D::8583641927658695390::1712768135::1712778911::1::::<><>::
+Uus_mang.png::CompressedTexture2D::1014831560566935572::1712768135::1712778911::1::::<><>::
+Välju.png::CompressedTexture2D::1321448578256468263::1712768135::1712778911::1::::<><>::
+::res://Audio/::1712778126
+button_click.wav::AudioStreamWAV::5748322004670847852::1712768135::1712778919::1::::<><>::
+click_mouse_button.wav::AudioStreamWAV::7532841731906707222::1712768135::1712778919::1::::<><>::
+slider_click.wav::AudioStreamWAV::6204780435602403360::1712768135::1712778919::1::::<><>::
+::res://Characters/::1712780075
+Pesukaru IDLE1Pesukaru-idle.png::CompressedTexture2D::3267060844371590885::1712768135::1712778911::1::::<><>::
+Pesukaru IDLE2Pesukaru-idle.png::CompressedTexture2D::9181590222152638617::1712768135::1712778911::1::::<><>::
+Pesukaru IDLE3Pesukaru-idle.png::CompressedTexture2D::3348922635990532132::1712768135::1712778911::1::::<><>::
+Pesukaru IDLE4Pesukaru-idle.png::CompressedTexture2D::571614407690320226::1712768135::1712778911::1::::<><>::
+Pesukaru KORJAB1.png::CompressedTexture2D::1743260361842037770::1712768135::1712778911::1::::<><>::
+Pesukaru KORJAB2.png::CompressedTexture2D::2173041148026700533::1712768135::1712778910::1::::<><>::
+Pesukaru TOP2Pesukaru-astub.png::CompressedTexture2D::4721484462776810012::1712768135::1712778910::1::::<><>::
+Pesukaru TOP parem samm.png::CompressedTexture2D::4759881007098372063::1712768135::1712778910::1::::<><>::
+Pesukaru TOP parem sammPesukaru-astub.png::CompressedTexture2D::4640568743034777081::1712768135::1712778910::1::::<><>::
+Pesukaru TOP vasak sammPesukaru-astub.png::CompressedTexture2D::3492799394945672656::1712768135::1712778910::1::::<><>::
+Pesukaru TOPPesukaru-astub.png::CompressedTexture2D::3701387620602276914::1712768135::1712778910::1::::<><>::
+player_raccoon.gd::GDScript::-1::1712768135::0::1::::<>CharacterBody2D<>::
+player_raccoon.tscn::PackedScene::3923770018888983037::1712768135::0::1::::<><>::res://Characters/player_raccoon.gd<>uid://y3pijpgnqq1g::::res://Characters/Pesukaru KORJAB1.png<>uid://57vw11o0hmyn::::res://Characters/Pesukaru KORJAB2.png<>uid://bmsuardbmv36p::::res://Characters/Pesukaru IDLE1Pesukaru-idle.png<>uid://d32vpjvuyifw0::::res://Characters/Pesukaru IDLE2Pesukaru-idle.png<>uid://bnyijcd0a8dbo::::res://Characters/Pesukaru IDLE3Pesukaru-idle.png<>uid://ie5n2c2onwgw::::res://Characters/Pesukaru IDLE4Pesukaru-idle.png<>uid://b8jefoerrg6uy::::res://Characters/Pesukaru TOP2Pesukaru-astub.png<>uid://b7d6qvrurtr3v::::res://Characters/Pesukaru TOP parem sammPesukaru-astub.png<>uid://bp065pp10qgqi::::res://Characters/Pesukaru TOP vasak sammPesukaru-astub.png<>uid://bsy8kwhgudvpi::::res://Characters/Pesukaru TOPPesukaru-astub.png
+::res://ConfirmActionPopup/::1712778126
 confirm_action_popup.gd::GDScript::-1::1712768135::0::1::::ConfirmActionPopup<>Node<>::
 confirm_action_popup.tscn::PackedScene::2600213563471990715::1712768135::0::1::::<><>::res://ConfirmActionPopup/confirm_action_popup.gd<>uid://duj8lfx5uxl3c::::res://Assets/Menu/Tekstikast.png<>uid://b1xv36ew86gvj::::res://Assets/Menu/Exit_32.png<>uid://u53sirvhgptt::::res://Assets/Menu/Jah.png<>uid://ba3x6vounx3ji::::res://Assets/Menu/Ei.png
-::res://Instructions/::1712774448
+::res://Instructions/::1712778126
 instructions_page.gd::GDScript::-1::1712768135::0::1::::InstructionsPage<>Control<>::
 instructions_page.tscn::PackedScene::7596418377363013902::1712768135::0::1::::<><>::res://Instructions/instructions_page.gd<>uid://dw83uahxvgqvd::::res://Assets/Background/Main_menu_background.png<>uid://cah0nw3nj2ogb::::res://Assets/Menu/Property 1=Default.png<>uid://dfk72j81q7ym5::::res://Audio/click_mouse_button.wav
-::res://Levels/::1712774473
-apple.gd::GDScript::-1::1712500927::0::1::::<>CharacterBody2D<>::
-apple.tscn::PackedScene::9216397762584180329::1712774473::0::1::::<><>::res://Levels/apple.gd<>uid://bce2s3jvtbe21::::res://Assets/Õun.png<>uid://bu2y8g7krm3fd::::res://Assets/Andika-Bold.ttf
-camera.tscn::PackedScene::8478595504881571041::1712497389::0::1::::<><>::
-game_level.gd::GDScript::-1::1712498433::0::1::::<>Node2D<>::
-game_level.tscn::PackedScene::1033539600192014793::1712774473::0::1::::<><>::res://Levels/game_level.gd<>uid://bv5x6ikcd0rwv::::res://Characters/player_raccoon.tscn<>uid://c3kyeblobd2cc::::res://Assets/Tilemap256x256grid.png<>uid://ds2dh18soge7b::::res://Levels/camera.tscn<>uid://c7p8g3l0b5gm8::::res://Assets/1. level tilemap.png<>uid://bu2y8g7krm3fd::::res://Assets/Andika-Bold.ttf<>uid://d4kqyvwmbta3j::::res://Levels/apple.tscn<>uid://cr5hyyge47l3w::::res://Pausemenu/pausemenu.tscn<>uid://drl7dteat4ox7::::res://Assets/GUI/Punktid.png
-::res://Mainmenu/::1712774474
-main_menu.gd::GDScript::-1::1712768135::0::1::::<>Control<>::
-main_menu.tscn::PackedScene::903319903864080865::1712774474::0::1::::<><>::res://Mainmenu/main_menu.gd<>uid://dw83uahxvgqvd::::res://Assets/Background/Main_menu_background.png<>uid://fnqlr2p5vyqg::::res://Assets/Menu/Property 1=Default(4).png<>uid://drsjqe6fcj8mu::::res://Assets/Menu/Property 1=Default(2).png<>uid://bkm3c5qgg73o6::::res://Assets/Menu/Property 1=Default(1).png<>uid://cah0nw3nj2ogb::::res://Assets/Menu/Property 1=Default.png<>uid://dfk72j81q7ym5::::res://Audio/click_mouse_button.wav<>uid://dlh5o1brjrpdv::::res://Options/options.tscn<>uid://dgh05vmajtinm::::res://Instructions/instructions_page.tscn<>uid://bdbtew7c0vbb4::::res://ConfirmActionPopup/confirm_action_popup.tscn
-::res://Options/::1712774257
+::res://Levels/::1712780076
+apple.gd::GDScript::-1::1712778126::0::1::::<>CharacterBody2D<>::
+apple.tscn::PackedScene::9216397762584180329::1712778126::0::1::::<><>::res://Levels/apple.gd<>uid://bce2s3jvtbe21::::res://Assets/Õun.png<>uid://bu2y8g7krm3fd::::res://Assets/Andika-Bold.ttf
+camera.tscn::PackedScene::8478595504881571041::1712768135::0::1::::<><>::
+game_level.gd::GDScript::-1::1712778126::0::1::::<>Node2D<>::
+game_level.tscn::PackedScene::1033539600192014793::1712779857::0::1::::<><>::res://Levels/game_level.gd<>uid://bv5x6ikcd0rwv::::res://Characters/player_raccoon.tscn<>uid://c3kyeblobd2cc::::res://Assets/Tilemap256x256grid.png<>uid://ds2dh18soge7b::::res://Levels/camera.tscn<>uid://c7p8g3l0b5gm8::::res://Assets/1. level tilemap.png<>uid://bu2y8g7krm3fd::::res://Assets/Andika-Bold.ttf<>uid://d4kqyvwmbta3j::::res://Levels/apple.tscn<>uid://cr5hyyge47l3w::::res://Pausemenu/pausemenu.tscn<>uid://drl7dteat4ox7::::res://Assets/GUI/Punktid.png
+::res://Mainmenu/::1712778623
+main_menu.gd::GDScript::-1::1712768135::0::1::::MainMenu<>Control<>::
+main_menu.tscn::PackedScene::903319903864080865::1712779857::0::1::::<><>::res://Mainmenu/main_menu.gd<>uid://dw83uahxvgqvd::::res://Assets/Background/Main_menu_background.png<>uid://fnqlr2p5vyqg::::res://Assets/Menu/Property 1=Default(4).png<>uid://drsjqe6fcj8mu::::res://Assets/Menu/Property 1=Default(2).png<>uid://bkm3c5qgg73o6::::res://Assets/Menu/Property 1=Default(1).png<>uid://cah0nw3nj2ogb::::res://Assets/Menu/Property 1=Default.png<>uid://dfk72j81q7ym5::::res://Audio/click_mouse_button.wav<>uid://dlh5o1brjrpdv::::res://Options/options.tscn<>uid://dgh05vmajtinm::::res://Instructions/instructions_page.tscn<>uid://bdbtew7c0vbb4::::res://ConfirmActionPopup/confirm_action_popup.tscn
+::res://Options/::1712778623
 options.gd::GDScript::-1::1712768135::0::1::::OptsionsMenu<>Control<>::
 options.tscn::PackedScene::7947637854210763311::1712768135::0::1::::<><>::res://Options/options.gd<>uid://dw83uahxvgqvd::::res://Assets/Background/Main_menu_background.png<>uid://dfk72j81q7ym5::::res://Audio/click_mouse_button.wav<>uid://cah0nw3nj2ogb::::res://Assets/Menu/Property 1=Default.png
-::res://Pausemenu/::1711096752
-pausemenu.gd::GDScript::-1::1711096752::0::1::::<>Control<>::
-pausemenu.tscn::PackedScene::6028452189908625482::1711096752::0::1::::<><>::res://Pausemenu/pausemenu.gd<>uid://dw83uahxvgqvd::::res://Assets/Background/Main_menu_background.png<>uid://cw8sg7i77ymjl::::res://Assets/Menu/Property 1=Default(3).png<>uid://drsjqe6fcj8mu::::res://Assets/Menu/Property 1=Default(2).png<>uid://bkm3c5qgg73o6::::res://Assets/Menu/Property 1=Default(1).png<>uid://cah0nw3nj2ogb::::res://Assets/Menu/Property 1=Default.png
-::res://webApp/::1712774106
-index.apple-touch-icon.png::CompressedTexture2D::8487005111730415925::1712768135::1712768135::1::::<><>::
-index.icon.png::CompressedTexture2D::5616676703080746753::1712768135::1712768135::1::::<><>::
-index.png::CompressedTexture2D::3592339128712308623::1712768135::1712768135::1::::<><>::
+::res://Pausemenu/::1712780076
+pausemenu.gd::GDScript::-1::1712768135::0::1::::PauseMenu<>Control<>::
+pausemenu.tscn::PackedScene::6028452189908625482::1712768135::0::1::::<><>::res://Pausemenu/pausemenu.gd<>uid://dw83uahxvgqvd::::res://Assets/Background/Main_menu_background.png<>uid://cw8sg7i77ymjl::::res://Assets/Menu/Property 1=Default(3).png<>uid://drsjqe6fcj8mu::::res://Assets/Menu/Property 1=Default(2).png<>uid://bkm3c5qgg73o6::::res://Assets/Menu/Property 1=Default(1).png<>uid://cah0nw3nj2ogb::::res://Assets/Menu/Property 1=Default.png<>uid://dlh5o1brjrpdv::::res://Options/options.tscn<>uid://cn5sa2iwhuwu3::::res://Audio/button_click.wav<>uid://dgh05vmajtinm::::res://Instructions/instructions_page.tscn<>uid://bdbtew7c0vbb4::::res://ConfirmActionPopup/confirm_action_popup.tscn
+::res://webApp/::1712780076
