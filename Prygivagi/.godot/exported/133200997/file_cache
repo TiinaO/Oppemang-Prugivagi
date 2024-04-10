@@ -1,0 +1,9 @@
+res://Characters/player_raccoon.tscn::154ec06f80b8b7db68791f98f23bc94a::1712775822::res://.godot/exported/133200997/export-0917b8e8c4d7d37d91e8fe3784d59e9f-player_raccoon.scn
+res://Instructions/instructions_page.tscn::de93a5513fade2371d690db3b9fb3b08::1712768135::res://.godot/exported/133200997/export-0ca391d963016ec87146919791e5257c-instructions_page.scn
+res://Levels/apple.tscn::c4a060132d10c1c1b4884443942ec419::1712775822::res://.godot/exported/133200997/export-3c605316fc11b5ee421633074e18d9df-apple.scn
+res://Levels/camera.tscn::5ceceac8302b661487be94c47e692ac5::1712497389::res://.godot/exported/133200997/export-99cbf993b85f9d948adc46b1de311165-camera.scn
+res://Levels/game_level.tscn::44157cecd105304f373003c95ed92be1::1712775822::res://.godot/exported/133200997/export-ec4230ce141bf454e89e40ab1995a0d6-game_level.scn
+res://Mainmenu/main_menu.tscn::12b571d2fc666dff4a21064f5bdf673d::1712775822::res://.godot/exported/133200997/export-67540d10bc8ea09fdcd3eeee2779595e-main_menu.scn
+res://Options/options.tscn::eaf09bb05f081921f5695b643367e6de::1712768135::res://.godot/exported/133200997/export-d8dc9ceb81f44622b8370792338f95b8-options.scn
+res://Pausemenu/pausemenu.tscn::56eb63421d492b39e83019d9840578cb::1711096752::res://.godot/exported/133200997/export-d7d4a2bd3fa19a2b9c4b2eda4bb39a9c-pausemenu.scn
+res://ConfirmActionPopup/confirm_action_popup.tscn::c5b9bf4eb4f89281ad50f4cf6c954a46::1712768135::res://.godot/exported/133200997/export-50961424fb3c5fa484d72258c50901f1-confirm_action_popup.scn

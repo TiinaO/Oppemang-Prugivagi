@@ -1,0 +1,5 @@
+res://Levels/game_level.tscn
+res://Characters/player_raccoon.tscn
+res://Levels/apple.tscn
+res://Mainmenu/main_menu.tscn
+res://Mainmenu/main_menu.gd
