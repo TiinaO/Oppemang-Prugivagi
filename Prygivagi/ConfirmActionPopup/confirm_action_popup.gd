@@ -7,4 +7,20 @@ extends Node
 
 
 func _ready():
-	pass # Replace with function body.
+	handle_connecting_signals()
+
+func on_x_pressed() -> void:
+	pass
+
+func on_yes_pressed() -> void:
+	get_tree().quit()
+
+func on_no_pressed() -> void:
+	pass
+
+
+func handle_connecting_signals() -> void:
+	x_button.button_down.connect(on_x_pressed)
+	yes_button.button_down.connect(on_yes_pressed)
+	no_button.button_down.connect(on_no_pressed)
+	

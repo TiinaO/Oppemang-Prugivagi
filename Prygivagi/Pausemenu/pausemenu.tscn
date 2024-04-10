@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cr5hyyge47l3w"]
+[gd_scene load_steps=11 format=3 uid="uid://cr5hyyge47l3w"]
 
 [ext_resource type="Script" path="res://Pausemenu/pausemenu.gd" id="1_4pj2e"]
 [ext_resource type="Texture2D" uid="uid://dw83uahxvgqvd" path="res://Assets/Background/Main_menu_background.png" id="2_1axdu"]
@@ -6,6 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://drsjqe6fcj8mu" path="res://Assets/Menu/Property 1=Default(2).png" id="5_vnspw"]
 [ext_resource type="Texture2D" uid="uid://bkm3c5qgg73o6" path="res://Assets/Menu/Property 1=Default(1).png" id="6_rtw0l"]
 [ext_resource type="Texture2D" uid="uid://cah0nw3nj2ogb" path="res://Assets/Menu/Property 1=Default.png" id="7_dbm12"]
+[ext_resource type="PackedScene" uid="uid://dlh5o1brjrpdv" path="res://Options/options.tscn" id="7_er2sg"]
+[ext_resource type="AudioStream" uid="uid://cn5sa2iwhuwu3" path="res://Audio/button_click.wav" id="7_n06wf"]
+[ext_resource type="PackedScene" uid="uid://dgh05vmajtinm" path="res://Instructions/instructions_page.tscn" id="8_5w3u7"]
 
 [sub_resource type="SystemFont" id="SystemFont_klkt6"]
 font_names = PackedStringArray("Impact")
@@ -120,6 +123,15 @@ position = Vector2(246, 54)
 texture = ExtResource("7_dbm12")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_n06wf")
+
+[node name="Options" parent="." instance=ExtResource("7_er2sg")]
+visible = false
+layout_mode = 1
+
+[node name="InstructionsPage" parent="." instance=ExtResource("8_5w3u7")]
+visible = false
+layout_mode = 1
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Continue_Button" to="." method="_on_continue_button_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Options_Button" to="." method="_on_options_button_pressed"]

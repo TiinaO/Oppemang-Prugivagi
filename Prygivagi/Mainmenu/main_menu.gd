@@ -13,6 +13,8 @@ extends Control
 @onready var exit_button = $MarginContainer/HBoxContainer/VBoxContainer/Exit_Button as Button
 @onready var margin_container = $MarginContainer as MarginContainer
 
+@onready var confirm_popup = $ConfirmActionPopup as ConfirmActionPopup
+
 func _ready():
 	handle_connecting_signals()
 
@@ -33,7 +35,6 @@ func on_tutorials_pressed() -> void:
 	instructions_page.visible = true
 
 func on_exit_pressed() -> void:
-	
 	get_tree().quit()
 
 func on_exit_options_pressed() -> void:

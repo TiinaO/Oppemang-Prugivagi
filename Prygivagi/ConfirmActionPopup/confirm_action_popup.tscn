@@ -112,7 +112,6 @@ theme_override_constants/separation = 15
 alignment = 2
 
 [node name="yes_button" type="Button" parent="MarginContainer/VBoxContainer2/HBoxContainer3/HBoxContainer"]
-self_modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_horizontal = 8
 icon = ExtResource("3_ke1c5")

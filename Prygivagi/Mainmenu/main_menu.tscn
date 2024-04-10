@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://m4tsue86clpx"]
+[gd_scene load_steps=12 format=3 uid="uid://m4tsue86clpx"]
 
 [ext_resource type="Script" path="res://Mainmenu/main_menu.gd" id="1_miivc"]
 [ext_resource type="Texture2D" uid="uid://dw83uahxvgqvd" path="res://Assets/Background/Main_menu_background.png" id="1_ptcvs"]
@@ -9,6 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://dfk72j81q7ym5" path="res://Audio/click_mouse_button.wav" id="7_1y2q1"]
 [ext_resource type="PackedScene" uid="uid://dlh5o1brjrpdv" path="res://Options/options.tscn" id="8_bxm1b"]
 [ext_resource type="PackedScene" uid="uid://dgh05vmajtinm" path="res://Instructions/instructions_page.tscn" id="9_j2sjn"]
+[ext_resource type="PackedScene" uid="uid://bdbtew7c0vbb4" path="res://ConfirmActionPopup/confirm_action_popup.tscn" id="10_ac4xn"]
 
 [sub_resource type="SystemFont" id="SystemFont_klkt6"]
 font_names = PackedStringArray("Impact")
@@ -125,6 +126,10 @@ visible = false
 layout_mode = 1
 
 [node name="InstructionsPage" parent="." instance=ExtResource("9_j2sjn")]
+visible = false
+layout_mode = 1
+
+[node name="ConfirmActionPopup" parent="." instance=ExtResource("10_ac4xn")]
 visible = false
 layout_mode = 1
 
