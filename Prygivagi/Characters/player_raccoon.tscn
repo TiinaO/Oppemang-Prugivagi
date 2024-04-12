@@ -50,10 +50,10 @@ animations = [{
 "texture": ExtResource("9_b0fo5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_mw2y0")
+"texture": ExtResource("11_vlfrx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_vlfrx")
+"texture": ExtResource("10_mw2y0")
 }],
 "loop": true,
 "name": &"move",
@@ -70,8 +70,7 @@ script = ExtResource("1_iq5xl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_lwj4b")
-animation = &"move"
-frame_progress = 0.620095
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(4, -94)
