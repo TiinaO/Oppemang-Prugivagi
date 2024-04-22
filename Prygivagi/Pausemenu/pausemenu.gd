@@ -11,7 +11,6 @@ extends Control
 
 @onready var back_to_main_menu_button = $MarginContainer/HBoxContainer/VBoxContainer/Back_To_Main_Menu_Button as Button
 @onready var continue_button = $MarginContainer/HBoxContainer/VBoxContainer/Continue_Button as Button
-@onready var exit_button = $MarginContainer/HBoxContainer/VBoxContainer/Exit_Button as Button
 
 
 @onready var margin_container = $MarginContainer as MarginContainer
@@ -31,12 +30,6 @@ func set_paused(value:bool) -> void:
 	_is_paused = value
 	get_tree().paused = _is_paused
 	visible = _is_paused
-
-func on_exit_pressed():
-	margin_container.set_process(false)
-	confirm_popup.set_process(true)
-	confirm_popup.visible = true
-	#get_tree().quit()
 
 func on_continue_button_pressed() -> void:
 	_is_paused = false
@@ -67,17 +60,10 @@ func on_exit_instructions_pressed() -> void:
 	instructions_page.set_process(false)
 	instructions_page.visible = false
 
-func on_exit_popup_pressed() -> void:
-	confirm_popup.set_process(false)
-	confirm_popup.visible = false
-	margin_container.set_process(true)
-
 func handle_connecting_signals() -> void:
 	continue_button.button_down.connect(on_continue_button_pressed)
-	exit_button.button_down.connect(on_exit_pressed)
 	options_button.button_down.connect(on_options_pressed)
 	tutorials_button.button_down.connect(on_tutorials_pressed)
 	options_menu.exit_options_menu.connect(on_exit_options_pressed)
 	instructions_page.exit_instructions_page.connect(on_exit_instructions_pressed)
-	confirm_popup.exit_confirm_popup.connect(on_exit_popup_pressed)
 	back_to_main_menu_button.button_down.connect(on_back_to_main_menu_pressed)

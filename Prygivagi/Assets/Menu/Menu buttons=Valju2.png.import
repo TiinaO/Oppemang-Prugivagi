@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1xv36ew86gvj"
-path="res://.godot/imported/Exit_32.png-2fd6bf707a73be08cfb8d2943d7d3c34.ctex"
+uid="uid://jlq8226y7qxu"
+path="res://.godot/imported/Menu buttons=Valju2.png-e7ee231e8f452ade9b08cf40a7c63f59.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Menu/Exit_32.png"
-dest_files=["res://.godot/imported/Exit_32.png-2fd6bf707a73be08cfb8d2943d7d3c34.ctex"]
+source_file="res://Assets/Menu/Menu buttons=Valju2.png"
+dest_files=["res://.godot/imported/Menu buttons=Valju2.png-e7ee231e8f452ade9b08cf40a7c63f59.ctex"]
 
 [params]
 

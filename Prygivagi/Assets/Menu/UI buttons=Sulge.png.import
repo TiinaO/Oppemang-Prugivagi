@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://s3echfpwxyl0"
-path="res://.godot/imported/Välju.png-3034a6553420bf6b92d145a9b996e276.ctex"
+uid="uid://biblbs4vdyniv"
+path="res://.godot/imported/UI buttons=Sulge.png-a01f1d0a7415dc96ceb4b7f036325b08.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Menu/Välju.png"
-dest_files=["res://.godot/imported/Välju.png-3034a6553420bf6b92d145a9b996e276.ctex"]
+source_file="res://Assets/Menu/UI buttons=Sulge.png"
+dest_files=["res://.godot/imported/UI buttons=Sulge.png-a01f1d0a7415dc96ceb4b7f036325b08.ctex"]
 
 [params]
 

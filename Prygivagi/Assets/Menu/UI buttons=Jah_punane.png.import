@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cah0nw3nj2ogb"
-path="res://.godot/imported/Property 1=Default.png-a88318ef44fece022ab81c48204e237b.ctex"
+uid="uid://cr20pyah4er2b"
+path="res://.godot/imported/UI buttons=Jah_punane.png-1a4d025b6f3fb75a0409d0517e2f0b10.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Menu/Property 1=Default.png"
-dest_files=["res://.godot/imported/Property 1=Default.png-a88318ef44fece022ab81c48204e237b.ctex"]
+source_file="res://Assets/Menu/UI buttons=Jah_punane.png"
+dest_files=["res://.godot/imported/UI buttons=Jah_punane.png-1a4d025b6f3fb75a0409d0517e2f0b10.ctex"]
 
 [params]
 

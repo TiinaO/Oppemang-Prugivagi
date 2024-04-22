@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpfswo3mp1l05"
-path="res://.godot/imported/Juhised.png-022d9a0c33f49df2ed724a24e566bf86.ctex"
+uid="uid://cr6jcej67nmvu"
+path="res://.godot/imported/Menu buttons=Seaded1.png-7d1674657f2531169682767ed379c66e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Menu/Juhised.png"
-dest_files=["res://.godot/imported/Juhised.png-022d9a0c33f49df2ed724a24e566bf86.ctex"]
+source_file="res://Assets/Menu/Menu buttons=Seaded1.png"
+dest_files=["res://.godot/imported/Menu buttons=Seaded1.png-7d1674657f2531169682767ed379c66e.ctex"]
 
 [params]
 
