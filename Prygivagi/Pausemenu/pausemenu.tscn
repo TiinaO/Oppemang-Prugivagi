@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://cr5hyyge47l3w"]
+[gd_scene load_steps=13 format=3 uid="uid://cr5hyyge47l3w"]
 
 [ext_resource type="Script" path="res://Pausemenu/pausemenu.gd" id="1_4pj2e"]
 [ext_resource type="Texture2D" uid="uid://dw83uahxvgqvd" path="res://Assets/Background/Main_menu_background.png" id="2_1axdu"]
+[ext_resource type="Texture2D" uid="uid://bhwilfds0dgdj" path="res://Assets/Menu/Menu buttons=Peamenuu1.png" id="3_l8qde"]
 [ext_resource type="Texture2D" uid="uid://cw8sg7i77ymjl" path="res://Assets/Menu/Property 1=Default(3).png" id="4_gwjae"]
 [ext_resource type="Texture2D" uid="uid://drsjqe6fcj8mu" path="res://Assets/Menu/Property 1=Default(2).png" id="5_vnspw"]
 [ext_resource type="Texture2D" uid="uid://bkm3c5qgg73o6" path="res://Assets/Menu/Property 1=Default(1).png" id="6_rtw0l"]
@@ -75,6 +76,24 @@ alignment = 1
 [node name="Separator2" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
+[node name="Separator7" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Separator8" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Separator9" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Back_To_Main_Menu_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(496, 104)
+layout_mode = 2
+
+[node name="Back_To_Main_Menu" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Back_To_Main_Menu_Button"]
+position = Vector2(248, 51)
+texture = ExtResource("3_l8qde")
+
 [node name="Separator3" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
@@ -138,6 +157,7 @@ layout_mode = 1
 visible = false
 layout_mode = 1
 
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Back_To_Main_Menu_Button" to="." method="_on_continue_button_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Continue_Button" to="." method="_on_continue_button_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Options_Button" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button" to="." method="_on_tutorials_button_pressed"]
