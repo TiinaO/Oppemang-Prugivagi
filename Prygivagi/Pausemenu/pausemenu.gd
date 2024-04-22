@@ -9,8 +9,10 @@ extends Control
 @onready var instructions_page = $InstructionsPage as InstructionsPage
 @onready var tutorials_button = $MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button as Button
 
+@onready var back_to_main_menu_button = $MarginContainer/HBoxContainer/VBoxContainer/Back_To_Main_Menu_Button as Button
 @onready var continue_button = $MarginContainer/HBoxContainer/VBoxContainer/Continue_Button as Button
 @onready var exit_button = $MarginContainer/HBoxContainer/VBoxContainer/Exit_Button as Button
+
 
 @onready var margin_container = $MarginContainer as MarginContainer
 @onready var confirm_popup = $ConfirmActionPopup as ConfirmActionPopup
@@ -38,6 +40,10 @@ func on_exit_pressed():
 
 func on_continue_button_pressed() -> void:
 	_is_paused = false
+
+func on_back_to_main_menu_pressed() -> void:
+	_is_paused = false
+	get_tree().change_scene_to_file("res://Mainmenu/main_menu.tscn")
 
 func on_options_pressed() -> void:
 	margin_container.visible = false
@@ -74,3 +80,4 @@ func handle_connecting_signals() -> void:
 	options_menu.exit_options_menu.connect(on_exit_options_pressed)
 	instructions_page.exit_instructions_page.connect(on_exit_instructions_pressed)
 	confirm_popup.exit_confirm_popup.connect(on_exit_popup_pressed)
+	back_to_main_menu_button.button_down.connect(on_back_to_main_menu_pressed)
