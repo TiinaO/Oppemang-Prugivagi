@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" path="res://Mainmenu/main_menu.gd" id="1_miivc"]
 [ext_resource type="Texture2D" uid="uid://dw83uahxvgqvd" path="res://Assets/Background/Main_menu_background.png" id="1_ptcvs"]
-[ext_resource type="Texture2D" uid="uid://fnqlr2p5vyqg" path="res://Assets/Menu/Property 1=Default(4).png" id="2_0iifj"]
 [ext_resource type="Texture2D" uid="uid://txm3025et7sp" path="res://Assets/Background/Raccoon_in_the_forest.png" id="3_lx1ya"]
-[ext_resource type="Texture2D" uid="uid://drsjqe6fcj8mu" path="res://Assets/Menu/Property 1=Default(2).png" id="4_8xw84"]
-[ext_resource type="Texture2D" uid="uid://bkm3c5qgg73o6" path="res://Assets/Menu/Property 1=Default(1).png" id="5_oabs3"]
-[ext_resource type="Texture2D" uid="uid://cah0nw3nj2ogb" path="res://Assets/Menu/Property 1=Default.png" id="6_lujms"]
+[ext_resource type="Texture2D" uid="uid://5diyid0nhqi0" path="res://Assets/Menu/Menu buttons=Uus_mang1.png" id="4_v427y"]
+[ext_resource type="Texture2D" uid="uid://cr6jcej67nmvu" path="res://Assets/Menu/Menu buttons=Seaded1.png" id="5_tj7av"]
+[ext_resource type="Texture2D" uid="uid://8lmf0vp6w7vi" path="res://Assets/Menu/Menu buttons=Juhised1.png" id="6_12uwg"]
 [ext_resource type="AudioStream" uid="uid://dfk72j81q7ym5" path="res://Audio/click_mouse_button.wav" id="7_1y2q1"]
+[ext_resource type="Texture2D" uid="uid://crwcj4oivso8i" path="res://Assets/Menu/Menu buttons=Valju1.png" id="7_csdps"]
 [ext_resource type="PackedScene" uid="uid://dlh5o1brjrpdv" path="res://Options/options.tscn" id="8_bxm1b"]
 [ext_resource type="PackedScene" uid="uid://dgh05vmajtinm" path="res://Instructions/instructions_page.tscn" id="9_j2sjn"]
 [ext_resource type="PackedScene" uid="uid://bdbtew7c0vbb4" path="res://ConfirmActionPopup/confirm_action_popup.tscn" id="10_ac4xn"]
@@ -93,7 +93,7 @@ layout_mode = 2
 
 [node name="New_game" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/New_game_Button"]
 position = Vector2(248, 51)
-texture = ExtResource("2_0iifj")
+texture = ExtResource("4_v427y")
 
 [node name="Separator4" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -105,7 +105,7 @@ layout_mode = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Options_Button"]
 position = Vector2(247, 53)
-texture = ExtResource("4_8xw84")
+texture = ExtResource("5_tj7av")
 
 [node name="Separator5" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -117,7 +117,7 @@ layout_mode = 2
 
 [node name="Sprite2D2" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button"]
 position = Vector2(247, 52)
-texture = ExtResource("5_oabs3")
+texture = ExtResource("6_12uwg")
 
 [node name="Separator6" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -129,7 +129,7 @@ layout_mode = 2
 
 [node name="Sprite2D3" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Exit_Button"]
 position = Vector2(246, 54)
-texture = ExtResource("6_lujms")
+texture = ExtResource("7_csdps")
 
 [node name="ClickButtonSfx" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_1y2q1")

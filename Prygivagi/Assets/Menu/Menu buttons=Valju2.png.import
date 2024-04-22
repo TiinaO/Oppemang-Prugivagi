@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vi41r0mv3eli"
-path="res://.godot/imported/Jätka.png-f731c5084a702fd9873368b1a9d6f2a4.ctex"
+uid="uid://jlq8226y7qxu"
+path="res://.godot/imported/Menu buttons=Valju2.png-e7ee231e8f452ade9b08cf40a7c63f59.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Menu/Jätka.png"
-dest_files=["res://.godot/imported/Jätka.png-f731c5084a702fd9873368b1a9d6f2a4.ctex"]
+source_file="res://Assets/Menu/Menu buttons=Valju2.png"
+dest_files=["res://.godot/imported/Menu buttons=Valju2.png-e7ee231e8f452ade9b08cf40a7c63f59.ctex"]
 
 [params]
 

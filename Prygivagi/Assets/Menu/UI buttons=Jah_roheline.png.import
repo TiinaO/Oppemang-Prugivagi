@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://baum5vj3s7cr4"
-path="res://.godot/imported/Exit_1.png-f2ae289c6a68b75cfcf3b6ddb04cf04f.ctex"
+uid="uid://cmrxlc1fycakv"
+path="res://.godot/imported/UI buttons=Jah_roheline.png-98a2559bc5b1c7ca2a9519e8c8249191.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Menu/Exit_1.png"
-dest_files=["res://.godot/imported/Exit_1.png-f2ae289c6a68b75cfcf3b6ddb04cf04f.ctex"]
+source_file="res://Assets/Menu/UI buttons=Jah_roheline.png"
+dest_files=["res://.godot/imported/UI buttons=Jah_roheline.png-98a2559bc5b1c7ca2a9519e8c8249191.ctex"]
 
 [params]
 

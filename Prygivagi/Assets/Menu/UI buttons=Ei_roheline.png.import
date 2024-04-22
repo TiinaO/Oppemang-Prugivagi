@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fnqlr2p5vyqg"
-path="res://.godot/imported/Property 1=Default(4).png-95260a30ca7aee036aaa4e29b1327b3d.ctex"
+uid="uid://im81goxpvl7j"
+path="res://.godot/imported/UI buttons=Ei_roheline.png-51588bcc6870ed4679c4d77360397852.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Menu/Property 1=Default(4).png"
-dest_files=["res://.godot/imported/Property 1=Default(4).png-95260a30ca7aee036aaa4e29b1327b3d.ctex"]
+source_file="res://Assets/Menu/UI buttons=Ei_roheline.png"
+dest_files=["res://.godot/imported/UI buttons=Ei_roheline.png-51588bcc6870ed4679c4d77360397852.ctex"]
 
 [params]
 
