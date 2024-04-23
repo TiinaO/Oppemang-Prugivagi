@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://bv5x6ikcd0rwv"]
+[gd_scene load_steps=15 format=3 uid="uid://bv5x6ikcd0rwv"]
 
 [ext_resource type="Script" path="res://Characters/player_raccoon.gd" id="1_iq5xl"]
 [ext_resource type="Texture2D" uid="uid://y3pijpgnqq1g" path="res://Characters/Pesukaru KORJAB1.png" id="2_h5c7l"]
+[ext_resource type="Resource" uid="uid://6a1lgwbcgcno" path="res://Inventory/InventoryItems/playerInventory.tres" id="2_yh65u"]
 [ext_resource type="Texture2D" uid="uid://57vw11o0hmyn" path="res://Characters/Pesukaru KORJAB2.png" id="3_fqdtn"]
 [ext_resource type="Texture2D" uid="uid://bmsuardbmv36p" path="res://Characters/Pesukaru IDLE1Pesukaru-idle.png" id="4_0rsbx"]
 [ext_resource type="Texture2D" uid="uid://d32vpjvuyifw0" path="res://Characters/Pesukaru IDLE2Pesukaru-idle.png" id="5_tg7gn"]
@@ -67,6 +68,7 @@ radius = 160.012
 [node name="PlayerRaccoon" type="CharacterBody2D"]
 position = Vector2(0, -7)
 script = ExtResource("1_iq5xl")
+inventory = ExtResource("2_yh65u")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_lwj4b")

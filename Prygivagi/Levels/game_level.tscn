@@ -6,9 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://c3kyeblobd2cc" path="res://Assets/Tilemap256x256grid.png" id="2_a0yw1"]
 [ext_resource type="PackedScene" uid="uid://ds2dh18soge7b" path="res://Levels/camera.tscn" id="2_ua8y1"]
 [ext_resource type="PackedScene" uid="uid://d4kqyvwmbta3j" path="res://Levels/apple.tscn" id="5_i8vko"]
-[ext_resource type="Script" path="res://Inventory/CanvasLayer.gd" id="6_jkljc"]
+[ext_resource type="Script" path="res://Inventory/InventoryGui/CanvasLayer.gd" id="6_jkljc"]
 [ext_resource type="PackedScene" uid="uid://cr5hyyge47l3w" path="res://Pausemenu/pausemenu.tscn" id="6_mn7t4"]
-[ext_resource type="PackedScene" uid="uid://u6moandru342" path="res://Inventory/inventory.tscn" id="6_wg73r"]
+[ext_resource type="PackedScene" uid="uid://u6moandru342" path="res://Inventory/InventoryGui/inventory.tscn" id="6_wg73r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sp00a"]
 texture = ExtResource("1_8vkjp")
