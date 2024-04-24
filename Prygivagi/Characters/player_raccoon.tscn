@@ -50,10 +50,10 @@ animations = [{
 "texture": ExtResource("9_b0fo5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_mw2y0")
+"texture": ExtResource("11_vlfrx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_vlfrx")
+"texture": ExtResource("10_mw2y0")
 }],
 "loop": true,
 "name": &"move",
