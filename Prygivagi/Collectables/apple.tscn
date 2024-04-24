@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://xodld3dgufoi"]
+
+[ext_resource type="PackedScene" uid="uid://dggc5mowrx8qb" path="res://Collectables/collectable.tscn" id="1_7b7vx"]
+[ext_resource type="Texture2D" uid="uid://cnt2710avr1wd" path="res://Assets/Collectable/Vector 39.png" id="2_flwr7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3183d"]
+resource_local_to_scene = true
+radius = 67.42
+
+[node name="Apple" instance=ExtResource("1_7b7vx")]
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("CircleShape2D_3183d")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_flwr7")

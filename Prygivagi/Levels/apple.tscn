@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://d4kqyvwmbta3j"]
 
 [ext_resource type="Script" path="res://Levels/apple.gd" id="1_0lqkt"]
-[ext_resource type="Texture2D" uid="uid://bce2s3jvtbe21" path="res://Assets/Õun.png" id="2_x07sl"]
+[ext_resource type="Texture2D" uid="uid://cnt2710avr1wd" path="res://Assets/Collectable/Vector 39.png" id="2_7jge1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nj272"]
 
@@ -14,7 +14,7 @@ script = ExtResource("1_0lqkt")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0.600021, -0.900009)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_x07sl")
+texture = ExtResource("2_7jge1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_nj272")

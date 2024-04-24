@@ -1,8 +1,6 @@
 class_name PauseMenu
 extends Control
 
-@onready var click_sfx:AudioStreamPlayer = $ClickButtonSfx
-
 @onready var options_menu = $Options as OptsionsMenu
 @onready var options_button = $MarginContainer/HBoxContainer/VBoxContainer/Options_Button as Button
 
@@ -40,12 +38,10 @@ func on_back_to_main_menu_pressed() -> void:
 
 func on_options_pressed() -> void:
 	margin_container.visible = false
-	#click_sfx.play()
 	options_menu.set_process(true)
 	options_menu.visible = true
 
 func on_tutorials_pressed() -> void:
-	#click_sfx.play()
 	margin_container.visible = false
 	instructions_page.set_process(true)
 	instructions_page.visible = true
