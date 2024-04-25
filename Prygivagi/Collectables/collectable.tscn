@@ -1,9 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://dggc5mowrx8qb"]
+[gd_scene load_steps=5 format=3 uid="uid://dggc5mowrx8qb"]
 
 [ext_resource type="Script" path="res://Collectables/Collectable.gd" id="1_1yxjy"]
+[ext_resource type="FontFile" uid="uid://ghwix5thu6qa" path="res://Assets/Andika-Bold.ttf" id="2_qx1xp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tu0uo"]
 resource_local_to_scene = true
+radius = 26.0192
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n1jf6"]
+radius = 42.107
 
 [node name="Collectable" type="Area2D"]
 script = ExtResource("1_1yxjy")
@@ -12,3 +17,22 @@ script = ExtResource("1_1yxjy")
 shape = SubResource("CircleShape2D_tu0uo")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("CircleShape2D_n1jf6")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1.0
+offset_top = -66.0
+offset_right = 337.0
+offset_bottom = 97.0
+scale = Vector2(0.125, 0.125)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_qx1xp")
+theme_override_font_sizes/font_size = 100
+text = "LABEL"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -6,4 +6,5 @@
 [resource]
 script = ExtResource("1_aq76u")
 name = "apple"
+label = ""
 texture = ExtResource("2_ct11t")

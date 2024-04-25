@@ -2,10 +2,10 @@ extends CharacterBody2D
 
 @export var move_speed: float = 400
 
-@export var inventory: InventoryResource
+@export var inventory: Inventory
 
 func _physics_process(_delta):
-		
+
 	# Liikumine
 	var input_direction = Vector2(
 		Input.get_action_strength("right") - Input.get_action_strength("left"),
@@ -27,5 +27,9 @@ func _physics_process(_delta):
 func play_action_animation():
 	print("test")
 	$AnimatedSprite2D.play("action")
+
+func on_pickup_area_entered(area):
+	if area.has_method("collect"):
+		area.collect(inventory)
 
 
