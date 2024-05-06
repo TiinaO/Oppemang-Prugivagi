@@ -6,7 +6,7 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3183d"]
 resource_local_to_scene = true
-radius = 50.0899
+radius = 52.0
 
 [node name="Apple" instance=ExtResource("1_7b7vx")]
 itemRes = ExtResource("2_dl5c6")

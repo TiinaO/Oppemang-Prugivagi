@@ -1,8 +1,9 @@
-[gd_resource type="Resource" script_class="Inventory" load_steps=3 format=3 uid="uid://6a1lgwbcgcno"]
+[gd_resource type="Resource" script_class="Inventory" load_steps=4 format=3 uid="uid://6a1lgwbcgcno"]
 
 [ext_resource type="Resource" uid="uid://bvcn1ddumj1e6" path="res://Inventory/InventoryItems/Items/apple.tres" id="1_2ax12"]
+[ext_resource type="Resource" uid="uid://cpu10s6s2k5dl" path="res://Inventory/InventoryItems/Items/watermelon.tres" id="2_mdx4n"]
 [ext_resource type="Script" path="res://Inventory/InventoryItems/inventory.gd" id="3_jfmv1"]
 
 [resource]
 script = ExtResource("3_jfmv1")
-items = Array[Resource("res://Inventory/InventoryItems/inventory_item.gd")]([ExtResource("1_2ax12"), ExtResource("1_2ax12"), ExtResource("1_2ax12"), ExtResource("1_2ax12"), null, null, ExtResource("1_2ax12"), null, ExtResource("1_2ax12"), ExtResource("1_2ax12")])
+items = Array[Resource("res://Inventory/InventoryItems/inventory_item.gd")]([ExtResource("1_2ax12"), ExtResource("1_2ax12"), ExtResource("2_mdx4n"), ExtResource("1_2ax12"), ExtResource("2_mdx4n"), null, ExtResource("1_2ax12"), null, ExtResource("1_2ax12"), ExtResource("1_2ax12"), null, ExtResource("2_mdx4n"), null, null, null])

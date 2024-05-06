@@ -13,6 +13,8 @@ func _ready():
 	label.visible = false
 
 func _on_body_entered(body):
+	if body.has_method("on_item_picked_up"):
+		body.on_item_picked_up()
 	if body.name == "PlayerRaccoon":
 		player_in_area = true
 		label.visible = true

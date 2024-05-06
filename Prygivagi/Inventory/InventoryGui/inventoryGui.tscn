@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://u6moandru342"]
+[gd_scene load_steps=6 format=3 uid="uid://u6moandru342"]
 
 [ext_resource type="Script" path="res://Inventory/InventoryGui/inventoryGui.gd" id="1_4xqdt"]
-[ext_resource type="Texture2D" uid="uid://bq5s8sgfsvmc8" path="res://Assets/Inventory/UI buttons=Inventory pohi.png" id="1_8bhly"]
+[ext_resource type="Texture2D" uid="uid://j1bulhoud2la" path="res://Assets/Inventory/Group 96.png" id="2_enok1"]
 [ext_resource type="PackedScene" uid="uid://dnit4crkhjd14" path="res://Inventory/InventoryGui/inventory_slot.tscn" id="3_bhvsw"]
+[ext_resource type="Texture2D" uid="uid://tc2yg3v71aql" path="res://Assets/Inventory/Vector.png" id="4_5nq6v"]
+[ext_resource type="Texture2D" uid="uid://biblbs4vdyniv" path="res://Assets/Menu/UI buttons=Sulge.png" id="4_poc7k"]
 
 [node name="InventoryGui" type="Control"]
 clip_contents = true
@@ -10,33 +12,72 @@ custom_minimum_size = Vector2(794, 474)
 layout_mode = 3
 anchors_preset = 0
 offset_right = 794.0
-offset_bottom = 474.0
+offset_bottom = 549.0
 script = ExtResource("1_4xqdt")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0
 offset_top = 1.0
-offset_right = 792.0
-offset_bottom = 472.0
-texture = ExtResource("1_8bhly")
+offset_right = 784.0
+offset_bottom = 545.0
+texture = ExtResource("2_enok1")
 patch_margin_left = 20
 patch_margin_top = 20
 patch_margin_right = 20
 patch_margin_bottom = 20
 
+[node name="VBoxContainer" type="VBoxContainer" parent="NinePatchRect"]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 780.0
+offset_bottom = 110.0
+
+[node name="Separator" type="Control" parent="NinePatchRect/VBoxContainer"]
+custom_minimum_size = Vector2(0, 11)
+layout_mode = 2
+size_flags_stretch_ratio = 5.75
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="NinePatchRect/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 60
+alignment = 2
+
+[node name="Separator2" type="Control" parent="NinePatchRect/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+size_flags_stretch_ratio = 5.75
+
+[node name="Seljakott" type="Sprite2D" parent="NinePatchRect/VBoxContainer/HBoxContainer2"]
+position = Vector2(383, 41)
+texture = ExtResource("4_5nq6v")
+
+[node name="Separator" type="Control" parent="NinePatchRect/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_stretch_ratio = 5.75
+
+[node name="X_Button" type="Button" parent="NinePatchRect/VBoxContainer/HBoxContainer2"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+icon = ExtResource("4_poc7k")
+
+[node name="Sprite2D" type="Sprite2D" parent="NinePatchRect/VBoxContainer/HBoxContainer2/X_Button"]
+position = Vector2(22, 22)
+texture = ExtResource("4_poc7k")
+
 [node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 0.944
 anchor_right = 0.5
-anchor_bottom = 0.5
+anchor_bottom = 0.944
 offset_left = -328.0
-offset_top = -196.0
+offset_top = -392.0
 offset_right = 328.0
-offset_bottom = 196.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 columns = 5
 
 [node name="InventorySlot" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bhvsw")]
