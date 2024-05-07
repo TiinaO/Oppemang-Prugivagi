@@ -2,22 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjo1050fhb0p4"
-path.bptc="res://.godot/imported/Paber.png-62bc7a411ac6b35397856680f968c2fc.bptc.ctex"
+uid="uid://b6b2r0fpbdtxu"
+path="res://.godot/imported/Papp-paber=Open.png-06c62359226c91d8ee3d1d79f53ce20d.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Paber.png"
-dest_files=["res://.godot/imported/Paber.png-62bc7a411ac6b35397856680f968c2fc.bptc.ctex"]
+source_file="res://Assets/Papp-paber=Open.png"
+dest_files=["res://.godot/imported/Papp-paber=Open.png-06c62359226c91d8ee3d1d79f53ce20d.ctex"]
 
 [params]
 
-compress/mode=2
-compress/high_quality=true
+compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

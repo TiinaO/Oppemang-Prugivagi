@@ -2,22 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjo1050fhb0p4"
-path.bptc="res://.godot/imported/Paber.png-62bc7a411ac6b35397856680f968c2fc.bptc.ctex"
+uid="uid://5o6kohql4554"
+path="res://.godot/imported/Sega=Right.png-b94fa6e4929df414fa686b09eedd3bdd.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Paber.png"
-dest_files=["res://.godot/imported/Paber.png-62bc7a411ac6b35397856680f968c2fc.bptc.ctex"]
+source_file="res://Assets/Sega=Right.png"
+dest_files=["res://.godot/imported/Sega=Right.png-b94fa6e4929df414fa686b09eedd3bdd.ctex"]
 
 [params]
 
-compress/mode=2
-compress/high_quality=true
+compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
