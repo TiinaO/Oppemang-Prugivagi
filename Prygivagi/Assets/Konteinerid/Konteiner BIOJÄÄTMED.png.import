@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6b2r0fpbdtxu"
-path="res://.godot/imported/Papp-paber=Open.png-06c62359226c91d8ee3d1d79f53ce20d.ctex"
+uid="uid://d2iwyhscrkhvl"
+path="res://.godot/imported/Konteiner BIOJÄÄTMED.png-a4f697d0814f53ee863ec26dd4b907ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Papp-paber=Open.png"
-dest_files=["res://.godot/imported/Papp-paber=Open.png-06c62359226c91d8ee3d1d79f53ce20d.ctex"]
+source_file="res://Assets/Konteinerid/Konteiner BIOJÄÄTMED.png"
+dest_files=["res://.godot/imported/Konteiner BIOJÄÄTMED.png-a4f697d0814f53ee863ec26dd4b907ca.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5v05tfnq1o0f"
-path="res://.godot/imported/Bio=Wrong.png-953426c766b1630ee0f39c204a92c25d.ctex"
+uid="uid://5o6kohql4554"
+path="res://.godot/imported/Sega=Right.png-f222bd94fcfa1e1d7aae8e657ce2f74c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bio=Wrong.png"
-dest_files=["res://.godot/imported/Bio=Wrong.png-953426c766b1630ee0f39c204a92c25d.ctex"]
+source_file="res://Assets/Konteinerid/Sega=Right.png"
+dest_files=["res://.godot/imported/Sega=Right.png-f222bd94fcfa1e1d7aae8e657ce2f74c.ctex"]
 
 [params]
 

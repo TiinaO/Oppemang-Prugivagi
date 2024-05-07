@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xycjqsk4lsis"
-path="res://.godot/imported/Klaas=Right.png-801fbdda72c7193ecbe084a4d127fbc7.ctex"
+uid="uid://ck8lkochc85b4"
+path="res://.godot/imported/Bio=Right.png-6bd8b4eef97a2997a95611322ea294a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Klaas=Right.png"
-dest_files=["res://.godot/imported/Klaas=Right.png-801fbdda72c7193ecbe084a4d127fbc7.ctex"]
+source_file="res://Assets/Konteinerid/Bio=Right.png"
+dest_files=["res://.godot/imported/Bio=Right.png-6bd8b4eef97a2997a95611322ea294a0.ctex"]
 
 [params]
 

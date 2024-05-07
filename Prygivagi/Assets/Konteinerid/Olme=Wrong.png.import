@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmlj7adwdons6"
-path="res://.godot/imported/Bio=Open.png-abd3d998515348c919930f085041abde.ctex"
+uid="uid://bluwnn0tcdemi"
+path="res://.godot/imported/Olme=Wrong.png-3d8b7884d26b57a47531864dc41e47ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bio=Open.png"
-dest_files=["res://.godot/imported/Bio=Open.png-abd3d998515348c919930f085041abde.ctex"]
+source_file="res://Assets/Konteinerid/Olme=Wrong.png"
+dest_files=["res://.godot/imported/Olme=Wrong.png-3d8b7884d26b57a47531864dc41e47ef.ctex"]
 
 [params]
 

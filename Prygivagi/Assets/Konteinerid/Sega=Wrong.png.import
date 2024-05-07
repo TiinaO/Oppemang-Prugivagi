@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtvpp5dp2oxia"
-path="res://.godot/imported/Olme=Open.png-c3a4a52d84f4d4ebf8f21fa193f40fd7.ctex"
+uid="uid://b5xv1gom7p7y2"
+path="res://.godot/imported/Sega=Wrong.png-34fac2394b8b83e67d8c5e9bc5e29b54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Olme=Open.png"
-dest_files=["res://.godot/imported/Olme=Open.png-c3a4a52d84f4d4ebf8f21fa193f40fd7.ctex"]
+source_file="res://Assets/Konteinerid/Sega=Wrong.png"
+dest_files=["res://.godot/imported/Sega=Wrong.png-34fac2394b8b83e67d8c5e9bc5e29b54.ctex"]
 
 [params]
 

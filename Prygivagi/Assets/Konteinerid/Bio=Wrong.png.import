@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://db3gungk0kfrn"
-path="res://.godot/imported/Klaas=Open.png-6cc0649712d1d07ba71268b703e7a0e2.ctex"
+uid="uid://5v05tfnq1o0f"
+path="res://.godot/imported/Bio=Wrong.png-58e1c40e12d951833ef147c036e288d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Klaas=Open.png"
-dest_files=["res://.godot/imported/Klaas=Open.png-6cc0649712d1d07ba71268b703e7a0e2.ctex"]
+source_file="res://Assets/Konteinerid/Bio=Wrong.png"
+dest_files=["res://.godot/imported/Bio=Wrong.png-58e1c40e12d951833ef147c036e288d9.ctex"]
 
 [params]
 

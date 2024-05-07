@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5xv1gom7p7y2"
-path="res://.godot/imported/Sega=Wrong.png-5a2ce2e9aaf38842e386395d0dcf0128.ctex"
+uid="uid://i5yyb1ntl244"
+path="res://.godot/imported/Konteiner METALL JA PLASTIK.png-f027164e52ab0c6b1878393f75e87273.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sega=Wrong.png"
-dest_files=["res://.godot/imported/Sega=Wrong.png-5a2ce2e9aaf38842e386395d0dcf0128.ctex"]
+source_file="res://Assets/Konteinerid/Konteiner METALL JA PLASTIK.png"
+dest_files=["res://.godot/imported/Konteiner METALL JA PLASTIK.png-f027164e52ab0c6b1878393f75e87273.ctex"]
 
 [params]
 

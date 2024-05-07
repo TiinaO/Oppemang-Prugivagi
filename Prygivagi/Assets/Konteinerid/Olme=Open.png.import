@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hfbp73ypwybx"
-path="res://.godot/imported/Konteiner PAPP JA PABER.png-c3e954838212d80e20fc832ae842359d.ctex"
+uid="uid://dtvpp5dp2oxia"
+path="res://.godot/imported/Olme=Open.png-285ac259fcb881142dac5bf91cdb7cc6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Konteiner PAPP JA PABER.png"
-dest_files=["res://.godot/imported/Konteiner PAPP JA PABER.png-c3e954838212d80e20fc832ae842359d.ctex"]
+source_file="res://Assets/Konteinerid/Olme=Open.png"
+dest_files=["res://.godot/imported/Olme=Open.png-285ac259fcb881142dac5bf91cdb7cc6.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cai7x6aj0wokn"
-path="res://.godot/imported/Konteiner OLMEJÄÄTMED.png-030b0edc8721e3483633d5dea855c141.ctex"
+uid="uid://xycjqsk4lsis"
+path="res://.godot/imported/Klaas=Right.png-14d5412b787f63986fc03b04848efae1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Konteiner OLMEJÄÄTMED.png"
-dest_files=["res://.godot/imported/Konteiner OLMEJÄÄTMED.png-030b0edc8721e3483633d5dea855c141.ctex"]
+source_file="res://Assets/Konteinerid/Klaas=Right.png"
+dest_files=["res://.godot/imported/Klaas=Right.png-14d5412b787f63986fc03b04848efae1.ctex"]
 
 [params]
 

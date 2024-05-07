@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1skaah2iwy07"
-path="res://.godot/imported/Sega=Open.png-e51f21eb4760014e9d5e0c65ed29b4dd.ctex"
+uid="uid://cai7x6aj0wokn"
+path="res://.godot/imported/Konteiner OLMEJÄÄTMED.png-d6d905ac0078f99735af5c56287edd9e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sega=Open.png"
-dest_files=["res://.godot/imported/Sega=Open.png-e51f21eb4760014e9d5e0c65ed29b4dd.ctex"]
+source_file="res://Assets/Konteinerid/Konteiner OLMEJÄÄTMED.png"
+dest_files=["res://.godot/imported/Konteiner OLMEJÄÄTMED.png-d6d905ac0078f99735af5c56287edd9e.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cr5w05mb3q8xl"
-path="res://.godot/imported/Konteiner METALL JA PLASTIK-1.png-c653c97d465d19ab35bd4c0a521a8e17.ctex"
+uid="uid://b6b2r0fpbdtxu"
+path="res://.godot/imported/Papp-paber=Open.png-8eb3c34dc5f2b575e09f821327598904.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Konteiner METALL JA PLASTIK-1.png"
-dest_files=["res://.godot/imported/Konteiner METALL JA PLASTIK-1.png-c653c97d465d19ab35bd4c0a521a8e17.ctex"]
+source_file="res://Assets/Konteinerid/Papp-paber=Open.png"
+dest_files=["res://.godot/imported/Papp-paber=Open.png-8eb3c34dc5f2b575e09f821327598904.ctex"]
 
 [params]
 
