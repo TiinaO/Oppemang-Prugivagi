@@ -1,8 +1,8 @@
 extends Node2D
 
-@onready var invCounter: Sprite2D = $UserInterface/GameUI/InventoryInfo
 
-var score = 0 #Skoori hoidja
+@onready var invCounter: Sprite2D = $UserInterface/GameUI/InventoryInfo
+var score = 0 # Skoori hoidja
 
 func _ready():
 	update_score(0) # Algse skoori seadistamine
