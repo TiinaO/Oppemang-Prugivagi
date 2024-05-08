@@ -36,4 +36,3 @@ offset_bottom = 61.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_w7nkv")
 theme_override_font_sizes/font_size = 24
-text = "99"

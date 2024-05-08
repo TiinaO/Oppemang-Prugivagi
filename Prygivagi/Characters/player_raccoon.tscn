@@ -24,7 +24,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"action",
-"speed": 4.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -51,10 +51,10 @@ animations = [{
 "texture": ExtResource("9_b0fo5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_mw2y0")
+"texture": ExtResource("11_vlfrx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_vlfrx")
+"texture": ExtResource("10_mw2y0")
 }],
 "loop": true,
 "name": &"move",
@@ -73,6 +73,8 @@ inventory = ExtResource("2_yh65u")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_lwj4b")
 animation = &"action"
+frame = 1
+frame_progress = 0.604285
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(4, -94)

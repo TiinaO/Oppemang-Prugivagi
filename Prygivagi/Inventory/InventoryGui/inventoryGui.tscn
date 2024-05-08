@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://u6moandru342"]
 
 [ext_resource type="Script" path="res://Inventory/InventoryGui/inventoryGui.gd" id="1_4xqdt"]
-[ext_resource type="Texture2D" uid="uid://j1bulhoud2la" path="res://Assets/Inventory/Group 96.png" id="2_enok1"]
+[ext_resource type="Texture2D" uid="uid://bpv1l4a7y3e56" path="res://Assets/Inventory/Group 119.png" id="2_edx5j"]
 [ext_resource type="Texture2D" uid="uid://tc2yg3v71aql" path="res://Assets/Inventory/Vector.png" id="4_5nq6v"]
 [ext_resource type="Texture2D" uid="uid://biblbs4vdyniv" path="res://Assets/Menu/UI buttons=Sulge.png" id="4_poc7k"]
 [ext_resource type="PackedScene" uid="uid://dnit4crkhjd14" path="res://Inventory/InventoryGui/inventory_ui_slot.tscn" id="5_nrrem"]
@@ -12,15 +12,15 @@ custom_minimum_size = Vector2(794, 474)
 layout_mode = 3
 anchors_preset = 0
 offset_right = 794.0
-offset_bottom = 549.0
+offset_bottom = 499.0
 script = ExtResource("1_4xqdt")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0
 offset_top = 1.0
 offset_right = 784.0
-offset_bottom = 545.0
-texture = ExtResource("2_enok1")
+offset_bottom = 497.0
+texture = ExtResource("2_edx5j")
 patch_margin_left = 20
 patch_margin_top = 20
 patch_margin_right = 20
@@ -33,7 +33,7 @@ offset_right = 780.0
 offset_bottom = 110.0
 
 [node name="Separator" type="Control" parent="NinePatchRect/VBoxContainer"]
-custom_minimum_size = Vector2(0, 11)
+custom_minimum_size = Vector2(0, 5)
 layout_mode = 2
 size_flags_stretch_ratio = 5.75
 
@@ -50,6 +50,7 @@ layout_mode = 2
 size_flags_stretch_ratio = 5.75
 
 [node name="Seljakott" type="Sprite2D" parent="NinePatchRect/VBoxContainer/HBoxContainer2"]
+visible = false
 position = Vector2(383, 41)
 texture = ExtResource("4_5nq6v")
 
