@@ -501,17 +501,5 @@ grow_vertical = 2
 
 [node name="Pause_menu" parent="CanvasLayer" instance=ExtResource("6_mn7t4")]
 
-[connection signal="body_entered" from="TileMap/@Area2D@30449" to="TileMap/@Area2D@30449" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@30449" to="TileMap/@Area2D@30449" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@30450" to="TileMap/@Area2D@30450" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@30450" to="TileMap/@Area2D@30450" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@30451" to="TileMap/@Area2D@30451" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@30451" to="TileMap/@Area2D@30451" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@30452" to="TileMap/@Area2D@30452" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@30452" to="TileMap/@Area2D@30452" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@30453" to="TileMap/@Area2D@30453" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@30453" to="TileMap/@Area2D@30453" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@30454" to="TileMap/@Area2D@30454" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@30454" to="TileMap/@Area2D@30454" method="_on_body_exited"]
 [connection signal="closed" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_closed"]
 [connection signal="opened" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_opened"]

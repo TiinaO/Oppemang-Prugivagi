@@ -14,7 +14,6 @@ var isOpen: bool = false
 func _ready():
 	inventory.update.connect(update_slots)
 	handle_connecting_signals()
-	#update()
 
 func update_slots():
 	for i in range(	min(inventory.slots.size(), slots.size())):

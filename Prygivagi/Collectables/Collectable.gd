@@ -31,9 +31,9 @@ func _process(_delta):
 	if player_in_area and Input.is_action_just_pressed("ui_accept"):
 		player.collect(itemRes)
 		queue_free()
-		
-		var player_node = get_node("/root/Characters/")
-		if player_node:
-			player_node.play_action_animation()
+	
+	var player_node = get_parent()	
+	if player_node != null and player_node.name == "PlayerRaccoon":
+		player_node.play_action_animation()
 
 

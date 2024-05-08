@@ -28,14 +28,6 @@ func play_action_animation():
 	print("test")
 	$AnimatedSprite2D.play("action")
 
-
-#Peaks toimima kui üles võtmise tuvastus, et lisada seljakotti asi
-func on_pickup_area_entered(area):
-	if area.has_method("collect"):
-		area.collect(inventory)
-
-func on_item_picked_up():
-	print("I got a ", inventory)
-
+#Asjade inventorysse lisamine, mis karakter on ülesse võtnud
 func collect(item):
 	inventory.insert(item)
