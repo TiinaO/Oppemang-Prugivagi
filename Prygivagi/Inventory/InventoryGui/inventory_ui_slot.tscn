@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Inventory/InventoryGui/inventory_ui_slot.gd" id="1_jtcr0"]
 [ext_resource type="Texture2D" uid="uid://ip1hxwcvty66" path="res://Assets/Inventory/UI buttons=Prugi ruut.png" id="2_p1cru"]
-[ext_resource type="FontFile" uid="uid://ghwix5thu6qa" path="res://Assets/Andika-Bold.ttf" id="3_w7nkv"]
+[ext_resource type="FontFile" uid="uid://d347pn0mkw81k" path="res://Assets/Andika-Bold.ttf" id="3_w7nkv"]
 
 [node name="InventorySlot" type="Panel"]
 self_modulate = Color(1, 1, 1, 0)
