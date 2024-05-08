@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://oywimvfqjqgv"]
+[gd_scene load_steps=16 format=3 uid="uid://oywimvfqjqgv"]
 
 [ext_resource type="Texture2D" uid="uid://ci6xjhmq4hoxq" path="res://Assets/Põrand 1.png" id="1_8vkjp"]
 [ext_resource type="PackedScene" uid="uid://bv5x6ikcd0rwv" path="res://Characters/player_raccoon.tscn" id="1_dc041"]
@@ -428,9 +428,6 @@ scenes/1/scene = ExtResource("4_l0i3v")
 resource_name = "Test"
 scenes/1/scene = ExtResource("4_l0i3v")
 
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_yfhk6"]
-scenes/1/scene = ExtResource("5_i8vko")
-
 [sub_resource type="TileSet" id="TileSet_hpt71"]
 tile_size = Vector2i(256, 256)
 physics_layer_0/collision_layer = 1
@@ -441,7 +438,6 @@ sources/0 = SubResource("TileSetAtlasSource_sp00a")
 sources/1 = SubResource("TileSetAtlasSource_5tgs3")
 sources/2 = SubResource("TileSetScenesCollectionSource_pln4u")
 sources/3 = SubResource("TileSetScenesCollectionSource_qk2or")
-sources/4 = SubResource("TileSetScenesCollectionSource_yfhk6")
 
 [node name="GameLevel" type="Node2D"]
 position = Vector2(16, 12)
@@ -505,17 +501,17 @@ grow_vertical = 2
 
 [node name="Pause_menu" parent="CanvasLayer" instance=ExtResource("6_mn7t4")]
 
-[connection signal="body_entered" from="TileMap/Apple" to="TileMap/Apple" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/Apple" to="TileMap/Apple" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@91643" to="TileMap/@Area2D@91643" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@91643" to="TileMap/@Area2D@91643" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@91644" to="TileMap/@Area2D@91644" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@91644" to="TileMap/@Area2D@91644" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@91645" to="TileMap/@Area2D@91645" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@91645" to="TileMap/@Area2D@91645" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@91646" to="TileMap/@Area2D@91646" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@91646" to="TileMap/@Area2D@91646" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@91647" to="TileMap/@Area2D@91647" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@91647" to="TileMap/@Area2D@91647" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap/@Area2D@30449" to="TileMap/@Area2D@30449" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap/@Area2D@30449" to="TileMap/@Area2D@30449" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap/@Area2D@30450" to="TileMap/@Area2D@30450" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap/@Area2D@30450" to="TileMap/@Area2D@30450" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap/@Area2D@30451" to="TileMap/@Area2D@30451" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap/@Area2D@30451" to="TileMap/@Area2D@30451" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap/@Area2D@30452" to="TileMap/@Area2D@30452" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap/@Area2D@30452" to="TileMap/@Area2D@30452" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap/@Area2D@30453" to="TileMap/@Area2D@30453" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap/@Area2D@30453" to="TileMap/@Area2D@30453" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap/@Area2D@30454" to="TileMap/@Area2D@30454" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap/@Area2D@30454" to="TileMap/@Area2D@30454" method="_on_body_exited"]
 [connection signal="closed" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_closed"]
 [connection signal="opened" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_opened"]

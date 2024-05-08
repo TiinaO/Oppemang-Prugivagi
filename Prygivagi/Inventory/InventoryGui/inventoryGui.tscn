@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://Inventory/InventoryGui/inventoryGui.gd" id="1_4xqdt"]
 [ext_resource type="Texture2D" uid="uid://j1bulhoud2la" path="res://Assets/Inventory/Group 96.png" id="2_enok1"]
-[ext_resource type="PackedScene" uid="uid://dnit4crkhjd14" path="res://Inventory/InventoryGui/inventory_slot.tscn" id="3_bhvsw"]
 [ext_resource type="Texture2D" uid="uid://tc2yg3v71aql" path="res://Assets/Inventory/Vector.png" id="4_5nq6v"]
 [ext_resource type="Texture2D" uid="uid://biblbs4vdyniv" path="res://Assets/Menu/UI buttons=Sulge.png" id="4_poc7k"]
+[ext_resource type="PackedScene" uid="uid://dnit4crkhjd14" path="res://Inventory/InventoryGui/inventory_ui_slot.tscn" id="5_nrrem"]
 
 [node name="InventoryGui" type="Control"]
 clip_contents = true
@@ -80,47 +80,47 @@ grow_horizontal = 2
 grow_vertical = 0
 columns = 5
 
-[node name="InventorySlot" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bhvsw")]
+[node name="InventorySlot" parent="NinePatchRect/GridContainer" instance=ExtResource("5_nrrem")]
 layout_mode = 2
 
-[node name="InventorySlot2" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bhvsw")]
+[node name="InventorySlot2" parent="NinePatchRect/GridContainer" instance=ExtResource("5_nrrem")]
 layout_mode = 2
 
-[node name="InventorySlot3" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bhvsw")]
+[node name="InventorySlot3" parent="NinePatchRect/GridContainer" instance=ExtResource("5_nrrem")]
 layout_mode = 2
 
-[node name="InventorySlot4" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bhvsw")]
+[node name="InventorySlot4" parent="NinePatchRect/GridContainer" instance=ExtResource("5_nrrem")]
 layout_mode = 2
 
-[node name="InventorySlot5" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bhvsw")]
+[node name="InventorySlot5" parent="NinePatchRect/GridContainer" instance=ExtResource("5_nrrem")]
 layout_mode = 2
 
-[node name="InventorySlot6" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bhvsw")]
+[node name="InventorySlot6" parent="NinePatchRect/GridContainer" instance=ExtResource("5_nrrem")]
 layout_mode = 2
 
-[node name="InventorySlot7" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bhvsw")]
+[node name="InventorySlot7" parent="NinePatchRect/GridContainer" instance=ExtResource("5_nrrem")]
 layout_mode = 2
 
-[node name="InventorySlot8" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bhvsw")]
+[node name="InventorySlot8" parent="NinePatchRect/GridContainer" instance=ExtResource("5_nrrem")]
 layout_mode = 2
 
-[node name="InventorySlot9" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bhvsw")]
+[node name="InventorySlot9" parent="NinePatchRect/GridContainer" instance=ExtResource("5_nrrem")]
 layout_mode = 2
 
-[node name="InventorySlot10" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bhvsw")]
+[node name="InventorySlot10" parent="NinePatchRect/GridContainer" instance=ExtResource("5_nrrem")]
 layout_mode = 2
 
-[node name="InventorySlot11" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bhvsw")]
+[node name="InventorySlot11" parent="NinePatchRect/GridContainer" instance=ExtResource("5_nrrem")]
 layout_mode = 2
 
-[node name="InventorySlot12" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bhvsw")]
+[node name="InventorySlot12" parent="NinePatchRect/GridContainer" instance=ExtResource("5_nrrem")]
 layout_mode = 2
 
-[node name="InventorySlot13" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bhvsw")]
+[node name="InventorySlot13" parent="NinePatchRect/GridContainer" instance=ExtResource("5_nrrem")]
 layout_mode = 2
 
-[node name="InventorySlot14" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bhvsw")]
+[node name="InventorySlot14" parent="NinePatchRect/GridContainer" instance=ExtResource("5_nrrem")]
 layout_mode = 2
 
-[node name="InventorySlot15" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bhvsw")]
+[node name="InventorySlot15" parent="NinePatchRect/GridContainer" instance=ExtResource("5_nrrem")]
 layout_mode = 2

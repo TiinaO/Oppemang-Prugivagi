@@ -9,12 +9,16 @@ var isOpen: bool = false
 @onready var inventory: Inventory = preload("res://Inventory/InventoryItems/playerInventory.tres")
 @onready var slots: Array = $NinePatchRect/GridContainer.get_children()
 
-func _ready():
-	update()
+@onready var x_button: Button = $NinePatchRect/VBoxContainer/HBoxContainer2/X_Button
 
-func update():
-	for i in range(min(inventory.items.size(), slots.size())):
-		slots[i].update(inventory.items[i])
+func _ready():
+	inventory.update.connect(update_slots)
+	handle_connecting_signals()
+	#update()
+
+func update_slots():
+	for i in range(	min(inventory.slots.size(), slots.size())):
+		slots[i].update(inventory.slots[i])
 
 func open():
 	visible = true
@@ -25,3 +29,11 @@ func close():
 	visible = false
 	isOpen = false
 	closed.emit()
+
+func on_x_pressed():
+	visible = false
+	isOpen = false
+	closed.emit()
+	
+func handle_connecting_signals() -> void:
+	x_button.button_down.connect(on_x_pressed)

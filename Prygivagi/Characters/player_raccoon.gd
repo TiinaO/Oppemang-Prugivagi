@@ -36,3 +36,6 @@ func on_pickup_area_entered(area):
 
 func on_item_picked_up():
 	print("I got a ", inventory)
+
+func collect(item):
+	inventory.insert(item)
