@@ -24,3 +24,4 @@ func _process(_delta):
 		var player_node = get_node("../PlayerRaccoon")
 		if player_node:
 			player_node.play_action_animation()
+

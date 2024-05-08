@@ -2,8 +2,10 @@ extends CharacterBody2D
 
 @export var move_speed: float = 400
 
+@export var inventory: Inventory
+
 func _physics_process(_delta):
-		
+
 	# Liikumine
 	var input_direction = Vector2(
 		Input.get_action_strength("right") - Input.get_action_strength("left"),
@@ -26,4 +28,6 @@ func play_action_animation():
 	print("test")
 	$AnimatedSprite2D.play("action")
 
-
+#Asjade inventorysse lisamine, mis karakter on ülesse võtnud
+func collect(item):
+	inventory.insert(item)

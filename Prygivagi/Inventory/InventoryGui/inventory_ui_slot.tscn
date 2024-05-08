@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnit4crkhjd14"]
+
+[ext_resource type="Script" path="res://Inventory/InventoryGui/inventory_ui_slot.gd" id="1_jtcr0"]
+[ext_resource type="Texture2D" uid="uid://ip1hxwcvty66" path="res://Assets/Inventory/UI buttons=Prugi ruut.png" id="2_p1cru"]
+[ext_resource type="FontFile" uid="uid://d347pn0mkw81k" path="res://Assets/Andika-Bold.ttf" id="3_w7nkv"]
+
+[node name="InventorySlot" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(128, 128)
+offset_right = 128.0
+offset_bottom = 128.0
+script = ExtResource("1_jtcr0")
+
+[node name="background" type="Sprite2D" parent="."]
+texture = ExtResource("2_p1cru")
+centered = false
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 128.0
+
+[node name="Panel" type="Panel" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="item" type="Sprite2D" parent="CenterContainer/Panel"]
+scale = Vector2(0.5, 0.5)
+
+[node name="ItemAmount" type="Label" parent="CenterContainer/Panel"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 8.0
+offset_right = 64.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_w7nkv")
+theme_override_font_sizes/font_size = 24

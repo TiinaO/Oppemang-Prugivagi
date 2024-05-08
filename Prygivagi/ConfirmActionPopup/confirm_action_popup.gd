@@ -14,7 +14,6 @@ func _ready():
 	set_process(false)
 
 func on_x_pressed() -> void:
-	print("MA EI TÖÖÖTA SEST ..... MIKS?")
 	exit_confirm_popup.emit()
 	set_process(false)
 
