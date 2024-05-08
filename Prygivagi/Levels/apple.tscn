@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" path="res://Levels/apple.gd" id="1_0lqkt"]
 [ext_resource type="Texture2D" uid="uid://cnt2710avr1wd" path="res://Assets/Collectable/Vector 39.png" id="2_7jge1"]
+[ext_resource type="FontFile" uid="uid://bu2y8g7krm3fd" path="res://Assets/Andika-Bold.ttf" id="3_biv84"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nj272"]
 

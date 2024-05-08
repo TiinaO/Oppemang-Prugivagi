@@ -64,3 +64,4 @@ func handle_connecting_signals() -> void:
 	instructions_page.exit_instructions_page.connect(on_exit_instructions_pressed)
 	confirm_popup.exit_confirm_popup.connect(on_exit_popup_pressed)
 	confirm_popup.exit_confirm_popup_with_x.connect(on_exit_popup_pressed)
+
