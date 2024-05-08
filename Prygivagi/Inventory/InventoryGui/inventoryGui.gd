@@ -11,6 +11,8 @@ var isOpen: bool = false
 
 @onready var x_button: Button = $NinePatchRect/VBoxContainer/HBoxContainer2/X_Button
 
+@onready var backpackSound: AudioStreamPlayer2D = $OpeningBackpackSound
+
 func _ready():
 	inventory.update.connect(update_slots)
 	handle_connecting_signals()
@@ -20,6 +22,8 @@ func update_slots():
 		slots[i].update(inventory.slots[i])
 
 func open():
+	backpackSound.play()
+	await get_tree().create_timer(0.5).timeout
 	visible = true
 	isOpen = true
 	opened.emit()
