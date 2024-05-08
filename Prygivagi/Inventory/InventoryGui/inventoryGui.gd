@@ -28,7 +28,9 @@ func open():
 	isOpen = true
 	opened.emit()
 
-func close():
+func close():	
+	backpackSound.play()
+	await get_tree().create_timer(0.5).timeout
 	visible = false
 	isOpen = false
 	closed.emit()

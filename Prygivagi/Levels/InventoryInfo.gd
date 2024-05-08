@@ -2,7 +2,7 @@ extends Sprite2D
 
 @onready var inventory = $"../InventoryGui"
 
-"""
+
 func _input(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		if get_rect().has_point(to_local(event.position)):
@@ -10,4 +10,4 @@ func _input(event):
 				inventory.close()
 			else:
 				inventory.open()
-"""
+

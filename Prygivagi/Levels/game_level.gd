@@ -1,7 +1,7 @@
 extends Node2D
 
 
-@onready var invCounter: Sprite2D = $UserInterface/GameUI/InventoryInfo
+@onready var invCounter: Sprite2D = $CanvasLayer/InventoryInfo
 var score = 0 # Skoori hoidja
 
 func _ready():
@@ -20,4 +20,5 @@ func _on_inventory_gui_closed():
 	get_tree().paused = false
 
 func _on_inventory_gui_opened():
-	get_tree().paused = true
+	#get_tree().paused = true #PROBLEEM
+	pass
