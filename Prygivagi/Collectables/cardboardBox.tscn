@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cr56f4dukqes5"]
 
 [ext_resource type="PackedScene" uid="uid://dggc5mowrx8qb" path="res://Collectables/collectable.tscn" id="1_bayx6"]
-[ext_resource type="Resource" uid="uid://d1hq5t2gghsac" path="res://Inventory/InventoryItems/Items/glassJar.tres" id="2_qlrhi"]
+[ext_resource type="Resource" uid="uid://c1hj6nv2nh35m" path="res://Inventory/InventoryItems/Items/cardboardBox.tres" id="2_icutb"]
 [ext_resource type="Texture2D" uid="uid://cg6wtrklu874i" path="res://Assets/Collectable/Pappkast2.png" id="2_w0l27"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n2q1w"]
@@ -11,7 +11,7 @@ size = Vector2(137, 120)
 size = Vector2(130, 52)
 
 [node name="Collectable" instance=ExtResource("1_bayx6")]
-itemRes = ExtResource("2_qlrhi")
+itemRes = ExtResource("2_icutb")
 
 [node name="CollisionShape2D" parent="." index="0"]
 position = Vector2(0.5, 0)
