@@ -41,7 +41,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 4.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -58,7 +58,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"move",
-"speed": 15.0
+"speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b33wy"]
@@ -73,6 +73,7 @@ inventory = ExtResource("2_yh65u")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_lwj4b")
 animation = &"move"
+
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(4, -94)
