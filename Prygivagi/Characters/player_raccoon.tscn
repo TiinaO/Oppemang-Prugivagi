@@ -72,9 +72,7 @@ inventory = ExtResource("2_yh65u")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_lwj4b")
-animation = &"action"
-frame = 1
-frame_progress = 0.604285
+animation = &"move"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(4, -94)

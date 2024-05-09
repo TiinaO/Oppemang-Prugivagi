@@ -4,6 +4,11 @@ extends Panel
 @onready var itemSprite: Sprite2D = $CenterContainer/Panel/item
 @onready var amount_text: Label = $CenterContainer/Panel/ItemAmount
 
+var filled_slots: Array = [] #Täidetud sloti id
+var current_slot_id: int = 0 #Praeguse kasutatava sloti id
+
+func _ready():
+	current_slot_id = 0
 """
 func update(item: InventoryItem):
 	if !item:
@@ -22,3 +27,16 @@ func update(slot: InvSlot):
 		itemSprite.texture = slot.item.texture
 		amount_text.visible = true
 		amount_text.text = str(slot.amount)
+		
+		#Slotile unikaalse id määramine
+		slot.id = current_slot_id
+		current_slot_id += 1
+		
+		#Kontroll, kas täidetud slotide hulgas on olemas slot, kuhu item läheb
+		var is_slot_filled = filled_slots.find(slot.id) != -1
+		if slot.amount == 1 and !is_slot_filled:
+			var game_level = get_node("/root/GameLevel")
+			game_level.update_slot_counter(1)
+			filled_slots.append(slot.id)
+		elif slot.amount == 0 and is_slot_filled:
+			filled_slots.erase(filled_slots.find(slot.id))
