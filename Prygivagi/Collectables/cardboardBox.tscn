@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cg6wtrklu874i" path="res://Assets/Collectable/Pappkast2.png" id="2_w0l27"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n2q1w"]
-size = Vector2(137, 120)
+size = Vector2(177, 114)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1svmf"]
 size = Vector2(130, 52)
@@ -14,7 +14,7 @@ size = Vector2(130, 52)
 itemRes = ExtResource("2_icutb")
 
 [node name="CollisionShape2D" parent="." index="0"]
-position = Vector2(0.5, 0)
+position = Vector2(-0.5, -3)
 shape = SubResource("RectangleShape2D_n2q1w")
 
 [node name="Sprite2D" parent="." index="1"]
