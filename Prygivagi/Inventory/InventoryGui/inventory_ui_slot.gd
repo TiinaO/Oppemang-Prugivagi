@@ -28,15 +28,14 @@ func update(slot: InvSlot):
 		amount_text.visible = true
 		amount_text.text = str(slot.amount)
 		
-		#Slotile unikaalse id määramine
-		slot.id = current_slot_id
-		current_slot_id += 1
-		
 		#Kontroll, kas täidetud slotide hulgas on olemas slot, kuhu item läheb
 		var is_slot_filled = filled_slots.find(slot.id) != -1
-		if slot.amount == 1 and !is_slot_filled:
+		if !is_slot_filled:
+			slot.id = current_slot_id
+			current_slot_id += 1
+			
 			var game_level = get_node("/root/GameLevel")
 			game_level.update_slot_counter(1)
 			filled_slots.append(slot.id)
-		elif slot.amount == 0 and is_slot_filled:
-			filled_slots.erase(filled_slots.find(slot.id))
+
+

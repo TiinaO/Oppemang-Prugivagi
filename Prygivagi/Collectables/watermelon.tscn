@@ -19,5 +19,5 @@ scale = Vector2(0.499363, 0.5)
 texture = ExtResource("2_xjsyn")
 
 [node name="Label" parent="." index="3"]
-scale = Vector2(0.12521, 0.125)
+scale = Vector2(0.3, 0.3)
 text = "ARBUUS"
