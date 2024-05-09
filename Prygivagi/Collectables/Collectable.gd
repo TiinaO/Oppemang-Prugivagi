@@ -33,7 +33,7 @@ func _process(_delta):
 		player.collect(itemRes)
 		queue_free()
 		var game_level = get_node("/root/GameLevel")
-		game_level.add_score(10)
+		game_level.add_score(100)
 	
 	var player_node = get_parent()	
 	if player_node != null and player_node.name == "PlayerRaccoon":
