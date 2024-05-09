@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://xodld3dgufoi"]
+[gd_scene load_steps=6 format=3 uid="uid://xodld3dgufoi"]
 
 [ext_resource type="PackedScene" uid="uid://dggc5mowrx8qb" path="res://Collectables/collectable.tscn" id="1_7b7vx"]
 [ext_resource type="Resource" uid="uid://bvcn1ddumj1e6" path="res://Inventory/InventoryItems/Items/apple.tres" id="2_dl5c6"]
@@ -6,7 +6,11 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3183d"]
 resource_local_to_scene = true
-radius = 52.0
+radius = 91.0055
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2ujcc"]
+resource_local_to_scene = true
+radius = 42.0
 
 [node name="Apple" instance=ExtResource("1_7b7vx")]
 itemRes = ExtResource("2_dl5c6")
@@ -17,6 +21,9 @@ shape = SubResource("CircleShape2D_3183d")
 [node name="Sprite2D" parent="." index="1"]
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("2_flwr7")
+
+[node name="CollisionShape2D" parent="StaticBody2D" index="0"]
+shape = SubResource("CircleShape2D_2ujcc")
 
 [node name="Label" parent="." index="3"]
 offset_left = -55.0
