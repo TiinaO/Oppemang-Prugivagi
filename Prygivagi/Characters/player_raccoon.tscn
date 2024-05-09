@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://bv5x6ikcd0rwv"]
+[gd_scene load_steps=16 format=3 uid="uid://bv5x6ikcd0rwv"]
 
 [ext_resource type="Script" path="res://Characters/player_raccoon.gd" id="1_iq5xl"]
 [ext_resource type="Texture2D" uid="uid://y3pijpgnqq1g" path="res://Characters/Pesukaru KORJAB1.png" id="2_h5c7l"]
+[ext_resource type="Resource" uid="uid://6a1lgwbcgcno" path="res://Inventory/InventoryItems/playerInventory.tres" id="2_yh65u"]
 [ext_resource type="Texture2D" uid="uid://57vw11o0hmyn" path="res://Characters/Pesukaru KORJAB2.png" id="3_fqdtn"]
 [ext_resource type="Texture2D" uid="uid://bmsuardbmv36p" path="res://Characters/Pesukaru IDLE1Pesukaru-idle.png" id="4_0rsbx"]
 [ext_resource type="Texture2D" uid="uid://d32vpjvuyifw0" path="res://Characters/Pesukaru IDLE2Pesukaru-idle.png" id="5_tg7gn"]
@@ -11,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://b7d6qvrurtr3v" path="res://Characters/Pesukaru TOP parem sammPesukaru-astub.png" id="9_b0fo5"]
 [ext_resource type="Texture2D" uid="uid://bp065pp10qgqi" path="res://Characters/Pesukaru TOP vasak sammPesukaru-astub.png" id="10_mw2y0"]
 [ext_resource type="Texture2D" uid="uid://bsy8kwhgudvpi" path="res://Characters/Pesukaru TOPPesukaru-astub.png" id="11_vlfrx"]
+[ext_resource type="AudioStream" uid="uid://bbvly1mm5t0wg" path="res://Audio/Movement/puidustPõrand_1.wav" id="13_ytygl"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lwj4b"]
 animations = [{
@@ -23,7 +25,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"action",
-"speed": 4.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -67,13 +69,16 @@ radius = 160.012
 [node name="PlayerRaccoon" type="CharacterBody2D"]
 position = Vector2(0, -7)
 script = ExtResource("1_iq5xl")
+inventory = ExtResource("2_yh65u")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_lwj4b")
 animation = &"move"
-frame_progress = 0.620095
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(4, -94)
 scale = Vector2(0.5, 0.5)
 shape = SubResource("CircleShape2D_b33wy")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_ytygl")

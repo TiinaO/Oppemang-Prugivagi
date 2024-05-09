@@ -1,9 +1,12 @@
 extends CharacterBody2D
 
-@export var move_speed: float = 400
+@export var move_speed: float = 800
+@export var inventory: Inventory
+
+@onready var movementSound: AudioStreamPlayer2D = $AudioStreamPlayer2D
 
 func _physics_process(_delta):
-		
+
 	# Liikumine
 	var input_direction = Vector2(
 		Input.get_action_strength("right") - Input.get_action_strength("left"),
@@ -14,6 +17,7 @@ func _physics_process(_delta):
 		input_direction = input_direction.normalized()
 		self.velocity = input_direction * move_speed
 		$AnimatedSprite2D.play("move")
+		movementSound.play()
 		var target_direction = Vector2(-input_direction.y, input_direction.x) #Pööra -90 kraadi
 		look_at(global_position + target_direction)
 	else:
@@ -26,4 +30,6 @@ func play_action_animation():
 	print("test")
 	$AnimatedSprite2D.play("action")
 
-
+#Asjade inventorysse lisamine, mis karakter on ülesse võtnud
+func collect(item):
+	inventory.insert(item)

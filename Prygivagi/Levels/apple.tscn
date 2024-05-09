@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://d4kqyvwmbta3j"]
+[gd_scene load_steps=5 format=3 uid="uid://d4kqyvwmbta3j"]
 
 [ext_resource type="Script" path="res://Levels/apple.gd" id="1_0lqkt"]
-[ext_resource type="Texture2D" uid="uid://bce2s3jvtbe21" path="res://Assets/Õun.png" id="2_x07sl"]
-[ext_resource type="FontFile" uid="uid://d347pn0mkw81k" path="res://Assets/Andika-Bold.ttf" id="3_biv84"]
+[ext_resource type="Texture2D" uid="uid://cnt2710avr1wd" path="res://Assets/Collectable/Vector 39.png" id="2_7jge1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nj272"]
 
@@ -15,7 +14,7 @@ script = ExtResource("1_0lqkt")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0.600021, -0.900009)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_x07sl")
+texture = ExtResource("2_7jge1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_nj272")
@@ -25,16 +24,4 @@ shape = SubResource("CircleShape2D_nj272")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_ji5rd")
 
-[node name="Label" type="Label" parent="."]
-offset_left = -9.0
-offset_top = -27.0
-offset_right = 170.0
-offset_bottom = 136.0
-scale = Vector2(0.1, 0.1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_biv84")
-theme_override_font_sizes/font_size = 100
-text = "ÕUN"
-
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
