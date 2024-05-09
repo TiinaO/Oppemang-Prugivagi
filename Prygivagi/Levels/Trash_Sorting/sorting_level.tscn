@@ -1,39 +1,15 @@
-[gd_scene load_steps=15 format=3 uid="uid://cll15k4xdrpl1"]
+[gd_scene load_steps=12 format=3 uid="uid://cll15k4xdrpl1"]
 
-[ext_resource type="Texture2D" uid="uid://bja1wc4go1uib" path="res://Assets/Maapind.png" id="1_6echn"]
-[ext_resource type="Texture2D" uid="uid://dsfgbnb853o7l" path="res://Assets/Sein.png" id="2_4w4x1"]
+[ext_resource type="Texture2D" path="res://Assets/Maapind.png" id="1_6echn"]
+[ext_resource type="Texture2D" path="res://Assets/Sein.png" id="2_4w4x1"]
 [ext_resource type="PackedScene" uid="uid://yap0js4uh1tv" path="res://Levels/Trash_Sorting/konteiner.tscn" id="3_royj2"]
 [ext_resource type="Texture2D" uid="uid://cai7x6aj0wokn" path="res://Assets/Konteinerid/Konteiner OLMEJÄÄTMED.png" id="4_o6sn5"]
 [ext_resource type="Texture2D" uid="uid://bbhjmqwa37y0i" path="res://Assets/Konteinerid/Konteiner KLAAS.png" id="5_kfpim"]
-[ext_resource type="Texture2D" uid="uid://dtvpp5dp2oxia" path="res://Assets/Konteinerid/Olme=Open.png" id="5_qk0cg"]
 [ext_resource type="Texture2D" uid="uid://hfbp73ypwybx" path="res://Assets/Konteinerid/Konteiner PAPP JA PABER.png" id="6_hic17"]
-[ext_resource type="Script" path="res://Levels/Trash_Sorting/konteineruus.gd" id="6_ly3v7"]
 [ext_resource type="Texture2D" uid="uid://i5yyb1ntl244" path="res://Assets/Konteinerid/Konteiner METALL JA PLASTIK.png" id="7_6lbq8"]
 [ext_resource type="Texture2D" uid="uid://d2iwyhscrkhvl" path="res://Assets/Konteinerid/Konteiner BIOJÄÄTMED.png" id="8_qbb4j"]
-[ext_resource type="Texture2D" uid="uid://dniyigp0k2576" path="res://Assets/UI buttons=Inventory pohi.png" id="9_4djd0"]
+[ext_resource type="Texture2D" path="res://Assets/UI buttons=Inventory pohi.png" id="9_4djd0"]
 [ext_resource type="PackedScene" uid="uid://db41wg3vpuv3j" path="res://Levels/Prügi/trash_object.tscn" id="10_fcgi4"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_sxfdu"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("4_o6sn5")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_qk0cg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_qk0cg")
-}],
-"loop": true,
-"name": &"open",
-"speed": 5.0
-}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2nv8b"]
 size = Vector2(208, 311)
@@ -62,17 +38,6 @@ offset_bottom = 692.0
 texture = ExtResource("2_4w4x1")
 metadata/_edit_lock_ = true
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["dropable"]]
-script = ExtResource("6_ly3v7")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" groups=["dropable"]]
-position = Vector2(387, 911)
-sprite_frames = SubResource("SpriteFrames_sxfdu")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D" groups=["dropable"]]
-position = Vector2(389, 906)
-shape = SubResource("RectangleShape2D_2nv8b")
-
 [node name="StaticBody2D" parent="." groups=["olmejaatmed"] instance=ExtResource("3_royj2")]
 position = Vector2(218, 521)
 
@@ -81,6 +46,7 @@ offset_left = -58.0
 offset_top = -98.0
 offset_right = 206.0
 offset_bottom = 222.0
+grow_vertical = 0
 texture = ExtResource("4_o6sn5")
 metadata/_edit_use_anchors_ = true
 
@@ -96,6 +62,7 @@ offset_left = -55.0
 offset_top = -97.0
 offset_right = 209.0
 offset_bottom = 223.0
+grow_vertical = 0
 texture = ExtResource("5_kfpim")
 metadata/_edit_use_anchors_ = true
 
@@ -111,6 +78,7 @@ offset_left = -55.0
 offset_top = -97.0
 offset_right = 209.0
 offset_bottom = 223.0
+grow_vertical = 0
 texture = ExtResource("6_hic17")
 metadata/_edit_use_anchors_ = true
 
@@ -126,6 +94,7 @@ offset_left = -55.0
 offset_top = -97.0
 offset_right = 209.0
 offset_bottom = 223.0
+grow_vertical = 0
 texture = ExtResource("7_6lbq8")
 metadata/_edit_use_anchors_ = true
 
@@ -141,6 +110,7 @@ offset_left = -55.0
 offset_top = -97.0
 offset_right = 209.0
 offset_bottom = 223.0
+grow_vertical = 0
 texture = ExtResource("8_qbb4j")
 metadata/_edit_use_anchors_ = true
 
@@ -150,3 +120,14 @@ shape = SubResource("RectangleShape2D_2nv8b")
 
 [node name="object" parent="." instance=ExtResource("10_fcgi4")]
 position = Vector2(829, 952)
+
+[connection signal="mouse_entered" from="StaticBody2D/TextureRect" to="StaticBody2D" method="_on_texture_rect_mouse_entered"]
+[connection signal="mouse_exited" from="StaticBody2D/TextureRect" to="StaticBody2D" method="_on_texture_rect_mouse_exited"]
+[connection signal="mouse_entered" from="StaticBody2D2/TextureRect" to="StaticBody2D2" method="_on_texture_rect_mouse_entered"]
+[connection signal="mouse_exited" from="StaticBody2D2/TextureRect" to="StaticBody2D2" method="_on_texture_rect_mouse_exited"]
+[connection signal="mouse_entered" from="StaticBody2D3/TextureRect" to="StaticBody2D3" method="_on_texture_rect_mouse_entered"]
+[connection signal="mouse_exited" from="StaticBody2D3/TextureRect" to="StaticBody2D" method="_on_texture_rect_mouse_exited"]
+[connection signal="mouse_entered" from="StaticBody2D4/TextureRect" to="StaticBody2D4" method="_on_texture_rect_mouse_entered"]
+[connection signal="mouse_exited" from="StaticBody2D4/TextureRect" to="StaticBody2D4" method="_on_texture_rect_mouse_exited"]
+[connection signal="mouse_entered" from="StaticBody2D5/TextureRect" to="StaticBody2D5" method="_on_texture_rect_mouse_entered"]
+[connection signal="mouse_exited" from="StaticBody2D5/TextureRect" to="StaticBody2D5" method="_on_texture_rect_mouse_exited"]
