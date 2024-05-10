@@ -6,62 +6,77 @@
 [sub_resource type="Resource" id="Resource_xr7dn"]
 script = ExtResource("2_dysge")
 amount = 0
+id = 0
 
 [sub_resource type="Resource" id="Resource_vmkgq"]
 script = ExtResource("2_dysge")
 amount = 0
+id = 0
 
 [sub_resource type="Resource" id="Resource_yljul"]
 script = ExtResource("2_dysge")
 amount = 0
+id = 0
 
 [sub_resource type="Resource" id="Resource_dkyv1"]
 script = ExtResource("2_dysge")
 amount = 0
+id = 0
 
 [sub_resource type="Resource" id="Resource_818lt"]
 script = ExtResource("2_dysge")
 amount = 0
+id = 0
 
 [sub_resource type="Resource" id="Resource_adm2b"]
 script = ExtResource("2_dysge")
 amount = 0
+id = 0
 
 [sub_resource type="Resource" id="Resource_yj8hu"]
 script = ExtResource("2_dysge")
 amount = 0
+id = 0
 
 [sub_resource type="Resource" id="Resource_8opkd"]
 script = ExtResource("2_dysge")
 amount = 0
+id = 0
 
 [sub_resource type="Resource" id="Resource_mgiqx"]
 script = ExtResource("2_dysge")
 amount = 0
+id = 0
 
 [sub_resource type="Resource" id="Resource_42k4b"]
 script = ExtResource("2_dysge")
 amount = 0
+id = 0
 
 [sub_resource type="Resource" id="Resource_djpfv"]
 script = ExtResource("2_dysge")
 amount = 0
+id = 0
 
 [sub_resource type="Resource" id="Resource_t3luq"]
 script = ExtResource("2_dysge")
 amount = 0
+id = 0
 
 [sub_resource type="Resource" id="Resource_5otb7"]
 script = ExtResource("2_dysge")
 amount = 0
+id = 0
 
 [sub_resource type="Resource" id="Resource_pfhtx"]
 script = ExtResource("2_dysge")
 amount = 0
+id = 0
 
 [sub_resource type="Resource" id="Resource_j1e1p"]
 script = ExtResource("2_dysge")
 amount = 0
+id = 0
 
 [resource]
 script = ExtResource("3_jfmv1")

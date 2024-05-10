@@ -3,14 +3,18 @@ extends Control
 
 @onready var click_sfx:AudioStreamPlayer = $ClickButtonSfx
 @onready var options_button = $MarginContainer/HBoxContainer/VBoxContainer/Options_Button as Button
+@onready var options_image: Sprite2D = $MarginContainer/HBoxContainer/VBoxContainer/Options_Button/Sprite2D
 @onready var options_menu = $Options as OptsionsMenu
 
 @onready var tutorials_button = $MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button as Button
+@onready var tutorials_image: Sprite2D = $MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button/Sprite2D2
 @onready var instructions_page = $InstructionsPage as InstructionsPage
 
 @onready var start_button = $MarginContainer/HBoxContainer/VBoxContainer/New_game_Button as Button
+@onready var start_image: Sprite2D = $MarginContainer/HBoxContainer/VBoxContainer/New_game_Button/New_game
 
 @onready var exit_button = $MarginContainer/HBoxContainer/VBoxContainer/Exit_Button as Button
+@onready var exit_image: Sprite2D = $MarginContainer/HBoxContainer/VBoxContainer/Exit_Button/Sprite2D3
 @onready var margin_container = $MarginContainer as MarginContainer
 
 @onready var confirm_popup = $ConfirmActionPopup as ConfirmActionPopup
@@ -65,3 +69,27 @@ func handle_connecting_signals() -> void:
 	confirm_popup.exit_confirm_popup.connect(on_exit_popup_pressed)
 	confirm_popup.exit_confirm_popup_with_x.connect(on_exit_popup_pressed)
 
+
+func _on_new_game_button_mouse_entered():
+	start_image.texture = load("res://Assets/Menu/Menu buttons=Uus_mang2.png")
+
+func _on_new_game_button_mouse_exited():
+	start_image.texture = load("res://Assets/Menu/Menu buttons=Uus_mang1.png")
+
+func _on_options_button_mouse_entered():
+	options_image.texture = load("res://Assets/Menu/Menu buttons=Seaded2.png")
+
+func _on_options_button_mouse_exited():
+	options_image.texture = load("res://Assets/Menu/Menu buttons=Seaded1.png")
+
+func _on_tutorials_button_mouse_entered():
+	tutorials_image.texture = load("res://Assets/Menu/Menu buttons=Juhised2.png")
+
+func _on_tutorials_button_mouse_exited():
+	tutorials_image.texture = load("res://Assets/Menu/Menu buttons=Juhised1.png")
+
+func _on_exit_button_mouse_entered():
+	exit_image.texture = load("res://Assets/Menu/Menu buttons=Valju2.png")
+
+func _on_exit_button_mouse_exited():
+	exit_image.texture = load("res://Assets/Menu/Menu buttons=Valju1.png")
