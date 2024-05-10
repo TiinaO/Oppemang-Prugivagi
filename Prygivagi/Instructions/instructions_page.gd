@@ -1,7 +1,6 @@
 class_name InstructionsPage
 extends Control
 
-@onready var back_button = $MarginContainer/VBoxContainer/Back as Button
 @onready var click_sfx:AudioStreamPlayer = $ClickButtonSfx as AudioStreamPlayer
 @onready var x_button: Button = $TextureRect/Button
 
