@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbuu0v1myh8l0"
-path="res://.godot/imported/Põrand 1-2.png-683edbf14cd2c5884d3bd98aecae6781.ctex"
+uid="uid://bhxfobe2bgfx8"
+path="res://.godot/imported/tilemap_lvl2_v1.png-43f3d7949f72b45a09b263334ac60f60.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Põrand 1-2.png"
-dest_files=["res://.godot/imported/Põrand 1-2.png-683edbf14cd2c5884d3bd98aecae6781.ctex"]
+source_file="res://Assets/tilemap_lvl2_v1.png"
+dest_files=["res://.godot/imported/tilemap_lvl2_v1.png-43f3d7949f72b45a09b263334ac60f60.ctex"]
 
 [params]
 
