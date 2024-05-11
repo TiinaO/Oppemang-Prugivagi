@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3xlrtgdvmx60"
-path="res://.godot/imported/Pesukaru-astub3.png-8531eb78d6c798bcd29ec0f20f6dc618.ctex"
+uid="uid://btcsiggesio0t"
+path="res://.godot/imported/Music.png-e4f82eb9f4b78293e119ae99d82baea0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pic/Pesukaru-astub3.png"
-dest_files=["res://.godot/imported/Pesukaru-astub3.png-8531eb78d6c798bcd29ec0f20f6dc618.ctex"]
+source_file="res://Assets/Menu/Options/Music.png"
+dest_files=["res://.godot/imported/Music.png-e4f82eb9f4b78293e119ae99d82baea0.ctex"]
 
 [params]
 

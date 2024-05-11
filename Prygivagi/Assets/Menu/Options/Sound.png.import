@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvlxhjtk2wpa6"
-path="res://.godot/imported/Pesukaru-idle3.png-e0e3399ac07076f75c3e4795784ea5b5.ctex"
+uid="uid://pg4gjht1bus5"
+path="res://.godot/imported/Sound.png-80cebf39e7dbf6d3d98e7359fbb6e507.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pic/Pesukaru-idle3.png"
-dest_files=["res://.godot/imported/Pesukaru-idle3.png-e0e3399ac07076f75c3e4795784ea5b5.ctex"]
+source_file="res://Assets/Menu/Options/Sound.png"
+dest_files=["res://.godot/imported/Sound.png-80cebf39e7dbf6d3d98e7359fbb6e507.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ce5qjta64k4wp"
-path="res://.godot/imported/Pesukaru-astub1.png-8c2df7b7ccf9680e614cf7b68edc1289.ctex"
+uid="uid://b3yesn35386o4"
+path="res://.godot/imported/Toggle-1.png-fe6b2ff6c9b58adaa152020e9ae17b8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pic/Pesukaru-astub1.png"
-dest_files=["res://.godot/imported/Pesukaru-astub1.png-8c2df7b7ccf9680e614cf7b68edc1289.ctex"]
+source_file="res://Assets/Menu/Options/Toggle-1.png"
+dest_files=["res://.godot/imported/Toggle-1.png-fe6b2ff6c9b58adaa152020e9ae17b8c.ctex"]
 
 [params]
 
