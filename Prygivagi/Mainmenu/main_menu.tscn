@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://m4tsue86clpx"]
+[gd_scene load_steps=14 format=3 uid="uid://m4tsue86clpx"]
 
 [ext_resource type="Script" path="res://Mainmenu/main_menu.gd" id="1_miivc"]
 [ext_resource type="Texture2D" uid="uid://dw83uahxvgqvd" path="res://Assets/Background/Main_menu_background.png" id="1_ptcvs"]
 [ext_resource type="Texture2D" uid="uid://txm3025et7sp" path="res://Assets/Background/Raccoon_in_the_forest.png" id="3_lx1ya"]
+[ext_resource type="Texture2D" uid="uid://ca6bh8g5bk1kr" path="res://Assets/Menu/Test2.png" id="4_qs4ys"]
 [ext_resource type="Texture2D" uid="uid://5diyid0nhqi0" path="res://Assets/Menu/Menu buttons=Uus_mang1.png" id="4_v427y"]
 [ext_resource type="Texture2D" uid="uid://cr6jcej67nmvu" path="res://Assets/Menu/Menu buttons=Seaded1.png" id="5_tj7av"]
 [ext_resource type="Texture2D" uid="uid://8lmf0vp6w7vi" path="res://Assets/Menu/Menu buttons=Juhised1.png" id="6_12uwg"]
@@ -65,6 +66,7 @@ theme_override_constants/separation = 60
 layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 12
@@ -73,6 +75,11 @@ theme_override_font_sizes/font_size = 64
 text = "Prügivägi"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer"]
+position = Vector2(948, 119)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_qs4ys")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
 layout_mode = 2
