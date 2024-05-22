@@ -1,23 +1,21 @@
-[gd_scene load_steps=12 format=3 uid="uid://cr5hyyge47l3w"]
+[gd_scene load_steps=14 format=3 uid="uid://cr5hyyge47l3w"]
 
 [ext_resource type="Script" path="res://Pausemenu/pausemenu.gd" id="1_4pj2e"]
 [ext_resource type="Texture2D" uid="uid://dw83uahxvgqvd" path="res://Assets/Background/Main_menu_background.png" id="2_1axdu"]
+[ext_resource type="Texture2D" uid="uid://ioylxm7g3l31" path="res://Assets/Logo/Test4.1.png" id="3_kxvw8"]
 [ext_resource type="Texture2D" uid="uid://bhwilfds0dgdj" path="res://Assets/Menu/Menu buttons=Peamenuu1.png" id="3_l8qde"]
 [ext_resource type="Texture2D" uid="uid://cn24l7aqmnpj" path="res://Assets/Menu/Menu buttons=Jatka1.png" id="3_yqa5c"]
 [ext_resource type="Texture2D" uid="uid://cr6jcej67nmvu" path="res://Assets/Menu/Menu buttons=Seaded1.png" id="4_i1mhu"]
-[ext_resource type="Texture2D" uid="uid://8lmf0vp6w7vi" path="res://Assets/Menu/Menu buttons=Juhised1.png" id="5_0rgsd"]
+[ext_resource type="Texture2D" uid="uid://coqybpc6nh6db" path="res://Assets/Menu/Menu buttons=Mangujuhend1.png" id="5_vs6xx"]
+[ext_resource type="Texture2D" uid="uid://cw72fkcgkueb8" path="res://Assets/Menu/Menu buttons=Sorteerimine1.png" id="6_ckf0c"]
 [ext_resource type="AudioStream" uid="uid://covwwql5uubv3" path="res://Audio/click_mouse_button.wav" id="7_7aiiu"]
 [ext_resource type="PackedScene" uid="uid://dlh5o1brjrpdv" path="res://Options/options.tscn" id="7_er2sg"]
 [ext_resource type="PackedScene" uid="uid://dgh05vmajtinm" path="res://Instructions/instructions_page.tscn" id="8_5w3u7"]
 [ext_resource type="PackedScene" uid="uid://bdbtew7c0vbb4" path="res://ConfirmActionPopup/confirm_action_popup.tscn" id="10_oswgc"]
-
-[sub_resource type="SystemFont" id="SystemFont_klkt6"]
-font_names = PackedStringArray("Impact")
-subpixel_positioning = 0
+[ext_resource type="PackedScene" uid="uid://85ee8kv6g4gw" path="res://SortingInstructions/sorting_instructions_beginning.tscn" id="13_btkpe"]
 
 [node name="Pause_menu" type="Control"]
 process_mode = 3
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -54,15 +52,10 @@ theme_override_constants/separation = 60
 [node name="Separator" type="Control" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 12
-theme_override_fonts/font = SubResource("SystemFont_klkt6")
-theme_override_font_sizes/font_size = 64
-text = "Prügivägi"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer"]
+position = Vector2(960, 150)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_kxvw8")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
 layout_mode = 2
@@ -73,16 +66,8 @@ layout_mode = 2
 theme_override_constants/separation = 24
 alignment = 1
 
-[node name="Separator2" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Separator8" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Separator9" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-
 [node name="Separator3" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 
 [node name="Continue_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
@@ -116,7 +101,19 @@ layout_mode = 2
 
 [node name="Sprite2D2" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button"]
 position = Vector2(247, 52)
-texture = ExtResource("5_0rgsd")
+texture = ExtResource("5_vs6xx")
+
+[node name="Separator7" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Sorting_Instructions_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(496, 104)
+layout_mode = 2
+
+[node name="Sprite2D2" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Sorting_Instructions_Button"]
+position = Vector2(247, 52)
+texture = ExtResource("6_ckf0c")
 
 [node name="Separator6" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -145,6 +142,10 @@ layout_mode = 1
 visible = false
 layout_mode = 1
 
+[node name="SortingInstructionsBeginning" parent="." instance=ExtResource("13_btkpe")]
+visible = false
+layout_mode = 1
+
 [connection signal="mouse_entered" from="MarginContainer/HBoxContainer/VBoxContainer/Continue_Button" to="." method="_on_continue_button_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/HBoxContainer/VBoxContainer/Continue_Button" to="." method="_on_continue_button_mouse_exited"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Continue_Button" to="." method="_on_continue_button_pressed"]
@@ -154,6 +155,8 @@ layout_mode = 1
 [connection signal="mouse_entered" from="MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button" to="." method="_on_tutorials_button_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button" to="." method="_on_tutorials_button_mouse_exited"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button" to="." method="_on_tutorials_button_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/HBoxContainer/VBoxContainer/Sorting_Instructions_Button" to="." method="_on_sorting_instructions_button_mouse_entered"]
+[connection signal="mouse_exited" from="MarginContainer/HBoxContainer/VBoxContainer/Sorting_Instructions_Button" to="." method="_on_sorting_instructions_button_mouse_exited"]
 [connection signal="mouse_entered" from="MarginContainer/HBoxContainer/VBoxContainer/Back_To_Main_Menu_Button" to="." method="_on_back_to_main_menu_button_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/HBoxContainer/VBoxContainer/Back_To_Main_Menu_Button" to="." method="_on_back_to_main_menu_button_mouse_exited"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Back_To_Main_Menu_Button" to="." method="_on_continue_button_pressed"]

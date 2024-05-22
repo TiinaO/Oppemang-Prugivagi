@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://3jrq10gvc3xm"]
+
+[ext_resource type="Texture2D" uid="uid://cfwrnoogn11av" path="res://Assets/Menu/Sorting/Bio_sorting.png" id="1_fdwwb"]
+[ext_resource type="Texture2D" uid="uid://53oci6kuo0bo" path="res://Assets/Menu/UI buttons=Vasakule.png" id="2_kd5h6"]
+[ext_resource type="Texture2D" uid="uid://d0m17crecikgy" path="res://Assets/Menu/UI buttons=Paremale.png" id="3_bo03l"]
+[ext_resource type="Texture2D" uid="uid://c6t8r0j1qq6y8" path="res://Assets/Menu/JÄTA VAHELE.png" id="4_0n3ts"]
+
+[node name="SortingBio" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_fdwwb")
+offset = Vector2(960, 540)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Separator2" type="Control" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Back_Button" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("2_kd5h6")
+
+[node name="Separator" type="Control" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Next_Button" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("3_bo03l")
+
+[node name="Exit_Button" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+icon = ExtResource("4_0n3ts")
