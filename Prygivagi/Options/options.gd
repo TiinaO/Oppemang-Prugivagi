@@ -1,7 +1,7 @@
 class_name OptsionsMenu
 extends Control
 
-@onready var back_button = $MarginContainer/HBoxContainer/VBoxContainer/Back as Button
+@onready var back_button = $MarginContainer/VBoxContainer/HBoxContainer/x_button as Button
 @onready var click_sfx:AudioStreamPlayer = $ClickButtonSfx as AudioStreamPlayer
 
 signal exit_options_menu

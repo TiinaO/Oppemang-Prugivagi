@@ -1,13 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://dlh5o1brjrpdv"]
+[gd_scene load_steps=9 format=3 uid="uid://dlh5o1brjrpdv"]
 
 [ext_resource type="Script" path="res://Options/options.gd" id="1_dmqds"]
-[ext_resource type="Texture2D" uid="uid://dw83uahxvgqvd" path="res://Assets/Background/Main_menu_background.png" id="1_nqc4o"]
+[ext_resource type="Texture2D" uid="uid://duj8lfx5uxl3c" path="res://Assets/Menu/Tekstikast.png" id="2_uku2o"]
 [ext_resource type="AudioStream" uid="uid://covwwql5uubv3" path="res://Audio/click_mouse_button.wav" id="3_kjn1u"]
-[ext_resource type="Texture2D" uid="uid://crwcj4oivso8i" path="res://Assets/Menu/Menu buttons=Valju1.png" id="3_yerbi"]
-
-[sub_resource type="SystemFont" id="SystemFont_v2qxh"]
-font_names = PackedStringArray("Impact")
-subpixel_positioning = 0
+[ext_resource type="Texture2D" uid="uid://biblbs4vdyniv" path="res://Assets/Menu/UI buttons=Sulge.png" id="3_xni6h"]
+[ext_resource type="FontFile" uid="uid://d347pn0mkw81k" path="res://Assets/Andika-Bold.ttf" id="4_3yup0"]
+[ext_resource type="Texture2D" path="res://Assets/Menu/Options/Music.png" id="5_swosv"]
+[ext_resource type="Texture2D" path="res://Assets/Menu/Options/Toggle.png" id="6_ymwek"]
+[ext_resource type="Texture2D" path="res://Assets/Menu/Options/Sound.png" id="7_xgbf3"]
 
 [node name="Options" type="Control"]
 layout_mode = 3
@@ -20,70 +20,122 @@ script = ExtResource("1_dmqds")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = -228.0
+offset_right = 375.0
+offset_bottom = 228.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_nqc4o")
+texture = ExtResource("2_uku2o")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 1.0
-offset_top = -1.0
-offset_right = 1.0
-offset_bottom = -1.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = -228.0
+offset_right = 375.0
+offset_bottom = 228.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 12
-theme_override_constants/margin_top = 12
-theme_override_constants/margin_right = 12
-theme_override_constants/margin_bottom = 12
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 10
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-theme_override_constants/separation = 60
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="x_button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_vertical = 0
+icon = ExtResource("3_xni6h")
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer/x_button"]
+position = Vector2(22, 22)
+texture = ExtResource("3_xni6h")
 
 [node name="Separator" type="Control" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 12
-theme_override_fonts/font = SubResource("SystemFont_v2qxh")
-theme_override_font_sizes/font_size = 64
-text = "Seaded"
+theme_override_fonts/font = ExtResource("4_3yup0")
+theme_override_font_sizes/font_size = 50
+text = "SEADED"
 horizontal_alignment = 1
-vertical_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+[node name="Separator2" type="Control" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 72)
 layout_mode = 2
 alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+[node name="Separator5" type="Control" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(80, 10)
 layout_mode = 2
-theme_override_constants/separation = 24
-alignment = 1
 
-[node name="Back" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+position = Vector2(240, 40)
+texture = ExtResource("5_swosv")
+
+[node name="Music_on_off" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
 self_modulate = Color(1, 1, 1, 0)
-custom_minimum_size = Vector2(496, 104)
 layout_mode = 2
-size_flags_vertical = 10
-text = "TAGASI"
+icon = ExtResource("6_ymwek")
 
-[node name="New_game" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Back"]
-position = Vector2(248, 51)
-texture = ExtResource("3_yerbi")
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/Music_on_off"]
+position = Vector2(3, 4)
+texture = ExtResource("6_ymwek")
+centered = false
 
-[node name="Separator3" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="Separator3" type="Control" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
 layout_mode = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+alignment = 1
+
+[node name="Separator4" type="Control" parent="MarginContainer/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(80, 10)
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer3"]
+position = Vector2(180, 42)
+texture = ExtResource("7_xgbf3")
+offset = Vector2(60, 0)
+
+[node name="Sound_on_off" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer3"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+icon = ExtResource("6_ymwek")
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer3/Sound_on_off"]
+position = Vector2(4, 4)
+texture = ExtResource("6_ymwek")
+centered = false
 
 [node name="ClickButtonSfx" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_kjn1u")
-
-[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]

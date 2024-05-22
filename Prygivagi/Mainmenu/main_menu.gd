@@ -83,10 +83,10 @@ func _on_options_button_mouse_exited():
 	options_image.texture = load("res://Assets/Menu/Menu buttons=Seaded1.png")
 
 func _on_tutorials_button_mouse_entered():
-	tutorials_image.texture = load("res://Assets/Menu/Menu buttons=Juhised2.png")
+	tutorials_image.texture = load("res://Assets/Menu/Menu buttons=Mangujuhend2.png")
 
 func _on_tutorials_button_mouse_exited():
-	tutorials_image.texture = load("res://Assets/Menu/Menu buttons=Juhised1.png")
+	tutorials_image.texture = load("res://Assets/Menu/Menu buttons=Mangujuhend1.png")
 
 func _on_exit_button_mouse_entered():
 	exit_image.texture = load("res://Assets/Menu/Menu buttons=Valju2.png")
