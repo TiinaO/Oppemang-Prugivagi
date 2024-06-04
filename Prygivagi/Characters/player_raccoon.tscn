@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://b7d6qvrurtr3v" path="res://Characters/Pesukaru TOP parem sammPesukaru-astub.png" id="9_b0fo5"]
 [ext_resource type="Texture2D" uid="uid://bp065pp10qgqi" path="res://Characters/Pesukaru TOP vasak sammPesukaru-astub.png" id="10_mw2y0"]
 [ext_resource type="Texture2D" uid="uid://bsy8kwhgudvpi" path="res://Characters/Pesukaru TOPPesukaru-astub.png" id="11_vlfrx"]
-[ext_resource type="AudioStream" uid="uid://bbvly1mm5t0wg" path="res://Audio/Movement/puidustPõrand_1.wav" id="13_ytygl"]
+[ext_resource type="AudioStream" uid="uid://76qrhc6cirm8" path="res://Audio/Movement/indoor-footsteps-6385.mp3" id="13_3xc4d"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lwj4b"]
 animations = [{
@@ -81,4 +81,4 @@ scale = Vector2(0.5, 0.5)
 shape = SubResource("CircleShape2D_b33wy")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("13_ytygl")
+stream = ExtResource("13_3xc4d")

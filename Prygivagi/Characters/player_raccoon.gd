@@ -17,12 +17,17 @@ func _physics_process(_delta):
 		input_direction = input_direction.normalized()
 		self.velocity = input_direction * move_speed
 		$AnimatedSprite2D.play("move")
-		# movementSound.play()
+		if not movementSound.playing:
+			movementSound.play()
+		# Muuda heli kiirust sõltuvalt liikumise kiirusest
+		movementSound.pitch_scale = 1.0 + (self.velocity.length() / move_speed) * 0.5
 		var target_direction = Vector2(-input_direction.y, input_direction.x) #Pööra -90 kraadi
 		look_at(global_position + target_direction)
 	else:
 		self.velocity = Vector2.ZERO
 		$AnimatedSprite2D.play("idle")
+		if movementSound.playing:
+			movementSound.stop()
 
 	move_and_slide()
 	
