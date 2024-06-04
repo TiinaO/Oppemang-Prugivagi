@@ -14,7 +14,9 @@ func _ready():
 	set_process(false)
 
 func on_back_pressed() -> void:
-	pass
+	click_button_sfx.play()
+	back_to_glass_page.emit()
+	set_process(false)
 
 func reload_pause_menu():
 	get_tree().change_scene_to_file("res://Pausemenu/pausemenu.tscn")
