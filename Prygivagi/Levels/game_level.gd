@@ -29,6 +29,3 @@ func _on_inventory_gui_opened():
 func update_slot_counter(slots):
 	slotsUsedInInv += slots
 	itemsInInv.text = str(slotsUsedInInv)
-
-
-

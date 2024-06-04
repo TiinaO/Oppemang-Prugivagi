@@ -11,6 +11,10 @@ extends Control
 @onready var tutorials_button = $MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button as Button
 @onready var tutorials_image: Sprite2D = $MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button/Sprite2D2
 
+@onready var sorting_instructions_page = $SortingInstructionsBeginning as SortingBeginning
+@onready var sorting_instructions_button = $MarginContainer/HBoxContainer/VBoxContainer/Sorting_Instructions_Button as Button
+@onready var sorting_instructions_image: Sprite2D = $MarginContainer/HBoxContainer/VBoxContainer/Sorting_Instructions_Button/Sprite2D2
+
 @onready var back_to_main_menu_button = $MarginContainer/HBoxContainer/VBoxContainer/Back_To_Main_Menu_Button as Button
 @onready var back_to_main_menu_image: Sprite2D = $MarginContainer/HBoxContainer/VBoxContainer/Back_To_Main_Menu_Button/Back_To_Main_Menu
 @onready var continue_button = $MarginContainer/HBoxContainer/VBoxContainer/Continue_Button as Button
@@ -60,6 +64,13 @@ func on_tutorials_pressed() -> void:
 	instructions_page.set_process(true)
 	instructions_page.visible = true
 
+func on_sorting_instructions_button_pressed() -> void:
+	clicking_sound.play()
+	await get_tree().create_timer(0.3).timeout
+	sorting_instructions_page.set_process(true)
+	sorting_instructions_page.visible = true
+	
+
 func on_exit_options_pressed() -> void:
 	margin_container.visible = true
 	options_menu.set_process(false)
@@ -69,6 +80,11 @@ func on_exit_instructions_pressed() -> void:
 	margin_container.visible = true
 	instructions_page.set_process(false)
 	instructions_page.visible = false
+	
+func on_exit_bio_sorting_pressed() -> void:
+	margin_container.visible = true
+	$SortingBio.visible = false
+	$SortingBio.set_process(false)
 
 func handle_connecting_signals() -> void:
 	continue_button.button_down.connect(on_continue_button_pressed)
@@ -77,6 +93,9 @@ func handle_connecting_signals() -> void:
 	options_menu.exit_options_menu.connect(on_exit_options_pressed)
 	instructions_page.exit_instructions_page.connect(on_exit_instructions_pressed)
 	back_to_main_menu_button.button_down.connect(on_back_to_main_menu_pressed)
+	sorting_instructions_button.button_down.connect(on_sorting_instructions_button_pressed)
+	#Sorteerimise lehed suletakse
+	$SortingBio.exit_bio_sorting_page.connect(on_exit_bio_sorting_pressed)
 
 
 func _on_continue_button_mouse_entered():
@@ -96,11 +115,11 @@ func _on_options_button_mouse_exited():
 
 
 func _on_tutorials_button_mouse_entered():
-	tutorials_image.texture = load("res://Assets/Menu/Menu buttons=Juhised2.png")
+	tutorials_image.texture = load("res://Assets/Menu/Menu buttons=Mangujuhend2.png")
 
 
 func _on_tutorials_button_mouse_exited():
-	tutorials_image.texture = load("res://Assets/Menu/Menu buttons=Juhised1.png")
+	tutorials_image.texture = load("res://Assets/Menu/Menu buttons=Mangujuhend1.png")
 
 
 func _on_back_to_main_menu_button_mouse_entered():
@@ -109,3 +128,11 @@ func _on_back_to_main_menu_button_mouse_entered():
 
 func _on_back_to_main_menu_button_mouse_exited():
 	back_to_main_menu_image.texture = load("res://Assets/Menu/Menu buttons=Peamenuu1.png")
+
+
+func _on_sorting_instructions_button_mouse_entered():
+	sorting_instructions_image.texture = load("res://Assets/Menu/Menu buttons=Sorteerimine2.png")
+
+
+func _on_sorting_instructions_button_mouse_exited():
+	sorting_instructions_image.texture = load("res://Assets/Menu/Menu buttons=Sorteerimine1.png")
