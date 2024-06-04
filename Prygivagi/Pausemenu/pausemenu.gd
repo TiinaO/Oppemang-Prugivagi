@@ -67,7 +67,6 @@ func on_tutorials_pressed() -> void:
 func on_sorting_instructions_button_pressed() -> void:
 	clicking_sound.play()
 	await get_tree().create_timer(0.3).timeout
-	margin_container.visible = false
 	sorting_instructions_page.set_process(true)
 	sorting_instructions_page.visible = true
 	
@@ -81,6 +80,11 @@ func on_exit_instructions_pressed() -> void:
 	margin_container.visible = true
 	instructions_page.set_process(false)
 	instructions_page.visible = false
+	
+func on_exit_bio_sorting_pressed() -> void:
+	margin_container.visible = true
+	$SortingBio.visible = false
+	$SortingBio.set_process(false)
 
 func handle_connecting_signals() -> void:
 	continue_button.button_down.connect(on_continue_button_pressed)
@@ -90,6 +94,8 @@ func handle_connecting_signals() -> void:
 	instructions_page.exit_instructions_page.connect(on_exit_instructions_pressed)
 	back_to_main_menu_button.button_down.connect(on_back_to_main_menu_pressed)
 	sorting_instructions_button.button_down.connect(on_sorting_instructions_button_pressed)
+	#Sorteerimise lehed suletakse
+	$SortingBio.exit_bio_sorting_page.connect(on_exit_bio_sorting_pressed)
 
 
 func _on_continue_button_mouse_entered():

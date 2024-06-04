@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cr5hyyge47l3w"]
+[gd_scene load_steps=15 format=3 uid="uid://cr5hyyge47l3w"]
 
 [ext_resource type="Script" path="res://Pausemenu/pausemenu.gd" id="1_4pj2e"]
 [ext_resource type="Texture2D" uid="uid://dw83uahxvgqvd" path="res://Assets/Background/Main_menu_background.png" id="2_1axdu"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://dgh05vmajtinm" path="res://Instructions/instructions_page.tscn" id="8_5w3u7"]
 [ext_resource type="PackedScene" uid="uid://bdbtew7c0vbb4" path="res://ConfirmActionPopup/confirm_action_popup.tscn" id="10_oswgc"]
 [ext_resource type="PackedScene" uid="uid://85ee8kv6g4gw" path="res://SortingInstructions/sorting_instructions_beginning.tscn" id="13_btkpe"]
+[ext_resource type="PackedScene" uid="uid://3jrq10gvc3xm" path="res://SortingInstructions/Bio/sorting_bio.tscn" id="14_mtnw2"]
 
 [node name="Pause_menu" type="Control"]
 process_mode = 3
@@ -143,6 +144,10 @@ visible = false
 layout_mode = 1
 
 [node name="SortingInstructionsBeginning" parent="." instance=ExtResource("13_btkpe")]
+visible = false
+layout_mode = 1
+
+[node name="SortingBio" parent="." instance=ExtResource("14_mtnw2")]
 visible = false
 layout_mode = 1
 
