@@ -32,6 +32,9 @@ Inspiratsioonitahvel asub [siin](https://www.figma.com/file/jnsVthyNQYT1DgylOYtE
 ## Stiiliraamat
 Stiiliraamat asub [siin](Stiiliraamat.md).
 
+## Plakat
+Plakati failid asuvad [siin](https://github.com/TLUHK-RIF22/Oppemang-Prugivagi/tree/main/assets/plakat).
+
 ## Roadmap
 Roadmap on leitav [siit](https://github.com/orgs/TLUHK-RIF22/projects/1/views/4). Täpsema vaate jaoks lülitada sisse markerite alt milestone valik. 
 
