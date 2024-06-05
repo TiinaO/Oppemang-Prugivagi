@@ -3,15 +3,21 @@ extends Node2D
 @onready var invCounter: Sprite2D = $CanvasLayer/InventoryInfo
 @onready var itemsInInv : Label = $CanvasLayer/InventoryInfo/ItemsInInventory
 var slotsUsedInInv: int = 0
-var score = 0 # Skoori hoidja
+#var score = 0 # Skoori hoidja
+
+@export var music_path : String = "res://Audio/taust2.mp3"
 
 func _ready():
 	update_slot_counter(0)
-	update_score(0) # Algse skoori seadistamine
+	update_score(str(Global.skoor)) # Algse skoori seadistamine
+	var audio_player = AudioStreamPlayer.new()
+	audio_player.stream = load(music_path)
+	add_child(audio_player)
+	audio_player.play()
 
 func add_score(points):
-	score += points
-	update_score(score)
+	Global.skoor += points
+	update_score(Global.skoor)
 
 func update_score(new_score):
 	var score_label = $UserInterface/GameUI/Score
