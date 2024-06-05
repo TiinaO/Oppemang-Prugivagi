@@ -1,0 +1,175 @@
+[gd_scene load_steps=19 format=3 uid="uid://cll15k4xdrpl1"]
+
+[ext_resource type="Texture2D" uid="uid://clj6b3d5pmuhq" path="res://Assets/Maapind.png" id="1_6echn"]
+[ext_resource type="Script" path="res://Levels/Trash_Sorting/sorting_level.gd" id="1_rfct4"]
+[ext_resource type="Texture2D" uid="uid://cmdcy8qw01fil" path="res://Assets/Sein.png" id="2_4w4x1"]
+[ext_resource type="PackedScene" uid="uid://yap0js4uh1tv" path="res://Levels/Trash_Sorting/konteiner.tscn" id="3_royj2"]
+[ext_resource type="Texture2D" uid="uid://cai7x6aj0wokn" path="res://Assets/Konteinerid/Konteiner OLMEJÄÄTMED.png" id="4_o6sn5"]
+[ext_resource type="Texture2D" uid="uid://bbhjmqwa37y0i" path="res://Assets/Konteiner KLAAS.png" id="5_kfpim"]
+[ext_resource type="Texture2D" uid="uid://hfbp73ypwybx" path="res://Assets/Konteiner PAPP JA PABER.png" id="6_hic17"]
+[ext_resource type="Texture2D" uid="uid://i5yyb1ntl244" path="res://Assets/Konteiner METALL JA PLASTIK.png" id="7_6lbq8"]
+[ext_resource type="Texture2D" uid="uid://d2iwyhscrkhvl" path="res://Assets/Konteiner BIOJÄÄTMED.png" id="8_qbb4j"]
+[ext_resource type="Texture2D" uid="uid://n0dfa4kcm4yt" path="res://Assets/UI buttons=Inventory pohi.png" id="9_4djd0"]
+[ext_resource type="PackedScene" uid="uid://db41wg3vpuv3j" path="res://Levels/Prügi/trash_object.tscn" id="10_fcgi4"]
+[ext_resource type="PackedScene" uid="uid://cn60hfcl1syxl" path="res://Levels/Prügi/arbuus.tscn" id="11_jumq2"]
+[ext_resource type="PackedScene" uid="uid://d28j25dgsu6p6" path="res://Levels/Prügi/banaan.tscn" id="13_nng2s"]
+[ext_resource type="Texture2D" uid="uid://flm36t6e61a2" path="res://Assets/Bin_/Bin_/Forward_112x112px.png" id="13_qlc1x"]
+[ext_resource type="Script" path="res://Sprite2D.gd" id="14_ddv0m"]
+[ext_resource type="Texture2D" uid="uid://drl7dteat4ox7" path="res://Assets/GUI/Punktid.png" id="16_g08of"]
+[ext_resource type="FontFile" uid="uid://d347pn0mkw81k" path="res://Assets/Andika-Bold.ttf" id="17_1g8td"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2nv8b"]
+size = Vector2(208, 311)
+
+[node name="sorting_level" type="Node2D"]
+script = ExtResource("1_rfct4")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = 645.0
+offset_right = 1920.0
+offset_bottom = 1089.0
+texture = ExtResource("1_6echn")
+metadata/_edit_lock_ = true
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+offset_left = 551.0
+offset_top = 876.0
+offset_right = 1381.0
+offset_bottom = 1036.0
+texture = ExtResource("9_4djd0")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = -1.0
+offset_top = -72.0
+offset_right = 1919.0
+offset_bottom = 692.0
+texture = ExtResource("2_4w4x1")
+metadata/_edit_lock_ = true
+
+[node name="olme" parent="." groups=["olmejaatmed"] instance=ExtResource("3_royj2")]
+position = Vector2(218, 521)
+
+[node name="TextureRect" type="TextureRect" parent="olme"]
+offset_left = -58.0
+offset_top = -98.0
+offset_right = 206.0
+offset_bottom = 222.0
+grow_vertical = 0
+texture = ExtResource("4_o6sn5")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="olme"]
+position = Vector2(78.5, 58.5)
+shape = SubResource("RectangleShape2D_2nv8b")
+
+[node name="klaas" parent="." groups=["klaaspakend"] instance=ExtResource("3_royj2")]
+position = Vector2(554, 519)
+
+[node name="TextureRect" type="TextureRect" parent="klaas"]
+offset_left = -53.0
+offset_top = -76.0
+offset_right = 211.0
+offset_bottom = 244.0
+texture = ExtResource("5_kfpim")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="klaas"]
+position = Vector2(74.5, 58.5)
+shape = SubResource("RectangleShape2D_2nv8b")
+
+[node name="papp" parent="." instance=ExtResource("3_royj2")]
+position = Vector2(864, 518)
+
+[node name="TextureRect" type="TextureRect" parent="papp"]
+offset_left = -55.0
+offset_top = -97.0
+offset_right = 209.0
+offset_bottom = 223.0
+grow_vertical = 0
+texture = ExtResource("6_hic17")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="papp"]
+position = Vector2(79, 58.5)
+shape = SubResource("RectangleShape2D_2nv8b")
+
+[node name="metall" parent="." instance=ExtResource("3_royj2")]
+position = Vector2(1203, 518)
+
+[node name="TextureRect" type="TextureRect" parent="metall"]
+offset_left = -55.0
+offset_top = -97.0
+offset_right = 209.0
+offset_bottom = 223.0
+grow_vertical = 0
+texture = ExtResource("7_6lbq8")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="metall"]
+position = Vector2(78.5, 58.5)
+shape = SubResource("RectangleShape2D_2nv8b")
+
+[node name="bio" parent="." instance=ExtResource("3_royj2")]
+position = Vector2(1567, 518)
+
+[node name="TextureRect" type="TextureRect" parent="bio"]
+offset_left = -55.0
+offset_top = -97.0
+offset_right = 209.0
+offset_bottom = 223.0
+grow_vertical = 0
+texture = ExtResource("8_qbb4j")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="bio"]
+position = Vector2(78.5, 58.5)
+shape = SubResource("RectangleShape2D_2nv8b")
+
+[node name="paber" parent="." instance=ExtResource("10_fcgi4")]
+position = Vector2(663, 956)
+
+[node name="arbuus" parent="." instance=ExtResource("11_jumq2")]
+position = Vector2(819, 958)
+
+[node name="banaan" parent="." instance=ExtResource("13_nng2s")]
+position = Vector2(981, 960)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visibility_layer = 2
+z_index = 2
+position = Vector2(1787, 968)
+scale = Vector2(1.11756, 1.11756)
+texture = ExtResource("13_qlc1x")
+script = ExtResource("14_ddv0m")
+
+[node name="Punktid" type="Sprite2D" parent="."]
+position = Vector2(157, 83)
+texture = ExtResource("16_g08of")
+metadata/_edit_group_ = true
+
+[node name="Score" type="Label" parent="."]
+offset_left = 141.0
+offset_top = 33.0
+offset_right = 287.0
+offset_bottom = 131.0
+theme_override_fonts/font = ExtResource("17_1g8td")
+theme_override_font_sizes/font_size = 60
+text = "0"
+metadata/_edit_group_ = true
+metadata/_edit_use_anchors_ = true
+
+[connection signal="mouse_entered" from="olme/TextureRect" to="olme" method="_on_texture_rect_mouse_entered"]
+[connection signal="mouse_exited" from="olme/TextureRect" to="olme" method="_on_texture_rect_mouse_exited"]
+[connection signal="mouse_entered" from="klaas/TextureRect" to="klaas" method="_on_klaas_mouse_entered"]
+[connection signal="mouse_exited" from="klaas/TextureRect" to="klaas" method="_on_klaas_mouse_exited"]
+[connection signal="mouse_entered" from="papp/TextureRect" to="papp" method="_on_pappjapaber_mouse_entered"]
+[connection signal="mouse_exited" from="papp/TextureRect" to="olme" method="_on_pappjapaber_mouse_exited"]
+[connection signal="mouse_entered" from="metall/TextureRect" to="metall" method="_on_sega_mouse_entered"]
+[connection signal="mouse_exited" from="metall/TextureRect" to="metall" method="_on_sega_mouse_exited"]
+[connection signal="mouse_entered" from="bio/TextureRect" to="bio" method="_on_bio_mouse_entered"]
+[connection signal="mouse_exited" from="bio/TextureRect" to="bio" method="_on_bio_mouse_exited"]

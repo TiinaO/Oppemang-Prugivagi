@@ -7,3 +7,4 @@
 script = ExtResource("1_uj7f5")
 name = "conserveCan"
 texture = ExtResource("2_ptcfj")
+type = ""

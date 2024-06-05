@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cqyudbuid3bcc"]
+[gd_scene load_steps=12 format=3 uid="uid://5oig2ox2j1ei"]
 
 [ext_resource type="Script" path="res://ConfirmActionPopup/confirm_action_popup.gd" id="1_0mgu8"]
 [ext_resource type="Shader" path="res://ConfirmActionPopup/confirm_action_popup.gdshader" id="2_3atmh"]

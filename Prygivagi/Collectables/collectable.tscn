@@ -11,7 +11,7 @@ radius = 64.0078
 resource_local_to_scene = true
 radius = 42.0
 
-[node name="Collectable" type="Area2D"]
+[node name="Collectable2" type="Area2D"]
 script = ExtResource("1_1yxjy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

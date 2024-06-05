@@ -1,0 +1,133 @@
+[gd_scene load_steps=12 format=3 uid="uid://cll15k4xdrpl1"]
+
+[ext_resource type="Texture2D" uid="uid://clj6b3d5pmuhq" path="res://Assets/Maapind.png" id="1_6echn"]
+[ext_resource type="Texture2D" uid="uid://cmdcy8qw01fil" path="res://Assets/Sein.png" id="2_4w4x1"]
+[ext_resource type="PackedScene" uid="uid://yap0js4uh1tv" path="res://Levels/Trash_Sorting/konteiner.tscn" id="3_royj2"]
+[ext_resource type="Texture2D" uid="uid://cai7x6aj0wokn" path="res://Assets/Konteinerid/Konteiner OLMEJÄÄTMED.png" id="4_o6sn5"]
+[ext_resource type="Texture2D" uid="uid://bbhjmqwa37y0i" path="res://Assets/Konteiner KLAAS.png" id="5_kfpim"]
+[ext_resource type="Texture2D" uid="uid://hfbp73ypwybx" path="res://Assets/Konteiner PAPP JA PABER.png" id="6_hic17"]
+[ext_resource type="Texture2D" uid="uid://i5yyb1ntl244" path="res://Assets/Konteiner METALL JA PLASTIK.png" id="7_6lbq8"]
+[ext_resource type="Texture2D" uid="uid://d2iwyhscrkhvl" path="res://Assets/Konteiner BIOJÄÄTMED.png" id="8_qbb4j"]
+[ext_resource type="Texture2D" uid="uid://n0dfa4kcm4yt" path="res://Assets/UI buttons=Inventory pohi.png" id="9_4djd0"]
+[ext_resource type="PackedScene" uid="uid://db41wg3vpuv3j" path="res://Levels/Prügi/trash_object.tscn" id="10_fcgi4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2nv8b"]
+size = Vector2(208, 311)
+
+[node name="sorting_level" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = 645.0
+offset_right = 1920.0
+offset_bottom = 1089.0
+texture = ExtResource("1_6echn")
+metadata/_edit_lock_ = true
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+offset_left = 742.0
+offset_top = 876.0
+offset_right = 1190.0
+offset_bottom = 1036.0
+texture = ExtResource("9_4djd0")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = -1.0
+offset_top = -72.0
+offset_right = 1919.0
+offset_bottom = 692.0
+texture = ExtResource("2_4w4x1")
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D" parent="." groups=["olmejaatmed"] instance=ExtResource("3_royj2")]
+position = Vector2(218, 521)
+
+[node name="TextureRect" type="TextureRect" parent="StaticBody2D"]
+offset_left = -58.0
+offset_top = -98.0
+offset_right = 206.0
+offset_bottom = 222.0
+grow_vertical = 0
+texture = ExtResource("4_o6sn5")
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(78.5, 58.5)
+shape = SubResource("RectangleShape2D_2nv8b")
+
+[node name="StaticBody2D2" parent="." groups=["klaaspakend"] instance=ExtResource("3_royj2")]
+position = Vector2(554, 519)
+
+[node name="TextureRect" type="TextureRect" parent="StaticBody2D2"]
+offset_left = -55.0
+offset_top = -97.0
+offset_right = 209.0
+offset_bottom = 223.0
+grow_vertical = 0
+texture = ExtResource("5_kfpim")
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(74.5, 58.5)
+shape = SubResource("RectangleShape2D_2nv8b")
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("3_royj2")]
+position = Vector2(864, 518)
+
+[node name="TextureRect" type="TextureRect" parent="StaticBody2D3"]
+offset_left = -55.0
+offset_top = -97.0
+offset_right = 209.0
+offset_bottom = 223.0
+grow_vertical = 0
+texture = ExtResource("6_hic17")
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(79, 58.5)
+shape = SubResource("RectangleShape2D_2nv8b")
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("3_royj2")]
+position = Vector2(1203, 518)
+
+[node name="TextureRect" type="TextureRect" parent="StaticBody2D4"]
+offset_left = -55.0
+offset_top = -97.0
+offset_right = 209.0
+offset_bottom = 223.0
+grow_vertical = 0
+texture = ExtResource("7_6lbq8")
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2(78.5, 58.5)
+shape = SubResource("RectangleShape2D_2nv8b")
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("3_royj2")]
+position = Vector2(1567, 518)
+
+[node name="TextureRect" type="TextureRect" parent="StaticBody2D5"]
+offset_left = -55.0
+offset_top = -97.0
+offset_right = 209.0
+offset_bottom = 223.0
+grow_vertical = 0
+texture = ExtResource("8_qbb4j")
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D5"]
+position = Vector2(78.5, 58.5)
+shape = SubResource("RectangleShape2D_2nv8b")
+
+[node name="object" parent="." instance=ExtResource("10_fcgi4")]
+position = Vector2(829, 952)
+
+[connection signal="mouse_entered" from="StaticBody2D/TextureRect" to="StaticBody2D" method="_on_texture_rect_mouse_entered"]
+[connection signal="mouse_exited" from="StaticBody2D/TextureRect" to="StaticBody2D" method="_on_texture_rect_mouse_exited"]
+[connection signal="mouse_entered" from="StaticBody2D2/TextureRect" to="StaticBody2D2" method="_on_klaas_mouse_entered"]
+[connection signal="mouse_exited" from="StaticBody2D2/TextureRect" to="StaticBody2D2" method="_on_klaas_mouse_exited"]
+[connection signal="mouse_entered" from="StaticBody2D3/TextureRect" to="StaticBody2D3" method="_on_pappjapaber_mouse_entered"]
+[connection signal="mouse_exited" from="StaticBody2D3/TextureRect" to="StaticBody2D" method="_on_pappjapaber_mouse_exited"]
+[connection signal="mouse_entered" from="StaticBody2D4/TextureRect" to="StaticBody2D4" method="_on_sega_mouse_entered"]
+[connection signal="mouse_exited" from="StaticBody2D4/TextureRect" to="StaticBody2D4" method="_on_sega_mouse_exited"]
+[connection signal="mouse_entered" from="StaticBody2D5/TextureRect" to="StaticBody2D5" method="_on_bio_mouse_entered"]
+[connection signal="mouse_exited" from="StaticBody2D5/TextureRect" to="StaticBody2D5" method="_on_bio_mouse_exited"]
