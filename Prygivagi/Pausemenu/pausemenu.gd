@@ -46,9 +46,11 @@ func on_continue_button_pressed() -> void:
 
 func on_back_to_main_menu_pressed() -> void:
 	clicking_sound.play()
-	await get_tree().create_timer(0.3).timeout
-	_is_paused = false
-	get_tree().change_scene_to_file("res://Mainmenu/main_menu.tscn")
+	confirm_popup.show_confirm("Nõustumisel tuleb alustada uut mängu. KAS OLED KINDEL, ET SOOVID MINNA PEAMENÜÜSSE?", 
+	func():
+		get_tree().change_scene_to_file("res://Mainmenu/main_menu.tscn"), 
+		func(): pass,
+		true)
 
 func on_options_pressed() -> void:
 	clicking_sound.play()
@@ -98,6 +100,7 @@ func handle_connecting_signals() -> void:
 	$SortingBio.exit_bio_sorting_page.connect(on_exit_bio_sorting_pressed)
 
 
+# Nuppude tekstuuri muutmine hiirega nupu peal hõljumisel
 func _on_continue_button_mouse_entered():
 	continue_image.texture = load("res://Assets/Menu/Menu buttons=Jatka2.png")
 

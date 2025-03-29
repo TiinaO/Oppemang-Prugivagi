@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://oywimvfqjqgv"]
+[gd_scene load_steps=35 format=3 uid="uid://oywimvfqjqgv"]
 
 [ext_resource type="Script" path="res://Levels/game_level.gd" id="1_7p1bv"]
 [ext_resource type="PackedScene" uid="uid://bv5x6ikcd0rwv" path="res://Characters/player_raccoon.tscn" id="1_dc041"]
@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://bhxfobe2bgfx8" path="res://Assets/tilemap_lvl2_v1.png" id="14_5r5bv"]
 [ext_resource type="Script" path="res://Levels/InventoryInfo.gd" id="14_wqiuj"]
 [ext_resource type="Script" path="res://Levels/changelevel.gd" id="23_bleug"]
+[ext_resource type="PackedScene" uid="uid://5oig2ox2j1ei" path="res://Scenes/ConfirmActionPopup/confirm_changing_levels.tscn" id="23_qei0y"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_otwwf"]
 
@@ -1529,9 +1530,11 @@ texture_region_size = Vector2i(256, 256)
 8:4/0 = 0
 8:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 8:4/0/physics_layer_0/angular_velocity = 0.0
+8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, 128, -128, 128, -60, -128, -60)
 8:10/0 = 0
 8:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 8:10/0/physics_layer_0/angular_velocity = 0.0
+8:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, 128, -128, 128, -60, -128, -60)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k71gj"]
 texture = ExtResource("5_cbhdb")
@@ -2819,11 +2822,14 @@ grow_vertical = 2
 [node name="Pause_menu" parent="CanvasLayer" instance=ExtResource("6_mn7t4")]
 visible = false
 
-[node name="Area2D" type="Area2D" parent="CanvasLayer"]
-position = Vector2(-182, 1369)
+[node name="ConfirmActionPopup" parent="CanvasLayer" instance=ExtResource("23_qei0y")]
+visible = false
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-198, 1357)
 script = ExtResource("23_bleug")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(5658, -1229.5)
 scale = Vector2(10, 10)
 shape = SubResource("RectangleShape2D_2rmvh")
