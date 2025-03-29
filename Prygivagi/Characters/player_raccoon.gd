@@ -5,7 +5,11 @@ extends CharacterBody2D
 
 @onready var movementSound: AudioStreamPlayer2D = $AudioStreamPlayer2D
 
+var can_move := true # Popupi ajal liikumise võimekuse määramiseks
+
 func _physics_process(_delta):
+	if not can_move:
+		return
 
 	# Liikumine
 	var input_direction = Vector2(

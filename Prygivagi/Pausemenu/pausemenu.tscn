@@ -11,8 +11,8 @@
 [ext_resource type="AudioStream" uid="uid://covwwql5uubv3" path="res://Audio/click_mouse_button.wav" id="7_7aiiu"]
 [ext_resource type="PackedScene" uid="uid://dlh5o1brjrpdv" path="res://Options/options.tscn" id="7_er2sg"]
 [ext_resource type="PackedScene" uid="uid://dgh05vmajtinm" path="res://Instructions/instructions_page.tscn" id="8_5w3u7"]
-[ext_resource type="PackedScene" uid="uid://bdbtew7c0vbb4" path="res://ConfirmActionPopup/confirm_action_popup.tscn" id="10_oswgc"]
 [ext_resource type="PackedScene" uid="uid://85ee8kv6g4gw" path="res://SortingInstructions/sorting_instructions_beginning.tscn" id="13_btkpe"]
+[ext_resource type="PackedScene" uid="uid://5oig2ox2j1ei" path="res://Scenes/ConfirmActionPopup/confirm_changing_levels.tscn" id="14_24jn8"]
 [ext_resource type="PackedScene" uid="uid://3jrq10gvc3xm" path="res://SortingInstructions/Bio/sorting_bio.tscn" id="14_mtnw2"]
 
 [node name="Pause_menu" type="Control"]
@@ -139,15 +139,15 @@ layout_mode = 1
 visible = false
 layout_mode = 1
 
-[node name="ConfirmActionPopup" parent="." instance=ExtResource("10_oswgc")]
-visible = false
-layout_mode = 1
-
 [node name="SortingInstructionsBeginning" parent="." instance=ExtResource("13_btkpe")]
 visible = false
 layout_mode = 1
 
 [node name="SortingBio" parent="." instance=ExtResource("14_mtnw2")]
+visible = false
+layout_mode = 1
+
+[node name="ConfirmActionPopup" parent="." instance=ExtResource("14_24jn8")]
 visible = false
 layout_mode = 1
 

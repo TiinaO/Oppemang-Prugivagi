@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://coqybpc6nh6db" path="res://Assets/Menu/Menu buttons=Mangujuhend1.png" id="7_vfbo0"]
 [ext_resource type="PackedScene" uid="uid://dlh5o1brjrpdv" path="res://Options/options.tscn" id="8_bxm1b"]
 [ext_resource type="PackedScene" uid="uid://dgh05vmajtinm" path="res://Instructions/instructions_page.tscn" id="9_j2sjn"]
-[ext_resource type="PackedScene" uid="uid://bdbtew7c0vbb4" path="res://ConfirmActionPopup/confirm_action_popup.tscn" id="10_ac4xn"]
+[ext_resource type="PackedScene" uid="uid://5oig2ox2j1ei" path="res://Scenes/ConfirmActionPopup/confirm_changing_levels.tscn" id="12_m2dol"]
 
 [node name="Main_menu" type="Control"]
 layout_mode = 3
@@ -124,7 +124,7 @@ layout_mode = 1
 visible = false
 layout_mode = 1
 
-[node name="ConfirmActionPopup" parent="." instance=ExtResource("10_ac4xn")]
+[node name="ConfirmActionPopup" parent="." instance=ExtResource("12_m2dol")]
 visible = false
 layout_mode = 1
 

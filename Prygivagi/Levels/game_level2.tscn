@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://bocutmtvd4nrx"]
+[gd_scene load_steps=37 format=3 uid="uid://bocutmtvd4nrx"]
 
 [ext_resource type="Script" path="res://Levels/game_level.gd" id="1_vmt12"]
 [ext_resource type="Texture2D" uid="uid://c3kyeblobd2cc" path="res://Assets/Tilemap256x256grid.png" id="2_vuqhu"]
@@ -23,6 +23,7 @@
 [ext_resource type="Script" path="res://Levels/InventoryInfo.gd" id="20_fgnal"]
 [ext_resource type="PackedScene" uid="uid://u6moandru342" path="res://Inventory/InventoryGui/inventoryGui.tscn" id="21_3m4db"]
 [ext_resource type="PackedScene" uid="uid://cr5hyyge47l3w" path="res://Pausemenu/pausemenu.tscn" id="22_decc1"]
+[ext_resource type="PackedScene" uid="uid://5oig2ox2j1ei" path="res://Scenes/ConfirmActionPopup/confirm_changing_levels.tscn" id="24_000md"]
 [ext_resource type="Script" path="res://Levels/changelevel.gd" id="24_ycsu0"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_otwwf"]
@@ -1530,9 +1531,11 @@ texture_region_size = Vector2i(256, 256)
 8:4/0 = 0
 8:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 8:4/0/physics_layer_0/angular_velocity = 0.0
+8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, 128, -128, 128, -58, -128, -58)
 8:10/0 = 0
 8:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 8:10/0/physics_layer_0/angular_velocity = 0.0
+8:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, 128, -128, 128, -58, -128, -58)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k71gj"]
 texture = ExtResource("5_ejbh3")
@@ -3384,6 +3387,9 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Pause_menu" parent="CanvasLayer" instance=ExtResource("22_decc1")]
+visible = false
+
+[node name="ConfirmActionPopup" parent="CanvasLayer" instance=ExtResource("24_000md")]
 visible = false
 
 [node name="Area2D" type="Area2D" parent="."]
