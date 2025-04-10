@@ -14,6 +14,7 @@ var isOpen: bool = false
 @onready var backpackSound: AudioStreamPlayer2D = $OpeningBackpackSound
 
 func _ready():
+	Global.player_inventory = inventory
 	inventory.update.connect(update_slots)
 	handle_connecting_signals()
 

@@ -7,3 +7,4 @@
 script = ExtResource("1_wyg6k")
 name = "tshirt"
 texture = ExtResource("2_aefpp")
+type = "olme"

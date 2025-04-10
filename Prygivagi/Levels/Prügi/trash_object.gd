@@ -74,3 +74,4 @@ func _on_area_2d_body_exited(body):
 		kontroll = false
 		is_inside_dropable = false
 		body.modulate = Color(Color.LIGHT_SLATE_GRAY, 1.0)
+

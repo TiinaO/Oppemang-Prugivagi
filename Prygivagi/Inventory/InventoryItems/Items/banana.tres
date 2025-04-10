@@ -7,3 +7,4 @@
 script = ExtResource("1_cgx5a")
 name = "Banaan"
 texture = ExtResource("2_8f0d6")
+type = "bio"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cll15k4xdrpl1"]
+[gd_scene load_steps=20 format=3 uid="uid://cll15k4xdrpl1"]
 
 [ext_resource type="Texture2D" uid="uid://clj6b3d5pmuhq" path="res://Assets/Maapind.png" id="1_6echn"]
 [ext_resource type="Script" path="res://Levels/Trash_Sorting/sorting_level.gd" id="1_rfct4"]
@@ -17,6 +17,7 @@
 [ext_resource type="Script" path="res://Sprite2D.gd" id="14_ddv0m"]
 [ext_resource type="Texture2D" uid="uid://drl7dteat4ox7" path="res://Assets/GUI/Punktid.png" id="16_g08of"]
 [ext_resource type="FontFile" uid="uid://d347pn0mkw81k" path="res://Assets/Andika-Bold.ttf" id="17_1g8td"]
+[ext_resource type="PackedScene" uid="uid://u6moandru342" path="res://Inventory/InventoryGui/inventoryGui.tscn" id="18_m0mtb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2nv8b"]
 size = Vector2(208, 311)
@@ -162,6 +163,24 @@ theme_override_font_sizes/font_size = 60
 text = "0"
 metadata/_edit_group_ = true
 metadata/_edit_use_anchors_ = true
+
+[node name="HotbarLayer" type="CanvasLayer" parent="."]
+
+[node name="InventoryGui" parent="HotbarLayer" instance=ExtResource("18_m0mtb")]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -394.0
+offset_top = -263.0
+offset_right = 400.0
+offset_bottom = 236.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SpawnArea" type="Node2D" parent="."]
 
 [connection signal="mouse_entered" from="olme/TextureRect" to="olme" method="_on_texture_rect_mouse_entered"]
 [connection signal="mouse_exited" from="olme/TextureRect" to="olme" method="_on_texture_rect_mouse_exited"]

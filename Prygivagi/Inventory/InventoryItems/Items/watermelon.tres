@@ -7,4 +7,4 @@
 script = ExtResource("1_xmksc")
 name = "Arbuus"
 texture = ExtResource("2_156wr")
-type = ""
+type = "bio"
