@@ -3294,7 +3294,7 @@ sources/7 = SubResource("TileSetAtlasSource_fbbak")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_osvrc"]
 size = Vector2(393, 285.5)
 
-[node name="GameLevel2" type="Node2D"]
+[node name="GameLevel" type="Node2D"]
 position = Vector2(16, 12)
 script = ExtResource("1_vmt12")
 

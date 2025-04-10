@@ -6,7 +6,7 @@ class_name  SortableItem
 @export var item_type: String = ""
 @export var item_name: String = ""
 
-@onready var sprite = $Sprite2D as Sprite2D
+@onready var sprite = $Area2D/Sprite2D as Sprite2D
 @onready var collision = $CollisionShape2D as CollisionShape2D
 
 var slot: InvSlot
@@ -22,6 +22,16 @@ func _ready():
 		else:
 			print("[SortableItem] Puudub tekstuur item_data jaoks: ", item_name)
 		print("Spawnin:", item_data.name, " with texture:", item_data.texture)
+		
+		# Debug-värv
+	sprite.modulate = Color(1, 1, 1, 1)
+	sprite.z_index = 100
+
+	# Lisa äärisnähtavus (või ruudustik)
+	var debug_rect = ColorRect.new()
+	debug_rect.color = Color(1, 0, 0, 0.3)
+	debug_rect.size = Vector2(64, 64)
+	add_child(debug_rect)
 
 func set_position_under_mouse():
 	global_position = get_global_mouse_position()

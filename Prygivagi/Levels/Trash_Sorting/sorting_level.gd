@@ -14,15 +14,10 @@ func _ready():
 		var obj = item_scene.instantiate()
 		obj.item_data = item
 		obj.global_position = Vector2(700, 100)
-		spawn_area.add_child(obj)
 
 func _process(delta):
 	$"Score".text = str(Global.skoor)
 	#update_score(Global.skoor) # Algse skoori seadistamine
-#
-#func update_score(new_score):
-	#var score_label = $"Score"
-	#score_label.text = str(new_score)
 
 func spawn_sortable_item(item: InventoryItem):
 	var obj = preload("res://Levels/Prügi/trash_object.tscn").instantiate()
