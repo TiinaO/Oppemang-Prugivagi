@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cll15k4xdrpl1"]
+[gd_scene load_steps=20 format=3 uid="uid://cll15k4xdrpl1"]
 
 [ext_resource type="Texture2D" uid="uid://clj6b3d5pmuhq" path="res://Assets/Maapind.png" id="1_6echn"]
 [ext_resource type="Script" path="res://Levels/Trash_Sorting/sorting_level.gd" id="1_rfct4"]
@@ -17,6 +17,7 @@
 [ext_resource type="Script" path="res://Sprite2D.gd" id="14_ddv0m"]
 [ext_resource type="Texture2D" uid="uid://drl7dteat4ox7" path="res://Assets/GUI/Punktid.png" id="16_g08of"]
 [ext_resource type="FontFile" uid="uid://d347pn0mkw81k" path="res://Assets/Andika-Bold.ttf" id="17_1g8td"]
+[ext_resource type="PackedScene" uid="uid://0igd7esk2o5d" path="res://Scenes/Inventory/UI/hotbar.tscn" id="18_bm1mo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2nv8b"]
 size = Vector2(208, 311)
@@ -32,6 +33,7 @@ texture = ExtResource("1_6echn")
 metadata/_edit_lock_ = true
 
 [node name="TextureRect3" type="TextureRect" parent="."]
+visible = false
 offset_left = 551.0
 offset_top = 876.0
 offset_right = 1381.0
@@ -131,12 +133,15 @@ position = Vector2(78.5, 58.5)
 shape = SubResource("RectangleShape2D_2nv8b")
 
 [node name="paber" parent="." instance=ExtResource("10_fcgi4")]
+visible = false
 position = Vector2(663, 956)
 
 [node name="arbuus" parent="." instance=ExtResource("11_jumq2")]
+visible = false
 position = Vector2(819, 958)
 
 [node name="banaan" parent="." instance=ExtResource("13_nng2s")]
+visible = false
 position = Vector2(981, 960)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -162,6 +167,21 @@ theme_override_font_sizes/font_size = 60
 text = "0"
 metadata/_edit_group_ = true
 metadata/_edit_use_anchors_ = true
+
+[node name="HotbarLayer" type="CanvasLayer" parent="."]
+
+[node name="Hotbar" parent="HotbarLayer" instance=ExtResource("18_bm1mo")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+offset_left = -360.0
+offset_top = -192.0
+offset_right = 360.0
+offset_bottom = -6.0
+grow_vertical = 0
+
+[node name="DragLayer" type="Node2D" parent="HotbarLayer"]
 
 [connection signal="mouse_entered" from="olme/TextureRect" to="olme" method="_on_texture_rect_mouse_entered"]
 [connection signal="mouse_exited" from="olme/TextureRect" to="olme" method="_on_texture_rect_mouse_exited"]

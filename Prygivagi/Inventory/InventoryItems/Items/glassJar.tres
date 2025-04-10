@@ -7,3 +7,4 @@
 script = ExtResource("1_wyg6k")
 name = "glassJar"
 texture = ExtResource("2_d0ms3")
+type = "glass"

@@ -29,8 +29,10 @@ func _on_body_exited(body):
 		label.visible = false
 
 func _process(_delta):
+	
 	if player_in_area and Input.is_action_just_pressed("ui_accept"):
-		player.collect(itemRes)
+		#player.collect(itemRes) # See lisab ka asja kotti, kui teha nii seda kui ka Global meetodit, siis 1 = 2
+		Global.player_inventory.insert(itemRes) 
 		queue_free()
 		var game_level = get_node("/root/GameLevel")
 		game_level.add_score(100)

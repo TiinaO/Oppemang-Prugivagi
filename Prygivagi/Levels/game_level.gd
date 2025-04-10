@@ -13,7 +13,7 @@ func _ready():
 	var audio_player = AudioStreamPlayer.new()
 	audio_player.stream = load(music_path)
 	add_child(audio_player)
-	audio_player.play()
+	#audio_player.play()
 
 func add_score(points):
 	Global.skoor += points
