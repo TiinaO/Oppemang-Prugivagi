@@ -32,11 +32,7 @@ func _process(_delta):
 	
 	if player_in_area and Input.is_action_just_pressed("ui_accept"):
 		#player.collect(itemRes) # See lisab ka asja kotti, kui teha nii seda kui ka Global meetodit, siis 1 = 2
-		Global.player_inventory.insert(itemRes) # Tekitab topelt sisestuse
-		Global.picked_items.append({
-			"item": itemRes,
-			"position": global_position
-		})
+		Global.player_inventory.insert(itemRes) 
 		queue_free()
 		var game_level = get_node("/root/GameLevel")
 		game_level.add_score(100)

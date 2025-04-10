@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cuv7sd8ftawvh"]
+
+[ext_resource type="Script" path="res://Scripts/Levels/Sorting/sortable_item_ui.gd" id="1_6cvfa"]
+
+[node name="SortableItemUi" type="Control"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_6cvfa")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 80.0
+mouse_filter = 0
