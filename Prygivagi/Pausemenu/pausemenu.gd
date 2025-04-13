@@ -24,30 +24,45 @@ extends Control
 @onready var margin_container = $MarginContainer as MarginContainer
 @onready var confirm_popup = $ConfirmActionPopup as ConfirmActionPopup
 
+signal pause_opened
+signal pause_closed
+
 var _is_paused:bool = false:
 	set = set_paused
 
 func _ready():
+	get_tree().paused = false #Default value
 	handle_connecting_signals()
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("Pause"):
 		_is_paused = !_is_paused
+		
 
 func set_paused(value:bool) -> void:
 	_is_paused = value
 	get_tree().paused = _is_paused
 	visible = _is_paused
+	
+	#if !_is_paused:
+		#emit_signal("pause_closed")
+	if _is_paused:
+		pause_opened.emit()
+	else:
+		pause_closed.emit()
+
 
 func on_continue_button_pressed() -> void:
 	clicking_sound.play()
 	await get_tree().create_timer(0.3).timeout
 	_is_paused = false
+	pause_closed.emit()
 
 func on_back_to_main_menu_pressed() -> void:
 	clicking_sound.play()
 	confirm_popup.show_confirm("Nõustumisel tuleb alustada uut mängu. KAS OLED KINDEL, ET SOOVID MINNA PEAMENÜÜSSE?", 
 	func():
+		get_tree().paused = false
 		get_tree().change_scene_to_file("res://Mainmenu/main_menu.tscn"), 
 		func(): pass,
 		true)
