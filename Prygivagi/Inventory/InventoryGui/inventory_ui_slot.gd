@@ -31,7 +31,7 @@ func update(new_slot: InvSlot):
 		amount_text.text = str(slot.amount)
 		
 		#Kontroll, kas täidetud slotide hulgas on olemas slot, kuhu item läheb 
-		# Muudab kotiikooni esimest nri
+		# Muudab kotiikooni esimest nri Siin on vaja teha muudatusi!!
 		"""var is_slot_filled = filled_slots.find(slot.id) != -1
 		if !is_slot_filled:
 			slot.id = current_slot_id
@@ -44,10 +44,11 @@ func update(new_slot: InvSlot):
 			
 func _gui_input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		if get_global_rect().has_point(get_global_mouse_position()):
+			spawn_draggable_item()
 		if slot.item and slot.amount > 0:
 			slot.amount -= 1
 			update(slot)  # See peab värskendama teksti ja peitma kui vaja
-			spawn_draggable_item()
 
 			
 func spawn_draggable_item():
@@ -67,6 +68,7 @@ func spawn_draggable_item():
 		print("slot.item on null!")
 		return
 		
+	#Asjade loomiseks hotbarist ülesse poole
 	var drag_layer = get_tree().current_scene.get_node("HotbarLayer/DragLayer")
 	drag_layer.add_child(item_instance)
 	
@@ -74,17 +76,7 @@ func spawn_draggable_item():
 	amount_text.visible = false
 
 
-	
 func restore_item():
 	slot.amount += 1
 	update(slot)
-
-func _unhandled_input(event):
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		if slot and slot.item and slot.amount > 0:
-			print("🧲 Ese valitud lohistamiseks:", slot.item.name)
-			spawn_draggable_item()
-			slot.amount -= 1
-			amount_text.text = str(slot.amount)
-
 
