@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://cll15k4xdrpl1"]
+[gd_scene load_steps=22 format=3 uid="uid://cll15k4xdrpl1"]
 
 [ext_resource type="Texture2D" uid="uid://clj6b3d5pmuhq" path="res://Assets/Maapind.png" id="1_6echn"]
 [ext_resource type="Script" path="res://Levels/Trash_Sorting/sorting_level.gd" id="1_rfct4"]
@@ -18,6 +18,8 @@
 [ext_resource type="Texture2D" uid="uid://drl7dteat4ox7" path="res://Assets/GUI/Punktid.png" id="16_g08of"]
 [ext_resource type="FontFile" uid="uid://d347pn0mkw81k" path="res://Assets/Andika-Bold.ttf" id="17_1g8td"]
 [ext_resource type="PackedScene" uid="uid://0igd7esk2o5d" path="res://Scenes/Inventory/UI/hotbar.tscn" id="18_bm1mo"]
+[ext_resource type="PackedScene" uid="uid://cr5hyyge47l3w" path="res://Pausemenu/pausemenu.tscn" id="18_tms7m"]
+[ext_resource type="Texture2D" uid="uid://dlpu2c4qvrtlu" path="res://Assets/Menu/UI buttons=Paus.png" id="20_ad4tq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2nv8b"]
 size = Vector2(208, 311)
@@ -27,7 +29,7 @@ script = ExtResource("1_rfct4")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_top = 645.0
-offset_right = 1920.0
+offset_right = 1940.0
 offset_bottom = 1089.0
 texture = ExtResource("1_6echn")
 metadata/_edit_lock_ = true
@@ -43,7 +45,7 @@ texture = ExtResource("9_4djd0")
 [node name="TextureRect2" type="TextureRect" parent="."]
 offset_left = -1.0
 offset_top = -72.0
-offset_right = 1919.0
+offset_right = 1939.0
 offset_bottom = 692.0
 texture = ExtResource("2_4w4x1")
 metadata/_edit_lock_ = true
@@ -182,6 +184,52 @@ offset_bottom = -6.0
 grow_vertical = 0
 
 [node name="DragLayer" type="Node2D" parent="HotbarLayer"]
+
+[node name="PauseMenu" type="CanvasLayer" parent="."]
+
+[node name="Pause_menu" parent="PauseMenu" instance=ExtResource("18_tms7m")]
+visible = false
+
+[node name="UI elements" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="UI elements"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -120.0
+offset_bottom = 120.0
+grow_horizontal = 0
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI elements/MarginContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="PauseButton" type="Button" parent="UI elements/MarginContainer/HBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+icon = ExtResource("20_ad4tq")
+
+[node name="CenterContainer" type="CenterContainer" parent="UI elements/MarginContainer/HBoxContainer/PauseButton"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="UI elements/MarginContainer/HBoxContainer/PauseButton/CenterContainer"]
+position = Vector2(-9, -8)
+texture = ExtResource("20_ad4tq")
+centered = false
 
 [connection signal="mouse_entered" from="olme/TextureRect" to="olme" method="_on_texture_rect_mouse_entered"]
 [connection signal="mouse_exited" from="olme/TextureRect" to="olme" method="_on_texture_rect_mouse_exited"]
