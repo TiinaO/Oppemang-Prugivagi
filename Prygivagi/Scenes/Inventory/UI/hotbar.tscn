@@ -1,29 +1,58 @@
-[gd_scene load_steps=4 format=3 uid="uid://0igd7esk2o5d"]
+[gd_scene load_steps=6 format=3 uid="uid://0igd7esk2o5d"]
 
 [ext_resource type="Script" path="res://Scripts/Inventory/UI/hotbar.gd" id="1_ews1a"]
-[ext_resource type="Texture2D" uid="uid://bq5s8sgfsvmc8" path="res://Assets/Inventory/UI buttons=Inventory pohi.png" id="2_qe76h"]
+[ext_resource type="Texture2D" uid="uid://53oci6kuo0bo" path="res://Assets/Menu/UI buttons=Vasakule.png" id="2_si201"]
+[ext_resource type="Texture2D" uid="uid://dxiqevnrj0pbi" path="res://Assets/Inventory/Hotbar/Layout=Empty.png" id="3_ac8e3"]
 [ext_resource type="PackedScene" uid="uid://dnit4crkhjd14" path="res://Inventory/InventoryGui/inventory_ui_slot.tscn" id="3_swadr"]
+[ext_resource type="Texture2D" uid="uid://d0m17crecikgy" path="res://Assets/Menu/UI buttons=Paremale.png" id="5_ycjhe"]
 
 [node name="Hotbar" type="Control"]
-custom_minimum_size = Vector2(720, 186)
+custom_minimum_size = Vector2(936, 186)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -1200.0
-offset_bottom = -888.0
+offset_right = -984.0
+offset_bottom = -894.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ews1a")
 
-[node name="NinePatchRect" type="NinePatchRect" parent="."]
-custom_minimum_size = Vector2(720, 186)
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 0
-offset_right = 720.0
-offset_bottom = 186.0
-texture = ExtResource("2_qe76h")
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
+[node name="LeftArrow" type="Button" parent="HBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+icon = ExtResource("2_si201")
+
+[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer/LeftArrow"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -48.0
+offset_right = 48.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LeftArrow" type="Sprite2D" parent="HBoxContainer/LeftArrow/CenterContainer"]
+texture = ExtResource("2_si201")
+centered = false
+
+[node name="NinePatchRect" type="NinePatchRect" parent="HBoxContainer"]
+custom_minimum_size = Vector2(720, 186)
+layout_mode = 2
+texture = ExtResource("3_ac8e3")
+
+[node name="GridContainer" type="GridContainer" parent="HBoxContainer/NinePatchRect"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -38,17 +67,41 @@ grow_horizontal = 2
 grow_vertical = 2
 columns = 5
 
-[node name="InventorySlot" parent="NinePatchRect/GridContainer" instance=ExtResource("3_swadr")]
+[node name="InventorySlot" parent="HBoxContainer/NinePatchRect/GridContainer" instance=ExtResource("3_swadr")]
 layout_mode = 2
 
-[node name="InventorySlot2" parent="NinePatchRect/GridContainer" instance=ExtResource("3_swadr")]
+[node name="InventorySlot2" parent="HBoxContainer/NinePatchRect/GridContainer" instance=ExtResource("3_swadr")]
 layout_mode = 2
 
-[node name="InventorySlot3" parent="NinePatchRect/GridContainer" instance=ExtResource("3_swadr")]
+[node name="InventorySlot3" parent="HBoxContainer/NinePatchRect/GridContainer" instance=ExtResource("3_swadr")]
 layout_mode = 2
 
-[node name="InventorySlot4" parent="NinePatchRect/GridContainer" instance=ExtResource("3_swadr")]
+[node name="InventorySlot4" parent="HBoxContainer/NinePatchRect/GridContainer" instance=ExtResource("3_swadr")]
 layout_mode = 2
 
-[node name="InventorySlot5" parent="NinePatchRect/GridContainer" instance=ExtResource("3_swadr")]
+[node name="InventorySlot5" parent="HBoxContainer/NinePatchRect/GridContainer" instance=ExtResource("3_swadr")]
 layout_mode = 2
+
+[node name="RightArrow" type="Button" parent="HBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+icon = ExtResource("5_ycjhe")
+
+[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer/RightArrow"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -48.0
+offset_right = 48.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RightArrow" type="Sprite2D" parent="HBoxContainer/RightArrow/CenterContainer"]
+texture = ExtResource("5_ycjhe")
+centered = false
