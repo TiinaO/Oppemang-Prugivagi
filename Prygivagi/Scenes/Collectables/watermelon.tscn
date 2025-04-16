@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://tvwgnfe3xgyp"]
+
+[ext_resource type="PackedScene" uid="uid://dggc5mowrx8qb" path="res://Scenes/Collectables/collectable.tscn" id="1_6568p"]
+[ext_resource type="Texture2D" uid="uid://n75hnepwmv0d" path="res://Assets/Collectable/arbuus.png" id="2_xjsyn"]
+[ext_resource type="Resource" uid="uid://cpu10s6s2k5dl" path="res://Data/Items/watermelon.tres" id="2_ygj6n"]
+
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_di7je"]
+resource_local_to_scene = true
+radius = 75.06
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jvtpd"]
+resource_local_to_scene = true
+radius = 42.0
+
+[node name="Collectable" instance=ExtResource("1_6568p")]
+itemRes = ExtResource("2_ygj6n")
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("CircleShape2D_di7je")
+
+[node name="Sprite2D" parent="." index="1"]
+scale = Vector2(0.499363, 0.5)
+texture = ExtResource("2_xjsyn")
+
+[node name="CollisionShape2D" parent="StaticBody2D" index="0"]
+shape = SubResource("CircleShape2D_jvtpd")
+
+[node name="Label" parent="." index="3"]
+offset_left = -61.0
+offset_top = -119.0
+offset_right = 354.0
+offset_bottom = 44.0
+scale = Vector2(0.3, 0.3)
+text = "ARBUUS"

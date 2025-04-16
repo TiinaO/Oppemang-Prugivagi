@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://guyliryxtp7d"]
+
+[ext_resource type="PackedScene" uid="uid://c4p0qq3bqu148" path="res://Scenes/Levels/Sorting/Containers/container.tscn" id="1_gyrmx"]
+[ext_resource type="Resource" uid="uid://bm1ut1hr20jx0" path="res://Data/Containers/cardboard_container.tres" id="2_jhngo"]
+[ext_resource type="Texture2D" uid="uid://uoajqy4sqoy1" path="res://Assets/Konteinerid/Papp=Closed.png" id="3_p85dl"]
+
+[node name="Container" instance=ExtResource("1_gyrmx")]
+container_data = ExtResource("2_jhngo")
+
+[node name="Container" parent="." index="0"]
+texture = ExtResource("3_p85dl")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(125, 154)

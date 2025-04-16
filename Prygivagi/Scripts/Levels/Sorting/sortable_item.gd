@@ -44,6 +44,7 @@ func _input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and !event.pressed:
 		on_drop()
 
+
 func on_drop():
 	is_dragging = false
 	return_to_hotbar()
@@ -57,9 +58,13 @@ func return_to_hotbar():
 	)
 	print("Tagastati hotbarile")
 
+
 func return_to_slot():
 	if origin_slot_node and origin_slot_node.has_method("restore_item"):
 		origin_slot_node.restore_item()
 	queue_free()
 
 
+func correctly_sorterd():
+	#Siia lisada veel loogikat, mis peab juhtuma siis, kui korrektselt sorteeritud, NT punktid
+	queue_free()
