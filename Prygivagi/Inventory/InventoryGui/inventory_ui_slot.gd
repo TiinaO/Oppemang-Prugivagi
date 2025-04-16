@@ -54,20 +54,14 @@ func _gui_input(event):
 func spawn_draggable_item():
 	var item_scene = preload("res://Scenes/Levels/Sorting/sortable_item.tscn")
 	var item_instance = item_scene.instantiate()
+	
 	var one_item := slot.item.duplicate()
 	item_instance.item_data = one_item
-
-	if slot.item:
-		item_instance.item_data = slot.item
-		item_instance.origin_slot_node = self
-		
-		item_instance.global_position =  get_global_mouse_position()
-		item_instance.original_position = item_instance.global_position
-		
-	else:
-		print("slot.item on null!")
-		return
-		
+	
+	item_instance.origin_slot_node = self
+	item_instance.global_position = get_global_mouse_position()
+	item_instance.original_position = item_instance.global_position
+	
 	#Asjade loomiseks hotbarist ülesse poole
 	var drag_layer = get_tree().current_scene.get_node("HotbarLayer/DragLayer")
 	drag_layer.add_child(item_instance)

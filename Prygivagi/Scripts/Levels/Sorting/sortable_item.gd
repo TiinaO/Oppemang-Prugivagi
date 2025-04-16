@@ -19,6 +19,7 @@ var slot: InvSlot
 # Called when the node enters the scene tree for the first time
 func _ready():
 	if item_data:
+		print("SortableItem sai item_data:", item_data.type, "| tüüp:", item_data.type)
 		item_type = item_data.type
 		item_name = item_data.name
 		if item_data.texture:
@@ -31,7 +32,7 @@ func _ready():
 	set_process(true)
 	set_process_unhandled_input(true)
 	
-	#konteineri jaoks
+	#Konteineri jaoks
 	add_to_group("draggables")
 	area_2d.monitoring = true
 	area_2d.monitorable = true
@@ -53,14 +54,34 @@ func _input(event):
 
 func on_drop():
 	is_dragging = false
-	var overlapping = area_2d.get_overlapping_areas()
-	print("Leitud alad:", overlapping)
-	for area in overlapping:
-		if area.is_in_group("container_areas"):
-			print("Ese langes KONTEINERI peale!")
-			# Edasine loogika – nt punkte lisamine, eseme eemaldamine, vms
-			queue_free()
-			return
+	
+	var overlapping_areas = area_2d.get_overlapping_areas()
+	print("Leitud alad:", overlapping_areas)
+	
+	for area in overlapping_areas:
+		var container = area.get_parent() 
+
+		if container and container.has_meta("is_container_bin"):
+			
+			var container_type = container.container_data.type
+			var item_type = item_data.type
+			
+			print("Konteineri tüüp on: ", container_type, " ja item type on: ", item_type)
+			
+			if item_type == container_type:
+				print("Õige konteiner – +100p")
+				Global.skoor += 100
+
+				if origin_slot_node and origin_slot_node.has_method("remove_one_item"):
+					origin_slot_node.remove_one_item()
+
+				queue_free()
+			else:
+				print("Vale konteiner – -25p")
+				Global.skoor -= 25
+				return_to_hotbar()
+			
+			return  # katkestame peale esimest konteinerit
 
 	# Kui ei olnud sobivat konteinerit
 	return_to_hotbar()
@@ -82,3 +103,9 @@ func return_to_slot():
 func correctly_sorterd():
 	#Siia lisada veel loogikat, mis peab juhtuma siis, kui korrektselt sorteeritud, NT punktid
 	queue_free()
+	
+#Konteineri jaoks, et saada kätte eseme tüüp
+func get_item_type() -> String:
+	if item_data:
+		return item_data.type
+	return ""
