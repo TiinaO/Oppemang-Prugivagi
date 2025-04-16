@@ -8,6 +8,7 @@
 container_data = ExtResource("2_c5eb8")
 
 [node name="Container" parent="." index="0"]
+position = Vector2(0, 0)
 texture = ExtResource("3_y3yk1")
 
 [node name="CollisionShape2D" parent="." index="1"]

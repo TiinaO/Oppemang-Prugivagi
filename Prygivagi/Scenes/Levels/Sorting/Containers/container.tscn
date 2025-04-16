@@ -5,16 +5,14 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qihjf"]
 size = Vector2(247, 309)
 
-[node name="Container" type="Area2D" groups=["dropable"]]
+[node name="Container" type="Node2D" groups=["dropable"]]
 script = ExtResource("1_tkpeh")
 
 [node name="Container" type="Sprite2D" parent="."]
-position = Vector2(-1, -5)
 centered = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="DetectArea" type="Area2D" parent="." groups=["container_areas"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectArea"]
 position = Vector2(125, 154)
 shape = SubResource("RectangleShape2D_qihjf")
-
-[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

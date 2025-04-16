@@ -12,6 +12,7 @@ var is_dragging := true
 
 @onready var sprite = $Area2D/Sprite2D as Sprite2D
 @onready var collision = $CollisionShape2D as CollisionShape2D
+@onready var area_2d = $Area2D as Area2D
 
 var slot: InvSlot
 
@@ -30,6 +31,11 @@ func _ready():
 	set_process(true)
 	set_process_unhandled_input(true)
 	
+	#konteineri jaoks
+	add_to_group("draggables")
+	area_2d.monitoring = true
+	area_2d.monitorable = true
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if is_dragging:
@@ -47,16 +53,24 @@ func _input(event):
 
 func on_drop():
 	is_dragging = false
+	var overlapping = area_2d.get_overlapping_areas()
+	print("Leitud alad:", overlapping)
+	for area in overlapping:
+		if area.is_in_group("container_areas"):
+			print("Ese langes KONTEINERI peale!")
+			# Edasine loogika – nt punkte lisamine, eseme eemaldamine, vms
+			queue_free()
+			return
+
+	# Kui ei olnud sobivat konteinerit
 	return_to_hotbar()
 
 
 func return_to_hotbar():
 	var tween := get_tree().create_tween()
 	tween.tween_property(self, "global_position", original_position, 0.3).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
-	tween.finished.connect(func():
-		return_to_slot()
-	)
-	print("Tagastati hotbarile")
+	tween.finished.connect(func():return_to_slot())
+
 
 
 func return_to_slot():
