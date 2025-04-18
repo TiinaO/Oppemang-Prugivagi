@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4p0qq3bqu148"]
+
+[ext_resource type="Script" path="res://Scripts/Levels/Sorting/Containers/container.gd" id="1_tkpeh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qihjf"]
+size = Vector2(247, 309)
+
+[node name="ContainerBin" type="Node2D" groups=["containers", "dropable"]]
+script = ExtResource("1_tkpeh")
+
+[node name="Container" type="Sprite2D" parent="."]
+centered = false
+
+[node name="DetectArea" type="Area2D" parent="." groups=["container_areas"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectArea"]
+position = Vector2(125, 154)
+shape = SubResource("RectangleShape2D_qihjf")

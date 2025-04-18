@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://b46kbdrsiskvq"]
+
+[ext_resource type="PackedScene" uid="uid://c4p0qq3bqu148" path="res://Scenes/Levels/Sorting/Containers/container.tscn" id="1_tntld"]
+[ext_resource type="Resource" uid="uid://c7y5xbris85lj" path="res://Data/Containers/glass_container.tres" id="2_36esd"]
+[ext_resource type="Texture2D" uid="uid://bxljm1u6qewpb" path="res://Assets/Konteinerid/Klaas=Closed.png" id="3_nkjgi"]
+
+[node name="Container" instance=ExtResource("1_tntld")]
+container_data = ExtResource("2_36esd")
+
+[node name="Container" parent="." index="0"]
+texture = ExtResource("3_nkjgi")

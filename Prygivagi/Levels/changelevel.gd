@@ -25,7 +25,7 @@ func show_confirm_popup():
 	popup.show_confirm("KAS OLED KINDEL, ET SOOVID 
 MINNA EDASI PRÜGI SORTEERIMA?", 
 	func(): 
-		get_tree().change_scene_to_file("res://Levels/Trash_Sorting/sorting_level.tscn"), 
+		get_tree().change_scene_to_file("res://Scenes/Levels/Sorting/sorting_level.tscn"), 
 	func(): 
 		player.can_move = true
 		popup_has_triggered = false)

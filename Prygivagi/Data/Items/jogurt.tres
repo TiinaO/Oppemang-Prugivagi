@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://c7jxx1blsey3y"]
+
+[ext_resource type="Script" path="res://Inventory/InventoryItems/inventory_item.gd" id="1_uu0uy"]
+[ext_resource type="Texture2D" uid="uid://dp1pl8ttuojik" path="res://Assets/Collectable/Jogurtitops_mustika.png" id="2_w3ys2"]
+
+[resource]
+script = ExtResource("1_uu0uy")
+name = "jogurt"
+texture = ExtResource("2_w3ys2")
+type = "mixed"

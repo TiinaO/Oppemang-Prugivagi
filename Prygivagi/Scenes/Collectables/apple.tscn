@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://xodld3dgufoi"]
+
+[ext_resource type="PackedScene" uid="uid://dggc5mowrx8qb" path="res://Scenes/Collectables/collectable.tscn" id="1_7b7vx"]
+[ext_resource type="Texture2D" uid="uid://cnt2710avr1wd" path="res://Assets/Collectable/Vector 39.png" id="2_flwr7"]
+[ext_resource type="Resource" uid="uid://bvcn1ddumj1e6" path="res://Data/Items/apple.tres" id="2_r3748"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3183d"]
+resource_local_to_scene = true
+radius = 91.0055
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2ujcc"]
+resource_local_to_scene = true
+radius = 42.0
+
+[node name="Apple" instance=ExtResource("1_7b7vx")]
+itemRes = ExtResource("2_r3748")
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("CircleShape2D_3183d")
+
+[node name="Sprite2D" parent="." index="1"]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_flwr7")
+
+[node name="CollisionShape2D" parent="StaticBody2D" index="0"]
+shape = SubResource("CircleShape2D_2ujcc")
+
+[node name="Label" parent="." index="3"]
+offset_left = -55.0
+offset_top = -122.0
+offset_right = 388.0
+offset_bottom = 202.0
+theme_override_font_sizes/font_size = 200
+text = "ÕUN"

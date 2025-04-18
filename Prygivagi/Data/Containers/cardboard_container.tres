@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ContainerType" load_steps=4 format=3 uid="uid://bm1ut1hr20jx0"]
+
+[ext_resource type="Script" path="res://Data/Containers/container_type.gd" id="1_txuj4"]
+[ext_resource type="Texture2D" uid="uid://uoajqy4sqoy1" path="res://Assets/Konteinerid/Papp=Closed.png" id="2_o4tkf"]
+[ext_resource type="Texture2D" uid="uid://bih7qu8lj44gn" path="res://Assets/Konteinerid/Papp=Open.png" id="3_wk0tt"]
+
+[resource]
+script = ExtResource("1_txuj4")
+type = "papp"
+display_name = "Papp-paberkonteiner"
+texture_closed = ExtResource("2_o4tkf")
+texture_open = ExtResource("3_wk0tt")
