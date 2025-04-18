@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqldwdrp0yj3l"
-path="res://.godot/imported/Pesukaru KORJAB1.png-1119fce963d1bfebd33f30499ef491d2.ctex"
+uid="uid://ddgeeyqfl3yh2"
+path="res://.godot/imported/Pesukaru IDLE2Pesukaru-idle.png-2451a1e7197ccd8c64b39d280832d0e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pesukaru KORJAB1.png"
-dest_files=["res://.godot/imported/Pesukaru KORJAB1.png-1119fce963d1bfebd33f30499ef491d2.ctex"]
+source_file="res://Assets/Character/Pesukaru IDLE2Pesukaru-idle.png"
+dest_files=["res://.godot/imported/Pesukaru IDLE2Pesukaru-idle.png-2451a1e7197ccd8c64b39d280832d0e4.ctex"]
 
 [params]
 

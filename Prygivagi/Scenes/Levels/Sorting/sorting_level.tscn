@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cll15k4xdrpl1"]
+[gd_scene load_steps=18 format=3 uid="uid://cll15k4xdrpl1"]
 
 [ext_resource type="Script" path="res://Scripts/Levels/Sorting/sorting_level.gd" id="1_g7ox8"]
 [ext_resource type="PackedScene" uid="uid://b6j1olq4ogywo" path="res://Scenes/Levels/Sorting/Containers/bio_container.tscn" id="2_tjgsw"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://0igd7esk2o5d" path="res://Scenes/Inventory/UI/hotbar.tscn" id="14_eg5j2"]
 [ext_resource type="PackedScene" uid="uid://cr5hyyge47l3w" path="res://Pausemenu/pausemenu.tscn" id="15_kra57"]
 [ext_resource type="Texture2D" uid="uid://dlpu2c4qvrtlu" path="res://Assets/Menu/UI buttons=Paus.png" id="16_3opua"]
+[ext_resource type="Texture2D" uid="uid://c2drlovshoq73" path="res://Assets/Character/Pesukaru FRONT.png" id="17_6fwvy"]
 [ext_resource type="PackedScene" uid="uid://575q8wx5l3nj" path="res://Scenes/Levels/Sorting/Containers/waste_container.tscn" id="18_edet2"]
 
 [node name="sorting_level" type="Node2D"]
@@ -32,22 +33,22 @@ theme_override_constants/margin_left = 80
 theme_override_constants/margin_right = 80
 
 [node name="olme" parent="ContainerHolder/MarginContainer" instance=ExtResource("18_edet2")]
-position = Vector2(118, 424)
+position = Vector2(118, 408)
 
 [node name="papp" parent="ContainerHolder/MarginContainer" instance=ExtResource("3_17foy")]
-position = Vector2(406, 424)
+position = Vector2(406, 408)
 
 [node name="sega" parent="ContainerHolder/MarginContainer" instance=ExtResource("4_dkji5")]
-position = Vector2(694, 424)
+position = Vector2(694, 408)
 
 [node name="bio" parent="ContainerHolder/MarginContainer" instance=ExtResource("2_tjgsw")]
-position = Vector2(982, 424)
+position = Vector2(982, 408)
 
 [node name="klaas" parent="ContainerHolder/MarginContainer" instance=ExtResource("6_dhu4q")]
-position = Vector2(1270, 424)
+position = Vector2(1270, 408)
 
 [node name="vana_paber" parent="ContainerHolder/MarginContainer" instance=ExtResource("7_mlucl")]
-position = Vector2(1558, 424)
+position = Vector2(1558, 408)
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_top = 645.0
@@ -147,4 +148,11 @@ grow_vertical = 2
 [node name="Sprite2D" type="Sprite2D" parent="UI elements/MarginContainer/HBoxContainer/PauseButton/CenterContainer"]
 position = Vector2(-9, -8)
 texture = ExtResource("16_3opua")
+centered = false
+
+[node name="Feedback" type="CanvasLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Feedback"]
+position = Vector2(80, 736)
+texture = ExtResource("17_6fwvy")
 centered = false

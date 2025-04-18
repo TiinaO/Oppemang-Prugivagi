@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2drlovshoq73"
-path="res://.godot/imported/Pesukaru FRONT.png-be71190bc9c53588f63202c0f633c4d5.ctex"
+uid="uid://dgpys8x457drc"
+path="res://.godot/imported/Pesukaru TOP2Pesukaru-astub.png-5e52d9c8b2e61f6987694d303289177d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pesukaru FRONT.png"
-dest_files=["res://.godot/imported/Pesukaru FRONT.png-be71190bc9c53588f63202c0f633c4d5.ctex"]
+source_file="res://Assets/Character/Pesukaru TOP2Pesukaru-astub.png"
+dest_files=["res://.godot/imported/Pesukaru TOP2Pesukaru-astub.png-5e52d9c8b2e61f6987694d303289177d.ctex"]
 
 [params]
 

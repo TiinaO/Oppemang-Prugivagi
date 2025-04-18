@@ -1,5 +1,7 @@
 extends Control
 
+class_name Hotbar
+
 @export var visible_slots := 5
 var slot_offset := 0 #Mitmendast slotist alustada
 
@@ -48,15 +50,26 @@ func _on_right_arrow_pressed():
 		update_arrows()
 
 func update_slots():
+	#var all_slots = grid_container.get_children()
+	#for i in range(all_slots.size()):
+		#var slot_index = i + slot_offset
+		#all_slots[i].visible = slot_index < inventory.slots.size()
+		#
+		#if slot_index < inventory.slots.size():
+			#all_slots[i].update(inventory.slots[slot_index])
+		#else:
+			#all_slots[i].update(InvSlot.new())
 	var all_slots = grid_container.get_children()
 	for i in range(all_slots.size()):
 		var slot_index = i + slot_offset
-		all_slots[i].visible = slot_index < inventory.slots.size()
-		
+		var slot_node = all_slots[i]
+
 		if slot_index < inventory.slots.size():
-			all_slots[i].update(inventory.slots[slot_index])
+			slot_node.update(inventory.slots[slot_index])
+			slot_node.visible = true
 		else:
-			all_slots[i].update(InvSlot.new())
+			slot_node.update(InvSlot.new())
+			slot_node.visible = false
 
 func update_arrows():
 	#Vaja saada täidetud slotide arv

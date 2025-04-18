@@ -32,7 +32,7 @@ func update_sprite_texture(texture: Texture2D):
 
 	# Arvuta tekstuuri kõrgus skaleerimisega
 	var texture_height = texture.get_height() * container_texture.scale.y
-	var bottom_y = 744  # Alumise serva kõrgus
+	var bottom_y = 736  # Alumise serva kõrgus
 
 	# Nihuta nii, et alumine äär jääb samale kohale
 	container_texture.global_position.y = bottom_y - texture_height

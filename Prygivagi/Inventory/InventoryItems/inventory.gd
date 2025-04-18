@@ -17,3 +17,18 @@ func insert(item: InventoryItem):
 			emptyslots[0].item = item
 			emptyslots[0].amount = 1
 	update.emit()
+
+func collapse_slots():
+	for i in range(slots.size()):
+		if not slots[i].item or slots[i].amount <= 0:
+			# Leia järgmine mitte-tühi slot
+			for j in range(i + 1, slots.size()):
+				if slots[j].item and slots[j].amount > 0:
+					# Nihuta järgmine mitte-tühi slot vasakule
+					slots[i].item = slots[j].item
+					slots[i].amount = slots[j].amount
+
+					# Tühjenda vana koht
+					slots[j].item = null
+					slots[j].amount = 0
+					break

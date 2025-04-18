@@ -10,6 +10,8 @@ var is_dragging := true
 @export var item_type: String = ""
 @export var item_name: String = ""
 
+@export var hotbar: Hotbar
+
 @onready var sprite = $Area2D/Sprite2D as Sprite2D
 @onready var collision = $CollisionShape2D as CollisionShape2D
 @onready var area_2d = $Area2D as Area2D
@@ -41,7 +43,8 @@ func _ready():
 func _process(delta):
 	if is_dragging:
 		global_position = get_global_mouse_position()
-	
+
+
 func _unhandled_input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and !event.pressed:
 		on_drop()
@@ -75,6 +78,7 @@ func on_drop():
 				if origin_slot_node and origin_slot_node.has_method("remove_one_item"):
 					origin_slot_node.remove_one_item()
 
+				#Vaja noolte update ka teha
 				queue_free()
 			else:
 				print("Vale konteiner – -25p")
@@ -91,7 +95,6 @@ func return_to_hotbar():
 	var tween := get_tree().create_tween()
 	tween.tween_property(self, "global_position", original_position, 0.3).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
 	tween.finished.connect(func():return_to_slot())
-
 
 
 func return_to_slot():
