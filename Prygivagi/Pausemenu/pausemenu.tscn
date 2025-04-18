@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cn24l7aqmnpj" path="res://Assets/Menu/Menu buttons=Jatka1.png" id="3_yqa5c"]
 [ext_resource type="Texture2D" uid="uid://cr6jcej67nmvu" path="res://Assets/Menu/Menu buttons=Seaded1.png" id="4_i1mhu"]
 [ext_resource type="Texture2D" uid="uid://coqybpc6nh6db" path="res://Assets/Menu/Menu buttons=Mangujuhend1.png" id="5_vs6xx"]
-[ext_resource type="Texture2D" uid="uid://cw72fkcgkueb8" path="res://Assets/Menu/Menu buttons=Sorteerimine1.png" id="6_ckf0c"]
+[ext_resource type="Texture2D" uid="uid://btxsij8umqkjr" path="res://Assets/Menu/Pause/Menu buttons=Sorteerimine1.png" id="7_0hrg7"]
 [ext_resource type="AudioStream" uid="uid://covwwql5uubv3" path="res://Audio/click_mouse_button.wav" id="7_7aiiu"]
 [ext_resource type="PackedScene" uid="uid://dlh5o1brjrpdv" path="res://Options/options.tscn" id="7_er2sg"]
 [ext_resource type="PackedScene" uid="uid://dgh05vmajtinm" path="res://Instructions/instructions_page.tscn" id="8_5w3u7"]
@@ -114,7 +114,7 @@ layout_mode = 2
 
 [node name="Sprite2D2" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Sorting_Instructions_Button"]
 position = Vector2(247, 52)
-texture = ExtResource("6_ckf0c")
+texture = ExtResource("7_0hrg7")
 
 [node name="Separator6" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
