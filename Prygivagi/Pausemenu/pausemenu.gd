@@ -149,8 +149,8 @@ func _on_back_to_main_menu_button_mouse_exited():
 
 
 func _on_sorting_instructions_button_mouse_entered():
-	sorting_instructions_image.texture = load("res://Assets/Menu/Menu buttons=Sorteerimine2.png")
+	sorting_instructions_image.texture = load("res://Assets/Menu/Pause/Menu buttons=Sorteerimine2.png")
 
 
 func _on_sorting_instructions_button_mouse_exited():
-	sorting_instructions_image.texture = load("res://Assets/Menu/Menu buttons=Sorteerimine1.png")
+	sorting_instructions_image.texture = load("res://Assets/Menu/Pause/Menu buttons=Sorteerimine1.png")

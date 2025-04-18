@@ -93,3 +93,10 @@ func get_filled_slot_count() -> int:
 		if slot.item and slot.amount > 0:
 			count += 1
 	return count
+
+func get_total_item_count() -> int:
+	var total := 0
+	for slot in inventory.slots:
+		if slot.item:
+			total += slot.amount
+	return total

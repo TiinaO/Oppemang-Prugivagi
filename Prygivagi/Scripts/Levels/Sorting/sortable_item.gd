@@ -14,10 +14,12 @@ var is_dragging := true
 @onready var collision = $CollisionShape2D as CollisionShape2D
 @onready var area_2d = $Area2D as Area2D
 
+@onready var next_level_arrow = get_tree().current_scene.get_node("Sprite2D")
+
 var slot: InvSlot
 
 # Called when the node enters the scene tree for the first time
-func _ready():
+func _ready():	
 	if item_data:
 		print("SortableItem sai item_data:", item_data.type, "| tüüp:", item_data.type)
 		item_type = item_data.type
@@ -32,7 +34,7 @@ func _ready():
 	set_process(true)
 	set_process_unhandled_input(true)
 	
-	#Konteineri jaoks
+	#Konteineri jaoks, et suudaks tuvastada, kas on alas
 	add_to_group("draggables")
 	area_2d.monitoring = true
 	area_2d.monitorable = true
@@ -63,44 +65,36 @@ func on_drop():
 		var container = area.get_parent() 
 
 		if container and container.has_meta("is_container_bin"):
-			
 			var container_type = container.container_data.type
 			var item_type = item_data.type
 			
 			print("Konteineri tüüp on: ", container_type, " ja item type on: ", item_type)
 			
-			if item_type == container_type:
+			var is_correct = item_type == container_type
+			var feedback = get_tree().current_scene.get_node("Feedback")
+			
+			if is_correct:
 				print("Õige konteiner – +100p")
 				Global.skoor += 100
+				Global.items_sorted += 1
 
 				if origin_slot_node and origin_slot_node.has_method("remove_one_item"):
 					origin_slot_node.remove_one_item()
 				
-				var feedback = get_tree().current_scene.get_node("Feedback")
 				if feedback:
 					feedback.show_positive_feedback()
-					if container.has_node("Container"):
-						var container_sprite = container.get_node("Container") as Sprite2D
-						if container_sprite:
-							var sprite_global_pos = container_sprite.get_global_position()
-							var sprite_size = container_sprite.texture.get_size() * container_sprite.scale
-							var icon_position = sprite_global_pos - Vector2(sprite_size.x /50 - 80, sprite_size.y * 0.25 + 20) 
-							feedback.show_feedback_icon_at_position(icon_position, true)
-				#Vaja noolte update ka teha
+					_show_feedback_icon(container, true)
+
+				if Global.items_sorted >= Global.total_items_collected:
+						next_level_arrow.set_enabled(true)
+					
 				queue_free()
 			else:
 				print("Vale konteiner – -25p")
 				Global.skoor -= 25
-				var feedback = get_tree().current_scene.get_node("Feedback")
 				if feedback:
 					feedback.show_negative_feedback()
-					if container.has_node("Container"):
-						var container_sprite = container.get_node("Container") as Sprite2D
-						if container_sprite:
-							var sprite_global_pos = container_sprite.get_global_position()
-							var sprite_size = container_sprite.texture.get_size() * container_sprite.scale
-							var icon_position = sprite_global_pos - Vector2(sprite_size.x /50 - 80, sprite_size.y * 0.25 + 20) 
-							feedback.show_feedback_icon_at_position(icon_position, false) 
+					_show_feedback_icon(container, false)
 				return_to_hotbar()
 			
 			return  # katkestame peale esimest konteinerit
@@ -119,6 +113,22 @@ func return_to_slot():
 	if origin_slot_node and origin_slot_node.has_method("restore_item"):
 		origin_slot_node.restore_item()
 	queue_free()
+
+#Visuaal - õige ja vale ikoon
+func _show_feedback_icon(container: Node, is_positive: bool):
+	if not container.has_node("Container"):
+		return
+	var container_sprite = container.get_node("Container") as Sprite2D
+	if not container_sprite:
+		return
+
+	var sprite_global_pos = container_sprite.get_global_position()
+	var sprite_size = container_sprite.texture.get_size() * container_sprite.scale
+	var icon_position = sprite_global_pos - Vector2(sprite_size.x / 50 - 80, sprite_size.y * 0.25 + 20)
+
+	var feedback = get_tree().current_scene.get_node("Feedback")
+	if feedback:
+		feedback.show_feedback_icon_at_position(icon_position, is_positive)
 
 
 #Konteineri jaoks, et saada kätte eseme tüüp
