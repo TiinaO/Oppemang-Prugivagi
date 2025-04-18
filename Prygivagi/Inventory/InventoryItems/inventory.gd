@@ -3,6 +3,7 @@ extends Resource
 class_name Inventory
 
 signal update
+signal update_arrows_requested 
 
 #@export var items: Array[InventoryItem]
 @export var slots: Array[InvSlot]
@@ -32,3 +33,6 @@ func collapse_slots():
 					slots[j].item = null
 					slots[j].amount = 0
 					break
+					
+	# Uuenda hotbari nooli
+	update_arrows_requested.emit()

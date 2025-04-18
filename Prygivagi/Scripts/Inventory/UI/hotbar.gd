@@ -1,6 +1,6 @@
 extends Control
 
-class_name Hotbar
+class_name HotbarClass
 
 @export var visible_slots := 5
 var slot_offset := 0 #Mitmendast slotist alustada
@@ -26,6 +26,7 @@ var right_arrow_texture_disabled = preload("res://Assets/Menu/UI buttons=Paremal
 func _ready():
 	# Inventory uuendamisel uuendatakse ka hotbar
 	inventory.update.connect(update_slots)
+	inventory.update_arrows_requested.connect(update_arrows)
 	#Noolte vajutus
 	left_arrow.pressed.connect(_on_left_arrow_pressed)
 	right_arrow.pressed.connect(_on_right_arrow_pressed)

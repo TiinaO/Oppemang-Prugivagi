@@ -10,8 +10,6 @@ var is_dragging := true
 @export var item_type: String = ""
 @export var item_name: String = ""
 
-@export var hotbar: Hotbar
-
 @onready var sprite = $Area2D/Sprite2D as Sprite2D
 @onready var collision = $CollisionShape2D as CollisionShape2D
 @onready var area_2d = $Area2D as Area2D
@@ -77,12 +75,32 @@ func on_drop():
 
 				if origin_slot_node and origin_slot_node.has_method("remove_one_item"):
 					origin_slot_node.remove_one_item()
-
+				
+				var feedback = get_tree().current_scene.get_node("Feedback")
+				if feedback:
+					feedback.show_positive_feedback()
+					if container.has_node("Container"):
+						var container_sprite = container.get_node("Container") as Sprite2D
+						if container_sprite:
+							var sprite_global_pos = container_sprite.get_global_position()
+							var sprite_size = container_sprite.texture.get_size() * container_sprite.scale
+							var icon_position = sprite_global_pos - Vector2(sprite_size.x /50 - 80, sprite_size.y * 0.25 + 20) 
+							feedback.show_feedback_icon_at_position(icon_position, true)
 				#Vaja noolte update ka teha
 				queue_free()
 			else:
 				print("Vale konteiner – -25p")
 				Global.skoor -= 25
+				var feedback = get_tree().current_scene.get_node("Feedback")
+				if feedback:
+					feedback.show_negative_feedback()
+					if container.has_node("Container"):
+						var container_sprite = container.get_node("Container") as Sprite2D
+						if container_sprite:
+							var sprite_global_pos = container_sprite.get_global_position()
+							var sprite_size = container_sprite.texture.get_size() * container_sprite.scale
+							var icon_position = sprite_global_pos - Vector2(sprite_size.x /50 - 80, sprite_size.y * 0.25 + 20) 
+							feedback.show_feedback_icon_at_position(icon_position, false) 
 				return_to_hotbar()
 			
 			return  # katkestame peale esimest konteinerit
@@ -93,7 +111,7 @@ func on_drop():
 
 func return_to_hotbar():
 	var tween := get_tree().create_tween()
-	tween.tween_property(self, "global_position", original_position, 0.3).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+	tween.tween_property(self, "global_position", original_position, 0.3).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)	
 	tween.finished.connect(func():return_to_slot())
 
 
@@ -103,10 +121,6 @@ func return_to_slot():
 	queue_free()
 
 
-func correctly_sorterd():
-	#Siia lisada veel loogikat, mis peab juhtuma siis, kui korrektselt sorteeritud, NT punktid
-	queue_free()
-	
 #Konteineri jaoks, et saada kätte eseme tüüp
 func get_item_type() -> String:
 	if item_data:
