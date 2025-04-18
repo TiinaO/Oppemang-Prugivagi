@@ -54,6 +54,14 @@ func _gui_input(event):
 
 			
 func spawn_draggable_item():
+	if get_tree().current_scene.name != "sorting_level":
+		print("Ei saa lohistada")
+		return
+		
+	if slot.item == null:
+		print("Pole eset, mida lohistada")
+		return
+	
 	var item_scene = preload("res://Scenes/Levels/Sorting/sortable_item.tscn")
 	var item_instance = item_scene.instantiate()
 	
