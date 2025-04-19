@@ -4,6 +4,8 @@ extends Sprite2D
 @export var disabled_texture: Texture2D = preload("res://Assets/UI_/_Button_/State=Inaktiivne.png")
 var is_enabled: bool = true
 
+@onready var confirm_popup = get_tree().current_scene.get_node("Confirm/ConfirmActionPopup") as ConfirmActionPopup
+
 func _ready():
 	# Luba sisendi sündmused
 	set_process_input(true)
@@ -18,8 +20,10 @@ func _input(event):
 				_on_sprite_clicked()
 
 func _on_sprite_clicked():
-	get_tree().change_scene_to_file("res://Levels/game_level2.tscn")
-	print("tere")
+	confirm_popup.show_confirm("KAS OLED KINDEL, ET SOOVID EDASI MINNA?", 
+	func():
+		get_tree().change_scene_to_file("res://Levels/game_level2.tscn"))
+
 
 func set_enabled(value: bool):
 	is_enabled = value
