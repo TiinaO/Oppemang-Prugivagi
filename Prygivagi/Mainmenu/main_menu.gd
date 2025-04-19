@@ -19,11 +19,25 @@ extends Control
 
 @onready var confirm_popup = $ConfirmActionPopup as ConfirmActionPopup
 
+var new_game = preload("res://Levels/game_level.tscn")
+
 func _ready():
 	handle_connecting_signals()
+	new_game
 
 func on_new_game_pressed() -> void:
 	click_sfx.play()
+	Global.skoor = 0
+	# Nulli kogutud asjad (inventory)
+	if Global.player_inventory:  # Kui inventory eksisteerib
+		for slot in Global.player_inventory.slots:
+			slot.item = null
+			slot.amount = 0
+
+		Global.player_inventory.update.emit()  # Kui sul on selline signaal (nt hotbari uuendamiseks)
+
+	# Nulli sorteeritud esemed
+	Global.items_sorted = 0
 	get_tree().change_scene_to_file("res://Levels/game_level.tscn")
 
 func on_options_pressed() -> void:
