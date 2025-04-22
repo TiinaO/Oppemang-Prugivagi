@@ -6,7 +6,7 @@
 
 [resource]
 script = ExtResource("1_ul586")
-type = "mixed"
+type = "segapakend"
 display_name = "Mixedkontainer"
 texture_closed = ExtResource("2_5sgfa")
 texture_open = ExtResource("3_yot04")

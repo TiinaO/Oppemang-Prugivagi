@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://cn06pocbatxra"]
+
+[ext_resource type="PackedScene" uid="uid://dggc5mowrx8qb" path="res://Scenes/Collectables/collectable.tscn" id="1_p2fso"]
+[ext_resource type="Resource" uid="uid://cm5x4vcy3iyb1" path="res://Data/Items/Bio/banana.tres" id="2_k0gcg"]
+[ext_resource type="Texture2D" uid="uid://31wnxhj3k83q" path="res://Assets/Collectable/bio/Banaanikoor.png" id="3_80w7u"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_di7je"]
+resource_local_to_scene = true
+radius = 75.06
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jvtpd"]
+resource_local_to_scene = true
+radius = 42.0
+
+[node name="Collectable" instance=ExtResource("1_p2fso")]
+itemRes = ExtResource("2_k0gcg")
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("CircleShape2D_di7je")
+
+[node name="Sprite2D" parent="." index="1"]
+scale = Vector2(0.7, 0.701)
+texture = ExtResource("3_80w7u")
+
+[node name="CollisionShape2D" parent="StaticBody2D" index="0"]
+shape = SubResource("CircleShape2D_jvtpd")
+
+[node name="Label" parent="." index="3"]
+offset_left = -61.0
+offset_top = -119.0
+offset_right = 354.0
+offset_bottom = 44.0
+scale = Vector2(0.3, 0.3)
+text = "BANAAN"

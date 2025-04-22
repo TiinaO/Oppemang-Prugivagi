@@ -8,18 +8,18 @@
 [ext_resource type="Texture2D" uid="uid://cq4h5x5p1huyc" path="res://Assets/tilemap_lvl1_v.png" id="4_6uri4"]
 [ext_resource type="FontFile" uid="uid://d347pn0mkw81k" path="res://Assets/Andika-Bold.ttf" id="5_2r3b6"]
 [ext_resource type="Texture2D" uid="uid://hmdugjiulvxi" path="res://Assets/tilemap_lvl2_v.png" id="5_cbhdb"]
+[ext_resource type="PackedScene" uid="uid://xodld3dgufoi" path="res://Scenes/Collectables/Bio/apple.tscn" id="6_hafti"]
 [ext_resource type="PackedScene" uid="uid://cr5hyyge47l3w" path="res://Pausemenu/pausemenu.tscn" id="6_mn7t4"]
-[ext_resource type="PackedScene" uid="uid://xodld3dgufoi" path="res://Scenes/Collectables/apple.tscn" id="7_58wwd"]
+[ext_resource type="PackedScene" uid="uid://tvwgnfe3xgyp" path="res://Scenes/Collectables/Bio/watermelon.tscn" id="7_l1deb"]
 [ext_resource type="Texture2D" uid="uid://drl7dteat4ox7" path="res://Assets/GUI/Punktid.png" id="8_d2cxp"]
-[ext_resource type="PackedScene" uid="uid://tvwgnfe3xgyp" path="res://Scenes/Collectables/watermelon.tscn" id="8_dhiqf"]
-[ext_resource type="PackedScene" uid="uid://bye6rjipbjwrc" path="res://Scenes/Collectables/conserveCan.tscn" id="9_j4chm"]
-[ext_resource type="PackedScene" uid="uid://chmu7nkldg2wl" path="res://Scenes/Collectables/jogurt.tscn" id="10_ihupw"]
+[ext_resource type="PackedScene" uid="uid://bye6rjipbjwrc" path="res://Scenes/Collectables/Pakend/conserveCan.tscn" id="8_qr0ah"]
+[ext_resource type="PackedScene" uid="uid://chmu7nkldg2wl" path="res://Scenes/Collectables/Pakend/jogurt.tscn" id="9_5a4y1"]
 [ext_resource type="PackedScene" uid="uid://u6moandru342" path="res://Inventory/InventoryGui/inventoryGui.tscn" id="11_5jpcp"]
 [ext_resource type="PackedScene" uid="uid://5xem7eo0lkvw" path="res://Scenes/Collectables/tshirt.tscn" id="11_gbmk1"]
+[ext_resource type="PackedScene" uid="uid://cgha1lfhfnybk" path="res://Scenes/Collectables/Klaas/glassJar.tscn" id="11_km4ne"]
+[ext_resource type="PackedScene" uid="uid://cr56f4dukqes5" path="res://Scenes/Collectables/Papp/cardboardBox.tscn" id="12_n70sb"]
 [ext_resource type="Script" path="res://Inventory/InventoryGui/CanvasLayer.gd" id="12_npyxb"]
-[ext_resource type="PackedScene" uid="uid://cgha1lfhfnybk" path="res://Scenes/Collectables/glassJar.tscn" id="12_qd444"]
 [ext_resource type="Texture2D" uid="uid://ya2trji2ni4a" path="res://Assets/GUI/UI buttons=UI buttons3.png" id="13_25fbn"]
-[ext_resource type="PackedScene" uid="uid://cr56f4dukqes5" path="res://Scenes/Collectables/cardboardBox.tscn" id="13_d3007"]
 [ext_resource type="Texture2D" uid="uid://bhxfobe2bgfx8" path="res://Assets/tilemap_lvl2_v1.png" id="14_5r5bv"]
 [ext_resource type="Script" path="res://Levels/InventoryInfo.gd" id="14_wqiuj"]
 [ext_resource type="Script" path="res://Levels/changelevel.gd" id="23_bleug"]
@@ -2183,13 +2183,13 @@ texture_region_size = Vector2i(256, 256)
 8:18/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_fhchq"]
-scenes/1/scene = ExtResource("7_58wwd")
-scenes/2/scene = ExtResource("8_dhiqf")
-scenes/3/scene = ExtResource("9_j4chm")
-scenes/6/scene = ExtResource("10_ihupw")
+scenes/1/scene = ExtResource("6_hafti")
+scenes/2/scene = ExtResource("7_l1deb")
+scenes/3/scene = ExtResource("8_qr0ah")
+scenes/6/scene = ExtResource("9_5a4y1")
 scenes/7/scene = ExtResource("11_gbmk1")
-scenes/8/scene = ExtResource("12_qd444")
-scenes/9/scene = ExtResource("13_d3007")
+scenes/8/scene = ExtResource("11_km4ne")
+scenes/9/scene = ExtResource("12_n70sb")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t3dml"]
 texture = ExtResource("14_5r5bv")
@@ -2834,41 +2834,5 @@ position = Vector2(5658, -1229.5)
 scale = Vector2(10, 10)
 shape = SubResource("RectangleShape2D_2rmvh")
 
-[connection signal="body_entered" from="TileMap/Collectable" to="TileMap/Collectable" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/Collectable" to="TileMap/Collectable" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@21182" to="TileMap/@Area2D@21182" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@21182" to="TileMap/@Area2D@21182" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/Apple" to="TileMap/Apple" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/Apple" to="TileMap/Apple" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@21183" to="TileMap/@Area2D@21183" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@21183" to="TileMap/@Area2D@21183" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@21184" to="TileMap/@Area2D@21184" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@21184" to="TileMap/@Area2D@21184" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@21185" to="TileMap/@Area2D@21185" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@21185" to="TileMap/@Area2D@21185" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@21186" to="TileMap/@Area2D@21186" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@21186" to="TileMap/@Area2D@21186" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@21187" to="TileMap/@Area2D@21187" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@21187" to="TileMap/@Area2D@21187" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@21188" to="TileMap/@Area2D@21188" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@21188" to="TileMap/@Area2D@21188" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@21189" to="TileMap/@Area2D@21189" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@21189" to="TileMap/@Area2D@21189" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@21190" to="TileMap/@Area2D@21190" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@21190" to="TileMap/@Area2D@21190" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@21191" to="TileMap/@Area2D@21191" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@21191" to="TileMap/@Area2D@21191" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@21192" to="TileMap/@Area2D@21192" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@21192" to="TileMap/@Area2D@21192" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@21193" to="TileMap/@Area2D@21193" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@21193" to="TileMap/@Area2D@21193" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@21194" to="TileMap/@Area2D@21194" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@21194" to="TileMap/@Area2D@21194" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@21195" to="TileMap/@Area2D@21195" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@21195" to="TileMap/@Area2D@21195" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@21196" to="TileMap/@Area2D@21196" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@21196" to="TileMap/@Area2D@21196" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap/@Area2D@21197" to="TileMap/@Area2D@21197" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap/@Area2D@21197" to="TileMap/@Area2D@21197" method="_on_body_exited"]
 [connection signal="closed" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_closed"]
 [connection signal="opened" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_opened"]

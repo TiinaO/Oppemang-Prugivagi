@@ -6,7 +6,7 @@
 
 [resource]
 script = ExtResource("1_5mni3")
-type = "old-paper"
+type = "vanapaber"
 display_name = "OldPaperContainer"
 texture_closed = ExtResource("2_5f0pa")
 texture_open = ExtResource("3_tqxgy")

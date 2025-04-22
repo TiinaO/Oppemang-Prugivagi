@@ -6,7 +6,7 @@
 
 [resource]
 script = ExtResource("1_ylius")
-type = "glass"
+type = "klaas"
 display_name = "Klaaspakend"
 texture_closed = ExtResource("2_prhjy")
 texture_open = ExtResource("3_fkm15")

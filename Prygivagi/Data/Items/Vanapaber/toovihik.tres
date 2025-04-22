@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://bh2va0lyuvfuu"]
+
+[ext_resource type="Script" path="res://Inventory/InventoryItems/inventory_item.gd" id="1_bmvt1"]
+[ext_resource type="Texture2D" uid="uid://dx0cmhrnmoi7q" path="res://Assets/Collectable/vanapaber/Toovihik.png" id="2_7qow6"]
+
+[resource]
+script = ExtResource("1_bmvt1")
+name = "töövihik"
+texture = ExtResource("2_7qow6")
+type = "vanapaber"

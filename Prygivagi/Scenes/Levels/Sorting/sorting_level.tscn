@@ -153,6 +153,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="ResetTimer" type="Timer" parent="Feedback"]
+wait_time = 3.0
 
 [node name="PauseMenu" type="CanvasLayer" parent="."]
 

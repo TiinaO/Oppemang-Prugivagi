@@ -9,6 +9,11 @@ var player_in_area = false
 
 func _ready():
 	label.visible = false
+	
+	#Antakse vastavalt resursi failile texture ja nimi 
+	if itemRes and itemRes.texture and itemRes.name:
+		$Sprite2D.texture = itemRes.texture
+		label.text = itemRes.name
 
 func _on_body_entered(body):
 	#Vajalik selle jaoks, et ülesse võetud asi jõuaks inventory'sse

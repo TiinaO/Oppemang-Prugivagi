@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://e1yv7rird181"]
+
+[ext_resource type="Script" path="res://Inventory/InventoryItems/inventory_item.gd" id="1_tiryo"]
+[ext_resource type="Texture2D" uid="uid://giledc6y01ry" path="res://Assets/Collectable/papp/majapidamispaberi-rull.png" id="2_7sust"]
+
+[resource]
+script = ExtResource("1_tiryo")
+name = "majapidamispaberi rull"
+texture = ExtResource("2_7sust")
+type = "papp"
