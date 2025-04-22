@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnt2710avr1wd"
-path="res://.godot/imported/Vector 39.png-a3c4a1689abd27a802709cbc90662694.ctex"
+uid="uid://cqbko1ck65o28"
+path="res://.godot/imported/Kohvipaks.png-b47d2fbd22e6ec3023d8f5679222dbf4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Collectable/Vector 39.png"
-dest_files=["res://.godot/imported/Vector 39.png-a3c4a1689abd27a802709cbc90662694.ctex"]
+source_file="res://Assets/Collectable/bio_proov/Kohvipaks.png"
+dest_files=["res://.godot/imported/Kohvipaks.png-b47d2fbd22e6ec3023d8f5679222dbf4.ctex"]
 
 [params]
 

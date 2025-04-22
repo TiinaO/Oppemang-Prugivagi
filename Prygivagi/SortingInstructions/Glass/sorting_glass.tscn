@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://c3pse2fdfn1g5"]
+[gd_scene load_steps=9 format=3 uid="uid://c3pse2fdfn1g5"]
 
 [ext_resource type="Script" path="res://SortingInstructions/Glass/sorting_glass.gd" id="1_1kefr"]
 [ext_resource type="Texture2D" uid="uid://dqu1764awvg5x" path="res://Assets/Menu/Sorting/Sorting_glass.png" id="1_6fco0"]
-[ext_resource type="Texture2D" uid="uid://c6t8r0j1qq6y8" path="res://Assets/Menu/JÄTA VAHELE.png" id="2_aihx5"]
 [ext_resource type="Texture2D" uid="uid://53oci6kuo0bo" path="res://Assets/Menu/UI buttons=Vasakule.png" id="3_7i47k"]
+[ext_resource type="Texture2D" uid="uid://rjjhw7pnlywx" path="res://Assets/Menu/Sorting/Klaaspakend.png" id="3_s4lap"]
+[ext_resource type="Texture2D" uid="uid://biblbs4vdyniv" path="res://Assets/Menu/UI buttons=Sulge.png" id="4_h5tyi"]
 [ext_resource type="Texture2D" uid="uid://d0m17crecikgy" path="res://Assets/Menu/UI buttons=Paremale.png" id="4_j8bbd"]
 [ext_resource type="AudioStream" uid="uid://covwwql5uubv3" path="res://Audio/click_mouse_button.wav" id="5_s0hfy"]
 [ext_resource type="PackedScene" uid="uid://d4jjj82a5x5a" path="res://SortingInstructions/Waste/sorting_waste.tscn" id="7_1pvit"]
@@ -26,18 +27,43 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="MarginContainer"]
+visible = false
 texture = ExtResource("1_6fco0")
+offset = Vector2(960, 540)
+
+[node name="Sprite2D2" type="Sprite2D" parent="MarginContainer"]
+texture = ExtResource("3_s4lap")
 offset = Vector2(960, 540)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
 alignment = 2
+
+[node name="Exit_Button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+icon = ExtResource("4_h5tyi")
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/Exit_Button"]
+texture = ExtResource("4_h5tyi")
+
+[node name="Separator2" type="Control" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+
+[node name="Separator between buttons" type="Control" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 722)
+layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 
 [node name="Separator2" type="Control" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(140, 0)
+custom_minimum_size = Vector2(116, 0)
 layout_mode = 2
 
 [node name="Back_Button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
@@ -51,7 +77,7 @@ texture = ExtResource("3_7i47k")
 centered = false
 
 [node name="Separator" type="Control" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(1400, 0)
+custom_minimum_size = Vector2(1464, 0)
 layout_mode = 2
 
 [node name="Next_Button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
@@ -65,28 +91,7 @@ texture = ExtResource("4_j8bbd")
 centered = false
 
 [node name="Separator" type="Control" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 260)
-layout_mode = 2
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-alignment = 2
-
-[node name="Exit_Button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
-self_modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-icon = ExtResource("2_aihx5")
-
-[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/Exit_Button"]
-position = Vector2(85, 17)
-texture = ExtResource("2_aihx5")
-
-[node name="Separator2" type="Control" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(168, 0)
-layout_mode = 2
-
-[node name="Separator2" type="Control" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 140)
+custom_minimum_size = Vector2(0, 30)
 layout_mode = 2
 
 [node name="ClickButtonSfx" type="AudioStreamPlayer" parent="."]

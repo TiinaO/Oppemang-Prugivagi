@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://xodld3dgufoi"]
 
-[ext_resource type="PackedScene" uid="uid://dggc5mowrx8qb" path="res://Scenes/Collectables/collectable.tscn" id="1_7b7vx"]
-[ext_resource type="Texture2D" uid="uid://cnt2710avr1wd" path="res://Assets/Collectable/Vector 39.png" id="2_flwr7"]
-[ext_resource type="Resource" uid="uid://bvcn1ddumj1e6" path="res://Data/Items/Bio/apple.tres" id="2_r3748"]
+[ext_resource type="PackedScene" uid="uid://dggc5mowrx8qb" path="res://Scenes/Collectables/collectable.tscn" id="1_rml1l"]
+[ext_resource type="Resource" uid="uid://bvcn1ddumj1e6" path="res://Data/Items/Bio/apple.tres" id="2_u47gu"]
+[ext_resource type="Texture2D" uid="uid://sloyx0t2kygr" path="res://Assets/Collectable/bio_proov/Oun-punane.png" id="3_mx4ou"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3183d"]
 resource_local_to_scene = true
@@ -12,15 +12,15 @@ radius = 91.0055
 resource_local_to_scene = true
 radius = 42.0
 
-[node name="Apple" instance=ExtResource("1_7b7vx")]
-itemRes = ExtResource("2_r3748")
+[node name="Apple" instance=ExtResource("1_rml1l")]
+itemRes = ExtResource("2_u47gu")
 
 [node name="CollisionShape2D" parent="." index="0"]
 shape = SubResource("CircleShape2D_3183d")
 
 [node name="Sprite2D" parent="." index="1"]
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("2_flwr7")
+texture = ExtResource("3_mx4ou")
 
 [node name="CollisionShape2D" parent="StaticBody2D" index="0"]
 shape = SubResource("CircleShape2D_2ujcc")

@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://bvcn1ddumj1e6"]
 
 [ext_resource type="Script" path="res://Inventory/InventoryItems/inventory_item.gd" id="1_f7wef"]
-[ext_resource type="Texture2D" uid="uid://cnt2710avr1wd" path="res://Assets/Collectable/Vector 39.png" id="2_6af3v"]
+[ext_resource type="Texture2D" uid="uid://cnt2710avr1wd" path="res://Assets/Collectable/bio/Vector 39.png" id="2_as6n8"]
 
 [resource]
 script = ExtResource("1_f7wef")
 name = "õun"
-texture = ExtResource("2_6af3v")
+texture = ExtResource("2_as6n8")
 type = "bio"

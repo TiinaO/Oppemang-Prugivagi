@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://barhux58vui2y"]
 
 [ext_resource type="Script" path="res://Inventory/InventoryItems/inventory_item.gd" id="1_pffmh"]
-[ext_resource type="Texture2D" uid="uid://dna1fp147q3mk" path="res://Assets/Collectable/bio/Pahklikoored.png" id="2_xdyym"]
+[ext_resource type="Texture2D" uid="uid://dn54t47cu08ms" path="res://Assets/Collectable/bio/porgand.png" id="2_wvd7l"]
 
 [resource]
 script = ExtResource("1_pffmh")
-name = "pähkli koored"
-texture = ExtResource("2_xdyym")
+name = "porgand"
+texture = ExtResource("2_wvd7l")
 type = "bio"
