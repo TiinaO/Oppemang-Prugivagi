@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var move_speed: float = 1600 #800
+@export var move_speed: float = 800
 @export var inventory: Inventory
 
 @onready var movementSound: AudioStreamPlayer2D = $AudioStreamPlayer2D
