@@ -2,10 +2,14 @@ extends Area2D
 
 @export var itemRes: InventoryItem
 @onready var label: Label = $Label
+@onready var score_label = $UserInterface/GameUI/Score as Label
 
 var player = null
 
 var player_in_area = false
+
+var label_offset = 80  # Kui kaugele Label asetatakse Collectable-st
+var min_distance = 36  # Min kogus, et ei kattuks korjatava esemega
 
 func _ready():
 	label.visible = false
@@ -41,9 +45,15 @@ func _process(_delta):
 		queue_free()
 		var game_level = get_node("/root/GameLevel")
 		game_level.add_score(100)
-	
+			
 	var player_node = get_parent()	
 	if player_node != null and player_node.name == "PlayerRaccoon":
 		player_node.play_action_animation()
+		
+	if player_in_area and player:
+		var direction = (player.global_position - global_position).normalized()
+		var opposite_direction = -direction  # Vastupidine suund
+		var final_position = global_position + (opposite_direction * (label_offset + min_distance))
+		label.global_position = final_position   - (label.size * 0.35) #Labeli asukoht
 
 

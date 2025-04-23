@@ -9,3 +9,5 @@ var picked_items: Array = []
 #Sorteerimise taseme esemete koguse visualiseerimine
 var total_items_collected := 0
 var items_sorted := 0
+
+

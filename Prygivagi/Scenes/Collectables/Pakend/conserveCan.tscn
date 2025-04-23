@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://dstq0fq7gdu42" path="res://Assets/Collectable/Konservitoos.png" id="2_6cl57"]
 [ext_resource type="Resource" uid="uid://d00204ctvu6c6" path="res://Data/Items/Pakend/conserveCan.tres" id="2_i4g85"]
 
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_aqq2l"]
 resource_local_to_scene = true
 radius = 97.0206
@@ -26,8 +25,8 @@ texture = ExtResource("2_6cl57")
 shape = SubResource("CircleShape2D_3jlxe")
 
 [node name="Label" parent="." index="3"]
-offset_left = -62.0
-offset_top = -135.0
-offset_right = 415.0
-offset_bottom = 28.0
+offset_left = -124.0
+offset_top = -82.0
+offset_right = 353.0
+offset_bottom = 81.0
 text = "KONSERV"
