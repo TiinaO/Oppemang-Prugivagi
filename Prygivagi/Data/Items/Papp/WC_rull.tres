@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://c1hj6nv2nh35m"]
+
+[ext_resource type="Script" path="res://Inventory/InventoryItems/inventory_item.gd" id="1_yfhln"]
+[ext_resource type="Texture2D" uid="uid://bl60oa1ah5hvn" path="res://Assets/Collectable/papp/WC-rull.png" id="2_kp5a3"]
+
+[resource]
+script = ExtResource("1_yfhln")
+name = "WC rull"
+texture = ExtResource("2_kp5a3")
+type = "papp"

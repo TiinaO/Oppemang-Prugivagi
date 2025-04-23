@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://byd6ou27gh3we"]
+
+[ext_resource type="Script" path="res://Inventory/InventoryItems/inventory_item.gd" id="1_7t1nx"]
+[ext_resource type="Texture2D" uid="uid://dvvpluqhwhhyh" path="res://Assets/Collectable/bio/Nartsinud_lill.png" id="2_l0r34"]
+
+[resource]
+script = ExtResource("1_7t1nx")
+name = "närtsinud lill"
+texture = ExtResource("2_l0r34")
+type = "bio"

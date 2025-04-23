@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://bycx2vejhq6o2"]
+
+[ext_resource type="Script" path="res://Inventory/InventoryItems/inventory_item.gd" id="1_3uooi"]
+[ext_resource type="Texture2D" uid="uid://cp5i14wblpj4j" path="res://Assets/Collectable/pakend/Mahlapakk-kartong.png" id="2_kam6r"]
+
+[resource]
+script = ExtResource("1_3uooi")
+name = "mahlapakk"
+texture = ExtResource("2_kam6r")
+type = "segapakend"

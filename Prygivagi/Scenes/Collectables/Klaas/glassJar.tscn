@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://cgha1lfhfnybk"]
+
+[ext_resource type="PackedScene" uid="uid://dggc5mowrx8qb" path="res://Scenes/Collectables/collectable.tscn" id="1_6dby5"]
+[ext_resource type="Resource" uid="uid://d1hq5t2gghsac" path="res://Data/Items/Klaas/glassJar.tres" id="2_mo8xv"]
+[ext_resource type="Texture2D" uid="uid://cwk6fji7uy236" path="res://Assets/Collectable/purk_1.png" id="3_oean7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hv8l4"]
+resource_local_to_scene = true
+radius = 46.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cg8ne"]
+resource_local_to_scene = true
+radius = 28.0
+
+[node name="Collectable" instance=ExtResource("1_6dby5")]
+itemRes = ExtResource("2_mo8xv")
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("CircleShape2D_hv8l4")
+
+[node name="Sprite2D" parent="." index="1"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_oean7")
+
+[node name="CollisionShape2D" parent="StaticBody2D" index="0"]
+shape = SubResource("CircleShape2D_cg8ne")
+
+[node name="Label" parent="." index="3"]
+offset_left = -76.0
+offset_top = -96.0
+offset_right = 528.0
+offset_bottom = 67.0
+text = "KLAASPURK"

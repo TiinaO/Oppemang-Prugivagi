@@ -51,15 +51,6 @@ func _on_right_arrow_pressed():
 		update_arrows()
 
 func update_slots():
-	#var all_slots = grid_container.get_children()
-	#for i in range(all_slots.size()):
-		#var slot_index = i + slot_offset
-		#all_slots[i].visible = slot_index < inventory.slots.size()
-		#
-		#if slot_index < inventory.slots.size():
-			#all_slots[i].update(inventory.slots[slot_index])
-		#else:
-			#all_slots[i].update(InvSlot.new())
 	var all_slots = grid_container.get_children()
 	for i in range(all_slots.size()):
 		var slot_index = i + slot_offset

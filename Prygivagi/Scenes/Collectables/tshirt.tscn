@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dggc5mowrx8qb" path="res://Scenes/Collectables/collectable.tscn" id="1_ost8k"]
 [ext_resource type="Texture2D" uid="uid://symqabargkmj" path="res://Assets/Collectable/Tsark2.png" id="2_7yth4"]
-[ext_resource type="Resource" uid="uid://b8i1he2nydekq" path="res://Data/Items/tshirt.tres" id="2_vcd7a"]
+[ext_resource type="Resource" uid="uid://b8i1he2nydekq" path="res://Data/Items/Olme/tass.tres" id="2_vcd7a"]
 
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gxpgk"]

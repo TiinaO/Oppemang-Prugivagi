@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://b8i1he2nydekq"]
+
+[ext_resource type="Script" path="res://Inventory/InventoryItems/inventory_item.gd" id="1_4gcyc"]
+[ext_resource type="Texture2D" uid="uid://c4m7qerlfx0mv" path="res://Assets/Collectable/olme/Tass.png" id="2_i2fgb"]
+
+[resource]
+script = ExtResource("1_4gcyc")
+name = "tass"
+texture = ExtResource("2_i2fgb")
+type = "olme"
