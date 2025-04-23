@@ -1,0 +1,93 @@
+[gd_scene load_steps=7 format=3 uid="uid://c4hhlvioow5yl"]
+
+[ext_resource type="Script" path="res://Archive/Menu/Script/Sorting-inst/Waste/sorting_waste.gd" id="1_31sav"]
+[ext_resource type="Texture2D" uid="uid://bmdxsejkacv20" path="res://Assets/Menu/Sorting/Sorting_waste.png" id="2_54aww"]
+[ext_resource type="Texture2D" uid="uid://53oci6kuo0bo" path="res://Assets/Menu/UI buttons=Vasakule.png" id="3_tfes2"]
+[ext_resource type="Texture2D" uid="uid://d0m17crecikgy" path="res://Assets/Menu/UI buttons=Paremale.png" id="4_d5ohj"]
+[ext_resource type="Texture2D" uid="uid://c6t8r0j1qq6y8" path="res://Assets/Menu/JÄTA VAHELE.png" id="5_3by30"]
+[ext_resource type="AudioStream" uid="uid://covwwql5uubv3" path="res://Audio/click_mouse_button.wav" id="6_0tohb"]
+
+[node name="SortingWaste" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_31sav")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer"]
+texture = ExtResource("2_54aww")
+offset = Vector2(960, 540)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Separator2" type="Control" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(140, 0)
+layout_mode = 2
+
+[node name="Back_Button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+icon = ExtResource("3_tfes2")
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer/Back_Button"]
+position = Vector2(4, 3)
+texture = ExtResource("3_tfes2")
+centered = false
+
+[node name="Separator" type="Control" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(1400, 0)
+layout_mode = 2
+
+[node name="Next_Button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+icon = ExtResource("4_d5ohj")
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer/Next_Button"]
+position = Vector2(4, 4)
+texture = ExtResource("4_d5ohj")
+centered = false
+
+[node name="Separator" type="Control" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 260)
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="Exit_Button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+icon = ExtResource("5_3by30")
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/Exit_Button"]
+position = Vector2(85, 17)
+texture = ExtResource("5_3by30")
+
+[node name="Separator3" type="Control" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(168, 0)
+layout_mode = 2
+
+[node name="Separator2" type="Control" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 140)
+layout_mode = 2
+
+[node name="ClickButtonSfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_0tohb")

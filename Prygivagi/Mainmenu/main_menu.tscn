@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://m4tsue86clpx"]
+[gd_scene load_steps=14 format=3 uid="uid://m4tsue86clpx"]
 
 [ext_resource type="Script" path="res://Mainmenu/main_menu.gd" id="1_miivc"]
 [ext_resource type="Texture2D" uid="uid://dw83uahxvgqvd" path="res://Assets/Background/Main_menu_background.png" id="1_ptcvs"]
@@ -6,10 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://5diyid0nhqi0" path="res://Assets/Menu/Menu buttons=Uus_mang1.png" id="4_v427y"]
 [ext_resource type="Texture2D" uid="uid://cr6jcej67nmvu" path="res://Assets/Menu/Menu buttons=Seaded1.png" id="5_tj7av"]
 [ext_resource type="AudioStream" uid="uid://covwwql5uubv3" path="res://Audio/click_mouse_button.wav" id="7_1y2q1"]
+[ext_resource type="Texture2D" uid="uid://btxsij8umqkjr" path="res://Assets/Menu/Pause/Menu buttons=Sorteerimine1.png" id="7_c2glx"]
 [ext_resource type="Texture2D" uid="uid://crwcj4oivso8i" path="res://Assets/Menu/Menu buttons=Valju1.png" id="7_csdps"]
 [ext_resource type="Texture2D" uid="uid://coqybpc6nh6db" path="res://Assets/Menu/Menu buttons=Mangujuhend1.png" id="7_vfbo0"]
 [ext_resource type="PackedScene" uid="uid://dlh5o1brjrpdv" path="res://Options/options.tscn" id="8_bxm1b"]
-[ext_resource type="PackedScene" uid="uid://dgh05vmajtinm" path="res://Instructions/instructions_page.tscn" id="9_j2sjn"]
+[ext_resource type="PackedScene" uid="uid://dgh05vmajtinm" path="res://Scenes/Menu/Instructions/instructions_page.tscn" id="9_j2sjn"]
+[ext_resource type="PackedScene" uid="uid://bs02clbigpdoa" path="res://Scenes/Menu/SortingInstructions/sorting_instructions.tscn" id="11_1tqgt"]
 [ext_resource type="PackedScene" uid="uid://5oig2ox2j1ei" path="res://Scenes/ConfirmActionPopup/confirm_changing_levels.tscn" id="12_m2dol"]
 
 [node name="Main_menu" type="Control"]
@@ -65,7 +67,7 @@ theme_override_constants/separation = 24
 alignment = 1
 
 [node name="Separator2" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 100)
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 
 [node name="New_game_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
@@ -104,6 +106,19 @@ texture = ExtResource("7_vfbo0")
 [node name="Separator6" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
+[node name="Sorting_instructions" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(496, 104)
+layout_mode = 2
+icon = ExtResource("7_c2glx")
+
+[node name="Sprite2D2" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Sorting_instructions"]
+position = Vector2(247, 52)
+texture = ExtResource("7_c2glx")
+
+[node name="Separator7" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
 [node name="Exit_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(496, 104)
@@ -124,6 +139,10 @@ layout_mode = 1
 visible = false
 layout_mode = 1
 
+[node name="SortingInstructions" parent="." instance=ExtResource("11_1tqgt")]
+visible = false
+layout_mode = 1
+
 [node name="ConfirmActionPopup" parent="." instance=ExtResource("12_m2dol")]
 visible = false
 layout_mode = 1
@@ -137,6 +156,8 @@ layout_mode = 1
 [connection signal="mouse_entered" from="MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button" to="." method="_on_tutorials_button_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button" to="." method="_on_tutorials_button_mouse_exited"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button" to="." method="on_tutorials_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/HBoxContainer/VBoxContainer/Sorting_instructions" to="." method="_on_sorting_instructions_mouse_entered"]
+[connection signal="mouse_exited" from="MarginContainer/HBoxContainer/VBoxContainer/Sorting_instructions" to="." method="_on_sorting_instructions_mouse_exited"]
 [connection signal="mouse_entered" from="MarginContainer/HBoxContainer/VBoxContainer/Exit_Button" to="." method="_on_exit_button_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/HBoxContainer/VBoxContainer/Exit_Button" to="." method="_on_exit_button_mouse_exited"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Exit_Button" to="." method="on_exit_pressed"]

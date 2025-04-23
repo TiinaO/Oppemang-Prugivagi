@@ -1,0 +1,80 @@
+[gd_scene load_steps=7 format=3 uid="uid://bs02clbigpdoa"]
+
+[ext_resource type="Script" path="res://Scripts/Menu/SortingInstructions/sorting_instructions.gd" id="1_2g418"]
+[ext_resource type="Texture2D" uid="uid://bi8r7hq20o5dv" path="res://Assets/Menu/Sorting/Nuppudega/Algus.png" id="2_0iqax"]
+[ext_resource type="Texture2D" uid="uid://biblbs4vdyniv" path="res://Assets/Menu/UI buttons=Sulge.png" id="3_ttvf2"]
+[ext_resource type="Texture2D" uid="uid://53oci6kuo0bo" path="res://Assets/Menu/UI buttons=Vasakule.png" id="4_i4dk5"]
+[ext_resource type="Texture2D" uid="uid://d0m17crecikgy" path="res://Assets/Menu/UI buttons=Paremale.png" id="5_8tyia"]
+[ext_resource type="AudioStream" uid="uid://covwwql5uubv3" path="res://Audio/click_mouse_button.wav" id="6_lxcuv"]
+
+[node name="SortingInstructions" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_2g418")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_0iqax")
+stretch_mode = 3
+
+[node name="Exit_Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -145.0
+offset_top = 68.0
+offset_right = -101.0
+offset_bottom = 112.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+icon = ExtResource("3_ttvf2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Exit_Button"]
+position = Vector2(5, 5)
+texture = ExtResource("3_ttvf2")
+centered = false
+
+[node name="Back_Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+offset_left = 110.0
+offset_top = 858.0
+offset_right = 1790.0
+offset_bottom = 962.0
+size_flags_vertical = 8
+icon = ExtResource("4_i4dk5")
+
+[node name="Sprite2D" type="Sprite2D" parent="Back_Button"]
+position = Vector2(4, 3)
+texture = ExtResource("4_i4dk5")
+centered = false
+
+[node name="Next_Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+offset_left = 1686.0
+offset_top = 858.0
+offset_right = 1790.0
+offset_bottom = 962.0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+icon = ExtResource("5_8tyia")
+
+[node name="Sprite2D" type="Sprite2D" parent="Next_Button"]
+position = Vector2(4, 4)
+texture = ExtResource("5_8tyia")
+centered = false
+
+[node name="ClickButtonSfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_lxcuv")

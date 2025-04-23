@@ -1,0 +1,96 @@
+[gd_scene load_steps=8 format=3 uid="uid://nr38uip20y6h"]
+
+[ext_resource type="Texture2D" uid="uid://cmgoytkp3wy2l" path="res://Assets/Menu/Sorting/Puhas/Klaaspakend.png" id="1_al1mj"]
+[ext_resource type="Script" path="res://Archive/Menu/Script/Sorting-inst/Glass/sorting_glass.gd" id="1_fy47w"]
+[ext_resource type="Texture2D" uid="uid://biblbs4vdyniv" path="res://Assets/Menu/UI buttons=Sulge.png" id="2_m61hd"]
+[ext_resource type="Texture2D" uid="uid://53oci6kuo0bo" path="res://Assets/Menu/UI buttons=Vasakule.png" id="3_n70if"]
+[ext_resource type="Texture2D" uid="uid://d0m17crecikgy" path="res://Assets/Menu/UI buttons=Paremale.png" id="4_fuo31"]
+[ext_resource type="AudioStream" uid="uid://covwwql5uubv3" path="res://Audio/click_mouse_button.wav" id="5_nfas1"]
+[ext_resource type="PackedScene" uid="uid://bxp52ppge1qli" path="res://Archive/Menu/Scene/Sorting_inst/Waste/sorting_waste.tscn" id="7_qdmy2"]
+
+[node name="SortingGlass" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_fy47w")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_al1mj")
+stretch_mode = 3
+
+[node name="Exit_Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -145.0
+offset_top = 68.0
+offset_right = -101.0
+offset_bottom = 112.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+icon = ExtResource("2_m61hd")
+
+[node name="Sprite2D" type="Sprite2D" parent="Exit_Button"]
+position = Vector2(5, 5)
+texture = ExtResource("2_m61hd")
+centered = false
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(1784, 956)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -892.0
+offset_top = -478.0
+offset_right = 892.0
+offset_bottom = 478.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 42
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 62
+theme_override_constants/margin_bottom = 56
+
+[node name="Back_Button2" type="Button" parent="MarginContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_vertical = 8
+icon = ExtResource("3_n70if")
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/Back_Button2"]
+position = Vector2(4, 3)
+texture = ExtResource("3_n70if")
+centered = false
+
+[node name="Next_Button2" type="Button" parent="MarginContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+icon = ExtResource("4_fuo31")
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/Next_Button2"]
+position = Vector2(4, 4)
+texture = ExtResource("4_fuo31")
+centered = false
+
+[node name="ClickButtonSfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_nfas1")
+
+[node name="SortingWaste" parent="." instance=ExtResource("7_qdmy2")]
+visible = false
+layout_mode = 1
