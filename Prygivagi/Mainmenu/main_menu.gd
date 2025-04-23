@@ -13,6 +13,10 @@ extends Control
 @onready var start_button = $MarginContainer/HBoxContainer/VBoxContainer/New_game_Button as Button
 @onready var start_image: Sprite2D = $MarginContainer/HBoxContainer/VBoxContainer/New_game_Button/New_game
 
+@onready var sorting_instructions_image = $MarginContainer/HBoxContainer/VBoxContainer/Sorting_instructions/Sprite2D2
+@onready var sorting_instructions_button = $MarginContainer/HBoxContainer/VBoxContainer/Sorting_instructions as Button
+@onready var sorting_instructions_page = $SortingInstructions as SortingInstructions
+
 @onready var exit_button = $MarginContainer/HBoxContainer/VBoxContainer/Exit_Button as Button
 @onready var exit_image: Sprite2D = $MarginContainer/HBoxContainer/VBoxContainer/Exit_Button/Sprite2D3
 @onready var margin_container = $MarginContainer as MarginContainer
@@ -50,6 +54,15 @@ func on_tutorials_pressed() -> void:
 	instructions_page.set_process(true)
 	instructions_page.visible = true
 
+func on_sorting_instructions_button_pressed() -> void:
+	click_sfx.play()
+	await get_tree().create_timer(0.3).timeout
+	sorting_instructions_page.current_index = 0 
+	sorting_instructions_page.update_visual() 
+	margin_container.visible = false
+	sorting_instructions_page.set_process(true)
+	sorting_instructions_page.visible = true
+
 func on_exit_pressed() -> void:
 	margin_container.set_process(false)
 	confirm_popup.show_confirm("KAS OLED KINDEL, ET SOOVID MÄNGU SULGEDA?", 
@@ -73,6 +86,11 @@ func on_exit_popup_pressed() -> void:
 	confirm_popup.visible = false
 	margin_container.set_process(true)
 
+func on_exit_sorting_instructions_pressed() -> void:
+	margin_container.visible = true
+	sorting_instructions_page.set_process(false)
+	sorting_instructions_page.visible = false
+
 func handle_connecting_signals() -> void:
 	start_button.button_down.connect(on_new_game_pressed)
 	exit_button.button_down.connect(on_exit_pressed)
@@ -80,6 +98,8 @@ func handle_connecting_signals() -> void:
 	tutorials_button.button_down.connect(on_tutorials_pressed)
 	options_menu.exit_options_menu.connect(on_exit_options_pressed)
 	instructions_page.exit_instructions_page.connect(on_exit_instructions_pressed)
+	sorting_instructions_button.button_down.connect(on_sorting_instructions_button_pressed)
+	sorting_instructions_page.exit_sorting_instructions.connect(on_exit_sorting_instructions_pressed)
 
 
 func _on_new_game_button_mouse_entered():
@@ -105,3 +125,9 @@ func _on_exit_button_mouse_entered():
 
 func _on_exit_button_mouse_exited():
 	exit_image.texture = load("res://Assets/Menu/Menu buttons=Valju1.png")
+
+func _on_sorting_instructions_mouse_entered():
+	sorting_instructions_image.texture = load("res://Assets/Menu/Pause/Menu buttons=Sorteerimine2.png")
+
+func _on_sorting_instructions_mouse_exited():
+	sorting_instructions_image.texture = load("res://Assets/Menu/Pause/Menu buttons=Sorteerimine1.png")

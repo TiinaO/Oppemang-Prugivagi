@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://drl7dteat4ox7" path="res://Assets/GUI/Punktid.png" id="12_qot28"]
 [ext_resource type="FontFile" uid="uid://d347pn0mkw81k" path="res://Assets/Andika-Bold.ttf" id="13_5kkbf"]
 [ext_resource type="PackedScene" uid="uid://0igd7esk2o5d" path="res://Scenes/Inventory/UI/hotbar.tscn" id="14_eg5j2"]
-[ext_resource type="PackedScene" uid="uid://cr5hyyge47l3w" path="res://Pausemenu/pausemenu.tscn" id="15_kra57"]
+[ext_resource type="PackedScene" uid="uid://cr5hyyge47l3w" path="res://Scenes/Menu/PauseMenu/pausemenu.tscn" id="15_kra57"]
 [ext_resource type="Script" path="res://Scripts/Levels/Sorting/Feedback.gd" id="15_skbrv"]
 [ext_resource type="Texture2D" uid="uid://dlpu2c4qvrtlu" path="res://Assets/Menu/UI buttons=Paus.png" id="16_3opua"]
 [ext_resource type="Texture2D" uid="uid://c2drlovshoq73" path="res://Assets/Character/Pesukaru FRONT.png" id="17_6fwvy"]

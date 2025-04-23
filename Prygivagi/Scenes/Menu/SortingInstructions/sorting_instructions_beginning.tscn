@@ -1,10 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://85ee8kv6g4gw"]
+[gd_scene load_steps=6 format=3 uid="uid://dj0xxdpd6ih10"]
 
-[ext_resource type="Script" path="res://Scripts/Menu/SortingInstructions/sorting_instructions_beginning.gd" id="1_0o64e"]
-[ext_resource type="Texture2D" uid="uid://eltyxcko2tt" path="res://Assets/Menu/Sorting/Sorting_begin_v1.png" id="2_j8dk1"]
-[ext_resource type="Texture2D" uid="uid://d0m17crecikgy" path="res://Assets/Menu/UI buttons=Paremale.png" id="2_ja756"]
-[ext_resource type="AudioStream" uid="uid://covwwql5uubv3" path="res://Audio/click_mouse_button.wav" id="4_o5e67"]
-[ext_resource type="PackedScene" uid="uid://cv3w1asm5t4p2" path="res://Archive/Menu/Scene/Sorting_inst/Bio/sorting_bio.tscn" id="5_w1aoc"]
+[ext_resource type="Script" path="res://Scripts/Menu/SortingInstructions/sorting_instructions_beginning.gd" id="1_x58tm"]
+[ext_resource type="Texture2D" uid="uid://eltyxcko2tt" path="res://Assets/Menu/Sorting/Sorting_begin_v1.png" id="2_gxug8"]
+[ext_resource type="Texture2D" uid="uid://d0m17crecikgy" path="res://Assets/Menu/UI buttons=Paremale.png" id="3_8pso6"]
+[ext_resource type="AudioStream" uid="uid://covwwql5uubv3" path="res://Audio/click_mouse_button.wav" id="4_h5cjv"]
+[ext_resource type="PackedScene" uid="uid://cv3w1asm5t4p2" path="res://Archive/Menu/Scene/Sorting_inst/Bio/sorting_bio.tscn" id="5_5yvus"]
 
 [node name="SortingInstructionsBeginning" type="Control"]
 layout_mode = 3
@@ -13,7 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_0o64e")
+script = ExtResource("1_x58tm")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -25,7 +25,7 @@ grow_vertical = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="MarginContainer"]
 position = Vector2(15, 31)
-texture = ExtResource("2_j8dk1")
+texture = ExtResource("2_gxug8")
 offset = Vector2(960, 540)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
@@ -41,12 +41,12 @@ alignment = 2
 self_modulate = Color(1, 1, 1, 0)
 layout_direction = 1
 layout_mode = 2
-icon = ExtResource("2_ja756")
+icon = ExtResource("3_8pso6")
 icon_alignment = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer/Go_Next_Button"]
 position = Vector2(4, 4)
-texture = ExtResource("2_ja756")
+texture = ExtResource("3_8pso6")
 centered = false
 
 [node name="Separator2" type="Control" parent="MarginContainer/VBoxContainer/HBoxContainer"]
@@ -58,8 +58,8 @@ custom_minimum_size = Vector2(0, 135)
 layout_mode = 2
 
 [node name="ClickButtonSfx" type="AudioStreamPlayer" parent="MarginContainer"]
-stream = ExtResource("4_o5e67")
+stream = ExtResource("4_h5cjv")
 
-[node name="SortingBio" parent="." instance=ExtResource("5_w1aoc")]
+[node name="SortingBio" parent="." instance=ExtResource("5_5yvus")]
 visible = false
 layout_mode = 1

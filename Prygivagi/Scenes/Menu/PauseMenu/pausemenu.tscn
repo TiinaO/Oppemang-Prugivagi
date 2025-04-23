@@ -1,0 +1,162 @@
+[gd_scene load_steps=14 format=3 uid="uid://cr5hyyge47l3w"]
+
+[ext_resource type="Script" path="res://Scripts/Menu/Pausemenu/pausemenu.gd" id="1_1l4uy"]
+[ext_resource type="Texture2D" uid="uid://dw83uahxvgqvd" path="res://Assets/Background/Main_menu_background.png" id="2_5ajxj"]
+[ext_resource type="Texture2D" uid="uid://ioylxm7g3l31" path="res://Assets/Logo/Test4.1.png" id="3_h5f64"]
+[ext_resource type="Texture2D" uid="uid://cn24l7aqmnpj" path="res://Assets/Menu/Menu buttons=Jatka1.png" id="4_1125p"]
+[ext_resource type="Texture2D" uid="uid://cr6jcej67nmvu" path="res://Assets/Menu/Menu buttons=Seaded1.png" id="5_xg0c4"]
+[ext_resource type="Texture2D" uid="uid://coqybpc6nh6db" path="res://Assets/Menu/Menu buttons=Mangujuhend1.png" id="6_xua7w"]
+[ext_resource type="Texture2D" uid="uid://btxsij8umqkjr" path="res://Assets/Menu/Pause/Menu buttons=Sorteerimine1.png" id="7_6owf5"]
+[ext_resource type="Texture2D" uid="uid://bhwilfds0dgdj" path="res://Assets/Menu/Menu buttons=Peamenuu1.png" id="8_o4hlj"]
+[ext_resource type="AudioStream" uid="uid://covwwql5uubv3" path="res://Audio/click_mouse_button.wav" id="9_ckrsq"]
+[ext_resource type="PackedScene" uid="uid://dlh5o1brjrpdv" path="res://Options/options.tscn" id="10_15byx"]
+[ext_resource type="PackedScene" uid="uid://dgh05vmajtinm" path="res://Scenes/Menu/Instructions/instructions_page.tscn" id="11_dk0td"]
+[ext_resource type="PackedScene" uid="uid://bs02clbigpdoa" path="res://Scenes/Menu/SortingInstructions/sorting_instructions.tscn" id="13_b1vut"]
+[ext_resource type="PackedScene" uid="uid://5oig2ox2j1ei" path="res://Scenes/ConfirmActionPopup/confirm_changing_levels.tscn" id="14_mwaij"]
+
+[node name="Pause_menu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1l4uy")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_5ajxj")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 60
+
+[node name="Separator" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer"]
+position = Vector2(960, 150)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_h5f64")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="Separator3" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+
+[node name="Continue_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(496, 104)
+layout_mode = 2
+
+[node name="Continue2" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Continue_Button"]
+position = Vector2(248, 51)
+texture = ExtResource("4_1125p")
+
+[node name="Separator4" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Options_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(496, 104)
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Options_Button"]
+position = Vector2(247, 53)
+texture = ExtResource("5_xg0c4")
+
+[node name="Separator5" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Tutorials_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(496, 104)
+layout_mode = 2
+
+[node name="Sprite2D2" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button"]
+position = Vector2(247, 52)
+texture = ExtResource("6_xua7w")
+
+[node name="Separator7" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Sorting_Instructions_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(496, 104)
+layout_mode = 2
+
+[node name="Sprite2D2" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Sorting_Instructions_Button"]
+position = Vector2(247, 52)
+texture = ExtResource("7_6owf5")
+
+[node name="Separator6" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Back_To_Main_Menu_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(496, 104)
+layout_mode = 2
+
+[node name="Back_To_Main_Menu" type="Sprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/Back_To_Main_Menu_Button"]
+position = Vector2(248, 51)
+texture = ExtResource("8_o4hlj")
+
+[node name="ClickingSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_ckrsq")
+
+[node name="Options" parent="." instance=ExtResource("10_15byx")]
+visible = false
+layout_mode = 1
+
+[node name="InstructionsPage" parent="." instance=ExtResource("11_dk0td")]
+visible = false
+layout_mode = 1
+
+[node name="SortingInstructions" parent="." instance=ExtResource("13_b1vut")]
+visible = false
+layout_mode = 1
+
+[node name="ConfirmActionPopup" parent="." instance=ExtResource("14_mwaij")]
+visible = false
+layout_mode = 1
+
+[connection signal="mouse_entered" from="MarginContainer/HBoxContainer/VBoxContainer/Continue_Button" to="." method="_on_continue_button_mouse_entered"]
+[connection signal="mouse_exited" from="MarginContainer/HBoxContainer/VBoxContainer/Continue_Button" to="." method="_on_continue_button_mouse_exited"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Continue_Button" to="." method="_on_continue_button_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/HBoxContainer/VBoxContainer/Options_Button" to="." method="_on_options_button_mouse_entered"]
+[connection signal="mouse_exited" from="MarginContainer/HBoxContainer/VBoxContainer/Options_Button" to="." method="_on_options_button_mouse_exited"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Options_Button" to="." method="_on_options_button_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button" to="." method="_on_tutorials_button_mouse_entered"]
+[connection signal="mouse_exited" from="MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button" to="." method="_on_tutorials_button_mouse_exited"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Tutorials_Button" to="." method="_on_tutorials_button_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/HBoxContainer/VBoxContainer/Sorting_Instructions_Button" to="." method="_on_sorting_instructions_button_mouse_entered"]
+[connection signal="mouse_exited" from="MarginContainer/HBoxContainer/VBoxContainer/Sorting_Instructions_Button" to="." method="_on_sorting_instructions_button_mouse_exited"]
+[connection signal="mouse_entered" from="MarginContainer/HBoxContainer/VBoxContainer/Back_To_Main_Menu_Button" to="." method="_on_back_to_main_menu_button_mouse_entered"]
+[connection signal="mouse_exited" from="MarginContainer/HBoxContainer/VBoxContainer/Back_To_Main_Menu_Button" to="." method="_on_back_to_main_menu_button_mouse_exited"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Back_To_Main_Menu_Button" to="." method="_on_continue_button_pressed"]
