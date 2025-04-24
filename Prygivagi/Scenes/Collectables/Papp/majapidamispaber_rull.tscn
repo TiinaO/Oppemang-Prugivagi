@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://brl3bchfxe2ib"]
+
+[ext_resource type="PackedScene" uid="uid://dggc5mowrx8qb" path="res://Scenes/Collectables/collectable.tscn" id="1_nawkd"]
+[ext_resource type="Resource" uid="uid://e1yv7rird181" path="res://Data/Items/Papp/majapidamispaberi_rull.tres" id="2_jh8ii"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4dxcf"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nh1h2"]
+resource_local_to_scene = true
+radius = 42.0
+
+[node name="Collectable" instance=ExtResource("1_nawkd")]
+itemRes = ExtResource("2_jh8ii")
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("CircleShape2D_4dxcf")
+
+[node name="CollisionShape2D" parent="StaticBody2D" index="0"]
+shape = SubResource("CircleShape2D_nh1h2")
