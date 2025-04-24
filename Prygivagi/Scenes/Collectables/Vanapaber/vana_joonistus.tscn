@@ -1,42 +1,21 @@
-[gd_scene load_steps=6 format=3 uid="uid://bsnh1bvcfbvpp"]
+[gd_scene load_steps=5 format=3 uid="uid://dbe8dcla16jii"]
 
-[ext_resource type="Script" path="res://Scenes/Collectables/Collectable.gd" id="1_plnpa"]
+[ext_resource type="PackedScene" uid="uid://dggc5mowrx8qb" path="res://Scenes/Collectables/collectable.tscn" id="1_ywamy"]
 [ext_resource type="Resource" uid="uid://demgp48oiim60" path="res://Data/Items/Vanapaber/vana_joonistus.tres" id="2_3mgeo"]
-[ext_resource type="FontFile" uid="uid://d347pn0mkw81k" path="res://Assets/Andika-Bold.ttf" id="3_swbv8"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_tu0uo"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_12uyg"]
 resource_local_to_scene = true
 radius = 64.0078
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_n1jf6"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_v4axi"]
 resource_local_to_scene = true
 radius = 42.0
 
-[node name="Collectable" type="Area2D"]
-script = ExtResource("1_plnpa")
+[node name="Collectable" instance=ExtResource("1_ywamy")]
 itemRes = ExtResource("2_3mgeo")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_tu0uo")
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("CircleShape2D_12uyg")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-shape = SubResource("CircleShape2D_n1jf6")
-
-[node name="Label" type="Label" parent="."]
-offset_left = -44.0
-offset_top = -110.0
-offset_right = 324.0
-offset_bottom = 53.0
-scale = Vector2(0.25, 0.25)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_swbv8")
-theme_override_font_sizes/font_size = 100
-text = "LABEL"
-uppercase = true
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
-[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[node name="CollisionShape2D" parent="StaticBody2D" index="0"]
+shape = SubResource("CircleShape2D_v4axi")

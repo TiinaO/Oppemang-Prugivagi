@@ -1,4 +1,4 @@
-[gd_scene load_steps=85 format=3 uid="uid://bocutmtvd4nrx"]
+[gd_scene load_steps=197 format=3 uid="uid://bocutmtvd4nrx"]
 
 [ext_resource type="Script" path="res://Levels/game_level.gd" id="1_vmt12"]
 [ext_resource type="Texture2D" uid="uid://jnubqfqlrpjt" path="res://Assets/Tilemaps/2025_tilemap_lvl2_v3.png" id="2_jgsfm"]
@@ -6,27 +6,32 @@
 [ext_resource type="Texture2D" uid="uid://bb4wxvtn83wxj" path="res://Assets/1. level tilemap.png" id="3_4ydqu"]
 [ext_resource type="Texture2D" uid="uid://c5f0bkc76k26b" path="res://Assets/Tilemaps/2025_tilemap_lvl2_v2.png" id="3_l66d0"]
 [ext_resource type="Texture2D" uid="uid://cq4h5x5p1huyc" path="res://Assets/tilemap_lvl1_v.png" id="4_hmdwp"]
-[ext_resource type="PackedScene" uid="uid://bsnh1bvcfbvpp" path="res://Scenes/Collectables/Vanapaber/vana_joonistus.tscn" id="4_mgvx0"]
+[ext_resource type="PackedScene" uid="uid://dbe8dcla16jii" path="res://Scenes/Collectables/Vanapaber/vana_joonistus.tscn" id="4_mgvx0"]
 [ext_resource type="Texture2D" uid="uid://hmdugjiulvxi" path="res://Assets/tilemap_lvl2_v.png" id="5_ejbh3"]
-[ext_resource type="PackedScene" uid="uid://qhljguvwtwpm" path="res://Scenes/Collectables/Vanapaber/umbrik.tscn" id="5_f42n2"]
+[ext_resource type="PackedScene" uid="uid://dg5yriodgnqq5" path="res://Scenes/Collectables/Vanapaber/umbrik.tscn" id="5_f42n2"]
 [ext_resource type="PackedScene" uid="uid://xodld3dgufoi" path="res://Scenes/Collectables/Bio/apple.tscn" id="6_6pca2"]
-[ext_resource type="PackedScene" uid="uid://ct2xwj6xg04sj" path="res://Scenes/Collectables/Vanapaber/toovihik.tscn" id="6_ljxol"]
+[ext_resource type="PackedScene" uid="uid://celn61br0orqh" path="res://Scenes/Collectables/Bio/pahklikoor.tscn" id="6_ai7nx"]
+[ext_resource type="PackedScene" uid="uid://d38j8xb5myt81" path="res://Scenes/Collectables/Vanapaber/toovihik.tscn" id="6_ljxol"]
 [ext_resource type="PackedScene" uid="uid://tvwgnfe3xgyp" path="res://Scenes/Collectables/Bio/watermelon.tscn" id="7_d34kq"]
-[ext_resource type="PackedScene" uid="uid://deugkmf1mnrh0" path="res://Scenes/Collectables/Vanapaber/katkine_raamat.tscn" id="7_giwrx"]
+[ext_resource type="PackedScene" uid="uid://dbey3ys08pdtg" path="res://Scenes/Collectables/Vanapaber/katkine_raamat.tscn" id="7_giwrx"]
 [ext_resource type="PackedScene" uid="uid://bye6rjipbjwrc" path="res://Scenes/Collectables/Pakend/conserveCan.tscn" id="8_a2847"]
-[ext_resource type="PackedScene" uid="uid://dgaopuls355nw" path="res://Scenes/Collectables/Vanapaber/ajakiri.tscn" id="8_dwkn1"]
-[ext_resource type="PackedScene" uid="uid://c2m4mttckakq4" path="res://Scenes/Collectables/Bio/katepaber.tscn" id="8_vpo0u"]
+[ext_resource type="PackedScene" uid="uid://d3lkcqc0avndw" path="res://Scenes/Collectables/Vanapaber/ajakiri.tscn" id="8_dwkn1"]
+[ext_resource type="PackedScene" uid="uid://dkhbi5y4vreg1" path="res://Scenes/Collectables/Bio/katepaber.tscn" id="8_vpo0u"]
 [ext_resource type="PackedScene" uid="uid://chmu7nkldg2wl" path="res://Scenes/Collectables/Pakend/jogurt.tscn" id="9_4iut4"]
-[ext_resource type="PackedScene" uid="uid://c4q2ivfmk30tk" path="res://Scenes/Collectables/Bio/kohvipaks.tscn" id="9_42c6l"]
-[ext_resource type="PackedScene" uid="uid://cv5xmcdxk7a2o" path="res://Scenes/Collectables/Bio/nartsinud_lill.tscn" id="10_2lwi5"]
+[ext_resource type="PackedScene" uid="uid://dj141wxhmdtcu" path="res://Scenes/Collectables/Bio/kohvipaks.tscn" id="9_42c6l"]
+[ext_resource type="PackedScene" uid="uid://do8sc6eob77ig" path="res://Scenes/Collectables/Bio/nartsinud_lill.tscn" id="10_2lwi5"]
 [ext_resource type="PackedScene" uid="uid://5xem7eo0lkvw" path="res://Scenes/Collectables/tshirt.tscn" id="10_3v47d"]
-[ext_resource type="PackedScene" uid="uid://dop6kb6ww265l" path="res://Scenes/Collectables/Papp/majapidamispaberi_rull.tscn" id="10_mh6a0"]
+[ext_resource type="Resource" uid="uid://dns5uivf0tfn" path="res://Data/Items/Bio/katepaber.tres" id="10_vp5b1"]
 [ext_resource type="PackedScene" uid="uid://cgha1lfhfnybk" path="res://Scenes/Collectables/Klaas/glassJar.tscn" id="11_8guoa"]
-[ext_resource type="PackedScene" uid="uid://isoqlrk0nr1p" path="res://Scenes/Collectables/Papp/wc_rull.tscn" id="11_ex0yl"]
-[ext_resource type="PackedScene" uid="uid://cak15l3h6702e" path="res://Scenes/Collectables/Bio/sai.tscn" id="11_s3oi6"]
-[ext_resource type="PackedScene" uid="uid://cseev0c5etepx" path="res://Scenes/Collectables/Olme/nuustik.tscn" id="12_0fugi"]
+[ext_resource type="PackedScene" uid="uid://dv42t62rjhx8g" path="res://Scenes/Collectables/Papp/wc_rull.tscn" id="11_ex0yl"]
+[ext_resource type="Texture2D" uid="uid://bohj5rhhjsou6" path="res://Assets/Collectable/bio/Katepaber.png" id="11_i51nu"]
+[ext_resource type="PackedScene" uid="uid://dkmnm6lya1ph6" path="res://Scenes/Collectables/Bio/sai.tscn" id="11_s3oi6"]
+[ext_resource type="PackedScene" uid="uid://cjh52n7fx2cxb" path="res://Scenes/Collectables/Olme/nuustik.tscn" id="12_0fugi"]
 [ext_resource type="PackedScene" uid="uid://cr56f4dukqes5" path="res://Scenes/Collectables/Papp/cardboardBox.tscn" id="12_dmerp"]
+[ext_resource type="Resource" uid="uid://ckwm8t4mdo3fu" path="res://Data/Items/Bio/kohvipaks.tres" id="13_hd5is"]
 [ext_resource type="Texture2D" uid="uid://bhxfobe2bgfx8" path="res://Assets/tilemap_lvl2_v1.png" id="13_k7yy4"]
+[ext_resource type="PackedScene" uid="uid://nq6jn3nw1nbg" path="res://Scenes/Collectables/Bio/juust.tscn" id="13_qcqet"]
+[ext_resource type="Texture2D" uid="uid://crrgxsyhqb4ud" path="res://Assets/Collectable/bio/Kohvipaks.png" id="14_2tt3r"]
 [ext_resource type="PackedScene" uid="uid://bv5x6ikcd0rwv" path="res://Characters/player_raccoon.tscn" id="14_fy7eh"]
 [ext_resource type="Texture2D" uid="uid://ba1xvjm3d1m5t" path="res://Assets/tilemap_prygi_v.png" id="14_nwwoj"]
 [ext_resource type="PackedScene" uid="uid://cn06pocbatxra" path="res://Scenes/Collectables/Bio/banana.tscn" id="14_xrht0"]
@@ -34,34 +39,72 @@
 [ext_resource type="Texture2D" uid="uid://drl7dteat4ox7" path="res://Assets/GUI/Punktid.png" id="16_10hq5"]
 [ext_resource type="Texture2D" uid="uid://ck30wskdsvter" path="res://Assets/Tilemaps/2025_tilemap_lvl1_v.png" id="16_c2jpf"]
 [ext_resource type="FontFile" uid="uid://d347pn0mkw81k" path="res://Assets/Andika-Bold.ttf" id="17_8rcev"]
+[ext_resource type="PackedScene" uid="uid://dgu2k353cl4t2" path="res://Scenes/Collectables/Bio/munakoor.tscn" id="17_cdp4y"]
 [ext_resource type="Texture2D" uid="uid://m4qx6webqt02" path="res://Assets/Tilemaps/2025_tilemap_lvl2_v.png" id="17_key4b"]
 [ext_resource type="Script" path="res://Inventory/InventoryGui/CanvasLayer.gd" id="18_dmt4f"]
 [ext_resource type="Texture2D" uid="uid://ya2trji2ni4a" path="res://Assets/GUI/UI buttons=UI buttons3.png" id="19_51qgh"]
+[ext_resource type="PackedScene" uid="uid://dmsy4wef7nmmt" path="res://Scenes/Collectables/Klaas/klaaspudel.tscn" id="20_e8pjd"]
 [ext_resource type="Script" path="res://Levels/InventoryInfo.gd" id="20_fgnal"]
 [ext_resource type="PackedScene" uid="uid://u6moandru342" path="res://Inventory/InventoryGui/inventoryGui.tscn" id="21_3m4db"]
-[ext_resource type="PackedScene" uid="uid://barc425lo0ysp" path="res://Scenes/Collectables/Klaas/klaaspudel_1.tscn" id="21_8bxjw"]
 [ext_resource type="PackedScene" uid="uid://cr5hyyge47l3w" path="res://Scenes/Menu/PauseMenu/pausemenu.tscn" id="22_decc1"]
-[ext_resource type="PackedScene" uid="uid://1mlv2l8km1jq" path="res://Scenes/Collectables/Klaas/klaaspudel_2.tscn" id="22_q3bls"]
-[ext_resource type="PackedScene" uid="uid://f1bpahakvdio" path="res://Scenes/Collectables/Olme/kummikindad.tscn" id="23_1fv5y"]
+[ext_resource type="PackedScene" uid="uid://igcceq3jou0a" path="res://Scenes/Collectables/Klaas/klaaspudel_2.tscn" id="22_q3bls"]
+[ext_resource type="PackedScene" uid="uid://b23h6t5sh2p7r" path="res://Scenes/Collectables/Olme/kummikindad.tscn" id="23_1fv5y"]
 [ext_resource type="PackedScene" uid="uid://5oig2ox2j1ei" path="res://Scenes/ConfirmActionPopup/confirm_changing_levels.tscn" id="24_000md"]
-[ext_resource type="PackedScene" uid="uid://diwxm71icicui" path="res://Scenes/Collectables/Olme/mullinats.tscn" id="24_mbhtd"]
+[ext_resource type="PackedScene" uid="uid://c8t8by1a0hsqv" path="res://Scenes/Collectables/Olme/mullinats.tscn" id="24_mbhtd"]
 [ext_resource type="Script" path="res://Levels/changelevel.gd" id="24_ycsu0"]
-[ext_resource type="PackedScene" uid="uid://doch6or4cmajf" path="res://Scenes/Collectables/Olme/pastapliiats.tscn" id="25_7p4g0"]
-[ext_resource type="PackedScene" uid="uid://bt1w7vf03sbo5" path="res://Scenes/Collectables/Olme/prillid.tscn" id="27_esfk5"]
-[ext_resource type="PackedScene" uid="uid://8krol4m3hspr" path="res://Scenes/Collectables/Olme/rasvakriidid.tscn" id="28_aymsh"]
-[ext_resource type="PackedScene" uid="uid://ew5lesvnvgby" path="res://Scenes/Collectables/Bio/munakarp.tscn" id="28_o4vj0"]
-[ext_resource type="PackedScene" uid="uid://b6xsvase33v6n" path="res://Scenes/Collectables/Bio/munakoored.tscn" id="29_0obri"]
-[ext_resource type="PackedScene" uid="uid://bxyesqj3o2fgc" path="res://Scenes/Collectables/Olme/tass.tscn" id="29_1q8xu"]
-[ext_resource type="PackedScene" uid="uid://chwpjnaslwrdb" path="res://Scenes/Collectables/Pakend/keeduvorst.tscn" id="30_82mb3"]
-[ext_resource type="PackedScene" uid="uid://fhxg4gt800ld" path="res://Scenes/Collectables/Bio/pahklikoored.tscn" id="30_futve"]
-[ext_resource type="PackedScene" uid="uid://muhmloi31wjb" path="res://Scenes/Collectables/Bio/porgand.tscn" id="31_jeqkm"]
-[ext_resource type="PackedScene" uid="uid://d0ny6rwhdhu30" path="res://Scenes/Collectables/Pakend/kilekott.tscn" id="31_skjt3"]
-[ext_resource type="PackedScene" uid="uid://db6tqgda0s5s3" path="res://Scenes/Collectables/Bio/sidrun.tscn" id="32_0bf7o"]
-[ext_resource type="PackedScene" uid="uid://rja0vjuna3rc" path="res://Scenes/Collectables/Pakend/mahlapakk.tscn" id="32_t1if1"]
+[ext_resource type="PackedScene" uid="uid://dirylevfdh2s" path="res://Scenes/Collectables/Olme/pastapliiats.tscn" id="25_7p4g0"]
+[ext_resource type="PackedScene" uid="uid://bnx8ao2wnvr2m" path="res://Scenes/Collectables/Olme/prillid.tscn" id="27_esfk5"]
+[ext_resource type="PackedScene" uid="uid://bed3ccn0v76py" path="res://Scenes/Collectables/Olme/rasvakriidid.tscn" id="28_aymsh"]
+[ext_resource type="PackedScene" uid="uid://cqkngko3cinoc" path="res://Scenes/Collectables/Bio/munakarp.tscn" id="28_o4vj0"]
+[ext_resource type="PackedScene" uid="uid://qsgiglq2mmy4" path="res://Scenes/Collectables/Olme/ripsmetušš.tscn" id="28_rt3pv"]
+[ext_resource type="PackedScene" uid="uid://cwcble8r8d84" path="res://Scenes/Collectables/Olme/tass.tscn" id="29_1q8xu"]
+[ext_resource type="PackedScene" uid="uid://c77vm0464ocw" path="res://Scenes/Collectables/Olme/svamm.tscn" id="29_fnua4"]
+[ext_resource type="PackedScene" uid="uid://bbn5cdhiduax4" path="res://Scenes/Collectables/Bio/porgand.tscn" id="31_jeqkm"]
+[ext_resource type="PackedScene" uid="uid://igknj3w6q68d" path="res://Scenes/Collectables/Pakend/kilekott.tscn" id="31_skjt3"]
+[ext_resource type="PackedScene" uid="uid://bt0ok6a2y1p77" path="res://Scenes/Collectables/Bio/sidrun.tscn" id="32_0bf7o"]
+[ext_resource type="PackedScene" uid="uid://inwi6c0p2p3b" path="res://Scenes/Collectables/Pakend/mahlapakk.tscn" id="32_t1if1"]
+[ext_resource type="PackedScene" uid="uid://dn235uw7mxd5f" path="res://Scenes/Collectables/Pakend/korrejook.tscn" id="33_3cihj"]
+[ext_resource type="PackedScene" uid="uid://dawwwvuvh3x80" path="res://Scenes/Collectables/Pakend/piimapakk_kartong.tscn" id="35_kchlv"]
+[ext_resource type="PackedScene" uid="uid://74mmc6hksexp" path="res://Scenes/Collectables/Pakend/piimapakk_kile.tscn" id="36_y5fsd"]
+[ext_resource type="PackedScene" uid="uid://b40q3vdba1hin" path="res://Scenes/Collectables/Pakend/sampoon.tscn" id="37_4lyg3"]
+[ext_resource type="PackedScene" uid="uid://c8s3g4uksluwr" path="res://Scenes/Collectables/Pakend/vorstipakk.tscn" id="38_730yp"]
+[ext_resource type="PackedScene" uid="uid://b62o4xxq861vh" path="res://Scenes/Collectables/Pakend/juustupakk.tscn" id="40_mm6ow"]
 [ext_resource type="PackedScene" uid="uid://l2tirroetxwh" path="res://Scenes/Collectables/Bio/hernes.tscn" id="40_yr70f"]
+[ext_resource type="PackedScene" uid="uid://dkpvos17pxq1r" path="res://Scenes/Collectables/Pakend/ketsupi_pudel.tscn" id="41_2xxqq"]
 [ext_resource type="Script" path="res://Scenes/Collectables/Collectable.gd" id="43_emi6l"]
+[ext_resource type="PackedScene" uid="uid://dy22ni1fvuxco" path="res://Scenes/Collectables/Pakend/kilekott_2.tscn" id="43_rd4ij"]
 [ext_resource type="Resource" uid="uid://cha1farkglckk" path="res://Data/Items/Bio/juust.tres" id="44_hf8ud"]
+[ext_resource type="PackedScene" uid="uid://bfdr7jp61mgvb" path="res://Scenes/Collectables/Pakend/kohuke.tscn" id="44_o50n7"]
 [ext_resource type="Texture2D" uid="uid://bkr3xpddgpjpp" path="res://Assets/Collectable/bio/Juust.png" id="45_ox7su"]
+[ext_resource type="PackedScene" uid="uid://fgobpf4awif2" path="res://Scenes/Collectables/Pakend/kommipakk.tscn" id="45_qdt45"]
+[ext_resource type="PackedScene" uid="uid://bb3rfxo6lyf5m" path="res://Scenes/Collectables/Pakend/konservikarp_kass.tscn" id="46_abngp"]
+[ext_resource type="PackedScene" uid="uid://brl3bchfxe2ib" path="res://Scenes/Collectables/Papp/majapidamispaber_rull.tscn" id="48_xbvy3"]
+[ext_resource type="Resource" uid="uid://byd6ou27gh3we" path="res://Data/Items/Bio/nartsinud_lill.tres" id="55_0xsj5"]
+[ext_resource type="Texture2D" uid="uid://dvvpluqhwhhyh" path="res://Assets/Collectable/bio/Nartsinud_lill.png" id="56_lh8my"]
+[ext_resource type="Resource" uid="uid://ci1rk2b7hmw3j" path="res://Data/Items/Bio/sai.tres" id="57_c70yd"]
+[ext_resource type="Texture2D" uid="uid://drd5uun0mbqan" path="res://Assets/Collectable/bio/Sai.png" id="58_1j3mc"]
+[ext_resource type="Resource" uid="uid://b07gn3tpck6h4" path="res://Data/Items/Olme/nuustik.tres" id="59_gkmsy"]
+[ext_resource type="Resource" uid="uid://bwkorfsqluksw" path="res://Data/Items/Klaas/klaaspudel_1.tres" id="60_r4dj0"]
+[ext_resource type="Texture2D" uid="uid://db2jjgrqayv10" path="res://Assets/Collectable/klaas/Klaaspudel1.png" id="61_6gcyt"]
+[ext_resource type="Resource" uid="uid://ewigdko4y676" path="res://Data/Items/Klaas/klaaspudel_2.tres" id="62_p0bew"]
+[ext_resource type="Texture2D" uid="uid://djpye0g3g16fb" path="res://Assets/Collectable/klaas/Klaaspudel2.png" id="63_k8ifv"]
+[ext_resource type="Resource" uid="uid://xyavrxyhrbhj" path="res://Data/Items/Olme/kummikindad.tres" id="64_5fn2x"]
+[ext_resource type="Texture2D" uid="uid://djtki7xbu24y" path="res://Assets/Collectable/olme/Kummikindad.png" id="65_algit"]
+[ext_resource type="Resource" uid="uid://cbqobnejflkx2" path="res://Data/Items/Olme/naritud_mullinats.tres" id="66_usefa"]
+[ext_resource type="Resource" uid="uid://bwip28rfobxfk" path="res://Data/Items/Olme/pastapliiats.tres" id="67_robq0"]
+[ext_resource type="Resource" uid="uid://hkvai84ufbjp" path="res://Data/Items/Olme/prillid.tres" id="68_7vci8"]
+[ext_resource type="Resource" uid="uid://bsajf4hk41foh" path="res://Data/Items/Olme/rasvakriidid.tres" id="69_tqoc8"]
+[ext_resource type="Resource" uid="uid://b8i1he2nydekq" path="res://Data/Items/Olme/tass.tres" id="70_dkppv"]
+[ext_resource type="Resource" uid="uid://b2nd6lq4vn8c1" path="res://Data/Items/Pakend/keeduvorst.tres" id="71_63ela"]
+[ext_resource type="Resource" uid="uid://bj8kgplv4od1b" path="res://Data/Items/Pakend/kilekott.tres" id="72_3mcku"]
+[ext_resource type="Resource" uid="uid://bycx2vejhq6o2" path="res://Data/Items/Pakend/mahlapakk.tres" id="73_hp5hj"]
+[ext_resource type="Resource" uid="uid://e1yv7rird181" path="res://Data/Items/Papp/majapidamispaberi_rull.tres" id="74_ov0lq"]
+[ext_resource type="Resource" uid="uid://c1hj6nv2nh35m" path="res://Data/Items/Papp/WC_rull.tres" id="75_4g3p7"]
+[ext_resource type="Resource" uid="uid://buoycnytf6c7h" path="res://Data/Items/Vanapaber/ajakiri.tres" id="76_qavxs"]
+[ext_resource type="Resource" uid="uid://cfktamk0fefck" path="res://Data/Items/Vanapaber/katkine_raamat.tres" id="77_e78ja"]
+[ext_resource type="Resource" uid="uid://bh2va0lyuvfuu" path="res://Data/Items/Vanapaber/toovihik.tres" id="78_tqvq4"]
+[ext_resource type="Resource" uid="uid://bt00f5y0sjc5t" path="res://Data/Items/Vanapaber/umbrik.tres" id="79_ba27d"]
+[ext_resource type="Resource" uid="uid://demgp48oiim60" path="res://Data/Items/Vanapaber/vana_joonistus.tres" id="80_k54yg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c3ij5"]
 texture = ExtResource("2_jgsfm")
@@ -1434,29 +1477,30 @@ texture_region_size = Vector2i(256, 256)
 13:0/0/physics_layer_0/angular_velocity = 0.0
 13:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, 128, -128, 128, 128, -128, 128)
 
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_vie5l"]
-resource_name = "Vanapaber"
-scenes/1/scene = ExtResource("4_mgvx0")
-scenes/2/scene = ExtResource("5_f42n2")
-scenes/3/scene = ExtResource("6_ljxol")
-scenes/4/scene = ExtResource("7_giwrx")
-scenes/5/scene = ExtResource("8_dwkn1")
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_daspw"]
+resource_name = "Bio"
+scenes/1/scene = ExtResource("6_6pca2")
+scenes/2/scene = ExtResource("14_xrht0")
+scenes/3/scene = ExtResource("40_yr70f")
+scenes/4/scene = ExtResource("13_qcqet")
+scenes/5/scene = ExtResource("8_vpo0u")
+scenes/6/scene = ExtResource("9_42c6l")
+scenes/7/scene = ExtResource("28_o4vj0")
+scenes/8/scene = ExtResource("17_cdp4y")
+scenes/9/scene = ExtResource("10_2lwi5")
+scenes/10/scene = ExtResource("6_ai7nx")
+scenes/11/scene = ExtResource("31_jeqkm")
+scenes/12/scene = ExtResource("11_s3oi6")
+scenes/13/scene = ExtResource("32_0bf7o")
+scenes/14/scene = ExtResource("7_d34kq")
 
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_yn6d2"]
-resource_name = "Papp ja paber"
-scenes/1/scene = ExtResource("12_dmerp")
-scenes/2/scene = ExtResource("10_mh6a0")
-scenes/3/scene = ExtResource("11_ex0yl")
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_8l2s8"]
+resource_name = "Klaas"
+scenes/1/scene = ExtResource("11_8guoa")
+scenes/2/scene = ExtResource("20_e8pjd")
+scenes/3/scene = ExtResource("22_q3bls")
 
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_g1qhs"]
-resource_name = "Segapakend"
-scenes/1/scene = ExtResource("8_a2847")
-scenes/2/scene = ExtResource("9_4iut4")
-scenes/3/scene = ExtResource("30_82mb3")
-scenes/4/scene = ExtResource("31_skjt3")
-scenes/5/scene = ExtResource("32_t1if1")
-
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_06h8c"]
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_nd4vr"]
 resource_name = "Olme"
 scenes/1/scene = ExtResource("23_1fv5y")
 scenes/2/scene = ExtResource("24_mbhtd")
@@ -1464,29 +1508,9 @@ scenes/3/scene = ExtResource("12_0fugi")
 scenes/4/scene = ExtResource("25_7p4g0")
 scenes/5/scene = ExtResource("27_esfk5")
 scenes/6/scene = ExtResource("28_aymsh")
-scenes/7/scene = ExtResource("29_1q8xu")
-
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_5tsa8"]
-resource_name = "Klaas"
-scenes/1/scene = ExtResource("11_8guoa")
-scenes/2/scene = ExtResource("21_8bxjw")
-scenes/3/scene = ExtResource("22_q3bls")
-
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_8066d"]
-resource_name = "Bio"
-scenes/1/scene = ExtResource("6_6pca2")
-scenes/2/scene = ExtResource("14_xrht0")
-scenes/4/scene = ExtResource("8_vpo0u")
-scenes/5/scene = ExtResource("9_42c6l")
-scenes/6/scene = ExtResource("10_2lwi5")
-scenes/7/scene = ExtResource("11_s3oi6")
-scenes/8/scene = ExtResource("7_d34kq")
-scenes/10/scene = ExtResource("28_o4vj0")
-scenes/11/scene = ExtResource("29_0obri")
-scenes/13/scene = ExtResource("31_jeqkm")
-scenes/14/scene = ExtResource("32_0bf7o")
-scenes/15/scene = ExtResource("40_yr70f")
-scenes/17/scene = ExtResource("30_futve")
+scenes/7/scene = ExtResource("28_rt3pv")
+scenes/8/scene = ExtResource("29_fnua4")
+scenes/9/scene = ExtResource("29_1q8xu")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r66sd"]
 texture = ExtResource("3_4ydqu")
@@ -1953,6 +1977,38 @@ texture_region_size = Vector2i(256, 256)
 16:14/0 = 0
 16:14/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 16:14/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_8pw7d"]
+resource_name = "Segapakend"
+scenes/1/scene = ExtResource("8_a2847")
+scenes/2/scene = ExtResource("9_4iut4")
+scenes/3/scene = ExtResource("40_mm6ow")
+scenes/4/scene = ExtResource("41_2xxqq")
+scenes/5/scene = ExtResource("31_skjt3")
+scenes/6/scene = ExtResource("43_rd4ij")
+scenes/7/scene = ExtResource("44_o50n7")
+scenes/8/scene = ExtResource("45_qdt45")
+scenes/9/scene = ExtResource("46_abngp")
+scenes/10/scene = ExtResource("33_3cihj")
+scenes/11/scene = ExtResource("32_t1if1")
+scenes/12/scene = ExtResource("35_kchlv")
+scenes/13/scene = ExtResource("36_y5fsd")
+scenes/14/scene = ExtResource("37_4lyg3")
+scenes/15/scene = ExtResource("38_730yp")
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_crrb0"]
+resource_name = "Papp"
+scenes/1/scene = ExtResource("12_dmerp")
+scenes/2/scene = ExtResource("48_xbvy3")
+scenes/3/scene = ExtResource("11_ex0yl")
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_1q0q1"]
+resource_name = "Vanapaber"
+scenes/1/scene = ExtResource("8_dwkn1")
+scenes/2/scene = ExtResource("7_giwrx")
+scenes/3/scene = ExtResource("6_ljxol")
+scenes/4/scene = ExtResource("5_f42n2")
+scenes/5/scene = ExtResource("4_mgvx0")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ajuao"]
 texture = ExtResource("4_hmdwp")
@@ -3242,6 +3298,489 @@ radius = 64.0078
 resource_local_to_scene = true
 radius = 42.0
 
+[sub_resource type="PackedScene" id="PackedScene_sm1nn"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 29, 28, 2, 0, 0, 1073741832, 1073741831, 31, 30, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "scale", "texture", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 2, 9, 3, 10, 4, 0, 1073741826, 0, 12, 11, -1, 0, 0, 1073741827, 0, 14, 13, -1, 1, 15, 5, 0, 1073741828, 0, 17, 16, -1, 10, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 26, 14, 27, 15, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("10_vp5b1"), SubResource("CircleShape2D_tu0uo"), Vector2(0.8, 0.8), ExtResource("11_i51nu"), SubResource("CircleShape2D_n1jf6"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "kätepaber", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6obmg"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cxs7o"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_glt8f"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 28, 27, 2, 0, 0, 1073741832, 1073741831, 30, 29, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "texture", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 1, 9, 3, 0, 1073741826, 0, 11, 10, -1, 0, 0, 1073741827, 0, 13, 12, -1, 1, 14, 4, 0, 1073741828, 0, 16, 15, -1, 10, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 26, 14, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("13_hd5is"), SubResource("CircleShape2D_6obmg"), ExtResource("14_2tt3r"), SubResource("CircleShape2D_cxs7o"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "KOHVIPAKS", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fc24r"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lcynp"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_aanku"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 29, 28, 2, 0, 0, 1073741832, 1073741831, 31, 30, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "scale", "texture", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 2, 9, 3, 10, 4, 0, 1073741826, 0, 12, 11, -1, 0, 0, 1073741827, 0, 14, 13, -1, 1, 15, 5, 0, 1073741828, 0, 17, 16, -1, 10, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 26, 14, 27, 15, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("55_0xsj5"), SubResource("CircleShape2D_fc24r"), Vector2(0.9, 0.9), ExtResource("56_lh8my"), SubResource("CircleShape2D_lcynp"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "Närtsinud lill", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dbjrh"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cqbg3"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_6xin7"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 29, 28, 2, 0, 0, 1073741832, 1073741831, 31, 30, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "scale", "texture", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 2, 9, 3, 10, 4, 0, 1073741826, 0, 12, 11, -1, 0, 0, 1073741827, 0, 14, 13, -1, 1, 15, 5, 0, 1073741828, 0, 17, 16, -1, 10, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 26, 14, 27, 15, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("57_c70yd"), SubResource("CircleShape2D_dbjrh"), Vector2(0.7, 0.7), ExtResource("58_1j3mc"), SubResource("CircleShape2D_cqbg3"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "sai", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_skysh"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b5obq"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_10o1k"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 27, 26, 2, 0, 0, 1073741832, 1073741831, 29, 28, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 0, 0, 1073741826, 0, 10, 9, -1, 0, 0, 1073741827, 0, 12, 11, -1, 1, 13, 3, 0, 1073741828, 0, 15, 14, -1, 10, 16, 4, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("59_gkmsy"), SubResource("CircleShape2D_skysh"), SubResource("CircleShape2D_b5obq"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "LABEL", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mn321"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yir0l"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_yn2df"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 28, 27, 2, 0, 0, 1073741832, 1073741831, 30, 29, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "texture", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 1, 9, 3, 0, 1073741826, 0, 11, 10, -1, 0, 0, 1073741827, 0, 13, 12, -1, 1, 14, 4, 0, 1073741828, 0, 16, 15, -1, 10, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 26, 14, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("60_r4dj0"), SubResource("CircleShape2D_mn321"), ExtResource("61_6gcyt"), SubResource("CircleShape2D_yir0l"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "klaaspudel", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1omb7"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jr62p"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_wcbt6"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 28, 27, 2, 0, 0, 1073741832, 1073741831, 30, 29, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "texture", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 1, 9, 3, 0, 1073741826, 0, 11, 10, -1, 0, 0, 1073741827, 0, 13, 12, -1, 1, 14, 4, 0, 1073741828, 0, 16, 15, -1, 10, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 26, 14, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("62_p0bew"), SubResource("CircleShape2D_1omb7"), ExtResource("63_k8ifv"), SubResource("CircleShape2D_jr62p"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "klaaspudel", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1s4l7"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kma4y"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_gu4wg"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 28, 27, 2, 0, 0, 1073741832, 1073741831, 30, 29, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "texture", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 1, 9, 3, 0, 1073741826, 0, 11, 10, -1, 0, 0, 1073741827, 0, 13, 12, -1, 1, 14, 4, 0, 1073741828, 0, 16, 15, -1, 10, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 26, 14, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("64_5fn2x"), SubResource("CircleShape2D_1s4l7"), ExtResource("65_algit"), SubResource("CircleShape2D_kma4y"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "Kummikindad", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p5uqd"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ykvml"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_t8du8"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 27, 26, 2, 0, 0, 1073741832, 1073741831, 29, 28, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 0, 0, 1073741826, 0, 10, 9, -1, 0, 0, 1073741827, 0, 12, 11, -1, 1, 13, 3, 0, 1073741828, 0, 15, 14, -1, 10, 16, 4, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("66_usefa"), SubResource("CircleShape2D_p5uqd"), SubResource("CircleShape2D_ykvml"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "LABEL", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_f43ai"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_55u2t"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_qfqeq"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 27, 26, 2, 0, 0, 1073741832, 1073741831, 29, 28, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 0, 0, 1073741826, 0, 10, 9, -1, 0, 0, 1073741827, 0, 12, 11, -1, 1, 13, 3, 0, 1073741828, 0, 15, 14, -1, 10, 16, 4, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("67_robq0"), SubResource("CircleShape2D_f43ai"), SubResource("CircleShape2D_55u2t"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "LABEL", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fnkbd"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vxya1"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_sevlg"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 27, 26, 2, 0, 0, 1073741832, 1073741831, 29, 28, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 0, 0, 1073741826, 0, 10, 9, -1, 0, 0, 1073741827, 0, 12, 11, -1, 1, 13, 3, 0, 1073741828, 0, 15, 14, -1, 10, 16, 4, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("68_7vci8"), SubResource("CircleShape2D_fnkbd"), SubResource("CircleShape2D_vxya1"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "LABEL", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_60roj"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bflg1"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_aw5oq"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 27, 26, 2, 0, 0, 1073741832, 1073741831, 29, 28, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 0, 0, 1073741826, 0, 10, 9, -1, 0, 0, 1073741827, 0, 12, 11, -1, 1, 13, 3, 0, 1073741828, 0, 15, 14, -1, 10, 16, 4, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("69_tqoc8"), SubResource("CircleShape2D_60roj"), SubResource("CircleShape2D_bflg1"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "LABEL", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gd4o6"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2hefn"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_6uxno"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 27, 26, 2, 0, 0, 1073741832, 1073741831, 29, 28, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 0, 0, 1073741826, 0, 10, 9, -1, 0, 0, 1073741827, 0, 12, 11, -1, 1, 13, 3, 0, 1073741828, 0, 15, 14, -1, 10, 16, 4, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("70_dkppv"), SubResource("CircleShape2D_gd4o6"), SubResource("CircleShape2D_2hefn"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "LABEL", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_oi2o7"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_727c1"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_vu7ye"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 27, 26, 2, 0, 0, 1073741832, 1073741831, 29, 28, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 0, 0, 1073741826, 0, 10, 9, -1, 0, 0, 1073741827, 0, 12, 11, -1, 1, 13, 3, 0, 1073741828, 0, 15, 14, -1, 10, 16, 4, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("71_63ela"), SubResource("CircleShape2D_oi2o7"), SubResource("CircleShape2D_727c1"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "LABEL", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cw72p"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ue81a"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_jx72b"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 27, 26, 2, 0, 0, 1073741832, 1073741831, 29, 28, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 0, 0, 1073741826, 0, 10, 9, -1, 0, 0, 1073741827, 0, 12, 11, -1, 1, 13, 3, 0, 1073741828, 0, 15, 14, -1, 10, 16, 4, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("72_3mcku"), SubResource("CircleShape2D_cw72p"), SubResource("CircleShape2D_ue81a"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "LABEL", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jja4c"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vquvq"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_bt3a4"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 27, 26, 2, 0, 0, 1073741832, 1073741831, 29, 28, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 0, 0, 1073741826, 0, 10, 9, -1, 0, 0, 1073741827, 0, 12, 11, -1, 1, 13, 3, 0, 1073741828, 0, 15, 14, -1, 10, 16, 4, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("73_hp5hj"), SubResource("CircleShape2D_jja4c"), SubResource("CircleShape2D_vquvq"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "LABEL", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qahqv"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hqobu"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_wppyx"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 27, 26, 2, 0, 0, 1073741832, 1073741831, 29, 28, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 0, 0, 1073741826, 0, 10, 9, -1, 0, 0, 1073741827, 0, 12, 11, -1, 1, 13, 3, 0, 1073741828, 0, 15, 14, -1, 10, 16, 4, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("74_ov0lq"), SubResource("CircleShape2D_qahqv"), SubResource("CircleShape2D_hqobu"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "LABEL", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fbfh2"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wcu0u"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_s25dy"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 27, 26, 2, 0, 0, 1073741832, 1073741831, 29, 28, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 0, 0, 1073741826, 0, 10, 9, -1, 0, 0, 1073741827, 0, 12, 11, -1, 1, 13, 3, 0, 1073741828, 0, 15, 14, -1, 10, 16, 4, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("75_4g3p7"), SubResource("CircleShape2D_fbfh2"), SubResource("CircleShape2D_wcu0u"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "LABEL", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gpkuk"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3k6sl"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_b5vsn"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 27, 26, 2, 0, 0, 1073741832, 1073741831, 29, 28, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 0, 0, 1073741826, 0, 10, 9, -1, 0, 0, 1073741827, 0, 12, 11, -1, 1, 13, 3, 0, 1073741828, 0, 15, 14, -1, 10, 16, 4, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("76_qavxs"), SubResource("CircleShape2D_gpkuk"), SubResource("CircleShape2D_3k6sl"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "LABEL", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3yuvl"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6isgv"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_8pjbu"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 27, 26, 2, 0, 0, 1073741832, 1073741831, 29, 28, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 0, 0, 1073741826, 0, 10, 9, -1, 0, 0, 1073741827, 0, 12, 11, -1, 1, 13, 3, 0, 1073741828, 0, 15, 14, -1, 10, 16, 4, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("77_e78ja"), SubResource("CircleShape2D_3yuvl"), SubResource("CircleShape2D_6isgv"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "LABEL", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lg7mk"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cv3pf"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_x8oew"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 27, 26, 2, 0, 0, 1073741832, 1073741831, 29, 28, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 0, 0, 1073741826, 0, 10, 9, -1, 0, 0, 1073741827, 0, 12, 11, -1, 1, 13, 3, 0, 1073741828, 0, 15, 14, -1, 10, 16, 4, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("78_tqvq4"), SubResource("CircleShape2D_lg7mk"), SubResource("CircleShape2D_cv3pf"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "LABEL", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l0j2y"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v6wch"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_jj0ys"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 27, 26, 2, 0, 0, 1073741832, 1073741831, 29, 28, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 0, 0, 1073741826, 0, 10, 9, -1, 0, 0, 1073741827, 0, 12, 11, -1, 1, 13, 3, 0, 1073741828, 0, 15, 14, -1, 10, 16, 4, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("79_ba27d"), SubResource("CircleShape2D_l0j2y"), SubResource("CircleShape2D_v6wch"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "LABEL", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nqtd3"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_varq3"]
+resource_local_to_scene = true
+radius = 42.0
+
+[sub_resource type="PackedScene" id="PackedScene_ray2b"]
+_bundled = {
+"conn_count": 2,
+"conns": PackedInt32Array(1073741830, 1073741829, 27, 26, 2, 0, 0, 1073741832, 1073741831, 29, 28, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Collectable", "Area2D", "script", "itemRes", "CollisionShape2D", "CollisionShape2D", "shape", "Sprite2D", "Sprite2D", "StaticBody2D", "StaticBody2D", "CollisionShape2D", "CollisionShape2D", "shape", "Label", "Label", "offset_left", "offset_top", "offset_right", "offset_bottom", "scale", "theme_override_colors/font_shadow_color", "theme_override_fonts/font", "theme_override_font_sizes/font_size", "text", "uppercase", "_on_body_entered", "body_entered", "_on_body_exited", "body_exited"),
+"node_count": 6,
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 0, 0, 1073741826, 0, 10, 9, -1, 0, 0, 1073741827, 0, 12, 11, -1, 1, 13, 3, 0, 1073741828, 0, 15, 14, -1, 10, 16, 4, 17, 5, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 0),
+"variants": [ExtResource("43_emi6l"), ExtResource("80_k54yg"), SubResource("CircleShape2D_nqtd3"), SubResource("CircleShape2D_varq3"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "LABEL", true],
+"version": 3
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8osc5"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xrlon"]
+resource_local_to_scene = true
+radius = 42.0
+
 [sub_resource type="PackedScene" id="PackedScene_5ecya"]
 _bundled = {
 "conn_count": 2,
@@ -3251,7 +3790,7 @@ _bundled = {
 "node_count": 6,
 "node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./StaticBody2D"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
 "nodes": PackedInt32Array(-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 1073741824, 0, 5, 4, -1, 1, 6, 2, 0, 1073741825, 0, 8, 7, -1, 2, 9, 3, 10, 4, 0, 1073741826, 0, 12, 11, -1, 0, 0, 1073741827, 0, 14, 13, -1, 1, 15, 5, 0, 1073741828, 0, 17, 16, -1, 10, 18, 6, 19, 7, 20, 8, 21, 9, 22, 10, 23, 11, 24, 12, 25, 13, 26, 14, 27, 15, 0),
-"variants": [ExtResource("43_emi6l"), ExtResource("44_hf8ud"), SubResource("CircleShape2D_tu0uo"), Vector2(0.7, 0.7), ExtResource("45_ox7su"), SubResource("CircleShape2D_n1jf6"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "juust", true],
+"variants": [ExtResource("43_emi6l"), ExtResource("44_hf8ud"), SubResource("CircleShape2D_8osc5"), Vector2(0.7, 0.7), ExtResource("45_ox7su"), SubResource("CircleShape2D_xrlon"), -44.0, -110.0, 324.0, 53.0, Vector2(0.25, 0.25), Color(0, 0, 0, 1), ExtResource("17_8rcev"), 100, "juust", true],
 "version": 3
 }
 
@@ -3266,29 +3805,29 @@ scenes/6/scene = ExtResource("9_4iut4")
 scenes/7/scene = ExtResource("10_3v47d")
 scenes/8/scene = ExtResource("11_8guoa")
 scenes/9/scene = ExtResource("12_dmerp")
-scenes/10/scene = ExtResource("8_vpo0u")
-scenes/11/scene = ExtResource("9_42c6l")
-scenes/12/scene = ExtResource("10_2lwi5")
-scenes/13/scene = ExtResource("11_s3oi6")
-scenes/14/scene = ExtResource("12_0fugi")
-scenes/15/scene = ExtResource("21_8bxjw")
-scenes/16/scene = ExtResource("22_q3bls")
-scenes/17/scene = ExtResource("23_1fv5y")
-scenes/18/scene = ExtResource("24_mbhtd")
-scenes/19/scene = ExtResource("25_7p4g0")
-scenes/20/scene = ExtResource("27_esfk5")
-scenes/21/scene = ExtResource("28_aymsh")
-scenes/22/scene = ExtResource("29_1q8xu")
-scenes/23/scene = ExtResource("30_82mb3")
-scenes/24/scene = ExtResource("31_skjt3")
-scenes/25/scene = ExtResource("32_t1if1")
-scenes/26/scene = ExtResource("10_mh6a0")
-scenes/27/scene = ExtResource("11_ex0yl")
-scenes/28/scene = ExtResource("8_dwkn1")
-scenes/29/scene = ExtResource("7_giwrx")
-scenes/30/scene = ExtResource("6_ljxol")
-scenes/31/scene = ExtResource("5_f42n2")
-scenes/32/scene = ExtResource("4_mgvx0")
+scenes/10/scene = SubResource("PackedScene_sm1nn")
+scenes/11/scene = SubResource("PackedScene_glt8f")
+scenes/12/scene = SubResource("PackedScene_aanku")
+scenes/13/scene = SubResource("PackedScene_6xin7")
+scenes/14/scene = SubResource("PackedScene_10o1k")
+scenes/15/scene = SubResource("PackedScene_yn2df")
+scenes/16/scene = SubResource("PackedScene_wcbt6")
+scenes/17/scene = SubResource("PackedScene_gu4wg")
+scenes/18/scene = SubResource("PackedScene_t8du8")
+scenes/19/scene = SubResource("PackedScene_qfqeq")
+scenes/20/scene = SubResource("PackedScene_sevlg")
+scenes/21/scene = SubResource("PackedScene_aw5oq")
+scenes/22/scene = SubResource("PackedScene_6uxno")
+scenes/23/scene = SubResource("PackedScene_vu7ye")
+scenes/24/scene = SubResource("PackedScene_jx72b")
+scenes/25/scene = SubResource("PackedScene_bt3a4")
+scenes/26/scene = SubResource("PackedScene_wppyx")
+scenes/27/scene = SubResource("PackedScene_s25dy")
+scenes/28/scene = SubResource("PackedScene_b5vsn")
+scenes/29/scene = SubResource("PackedScene_8pjbu")
+scenes/30/scene = SubResource("PackedScene_x8oew")
+scenes/31/scene = SubResource("PackedScene_jj0ys")
+scenes/32/scene = SubResource("PackedScene_ray2b")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t3dml"]
 texture = ExtResource("13_k7yy4")
@@ -5213,13 +5752,13 @@ sources/7 = SubResource("TileSetAtlasSource_fbbak")
 sources/8 = SubResource("TileSetAtlasSource_pjbm3")
 sources/9 = SubResource("TileSetAtlasSource_elr55")
 sources/10 = SubResource("TileSetAtlasSource_lcenm")
-sources/11 = SubResource("TileSetScenesCollectionSource_vie5l")
-sources/12 = SubResource("TileSetScenesCollectionSource_yn6d2")
-sources/13 = SubResource("TileSetScenesCollectionSource_g1qhs")
-sources/14 = SubResource("TileSetScenesCollectionSource_06h8c")
-sources/15 = SubResource("TileSetScenesCollectionSource_5tsa8")
-sources/16 = SubResource("TileSetScenesCollectionSource_8066d")
 sources/0 = SubResource("TileSetAtlasSource_c3ij5")
+sources/17 = SubResource("TileSetScenesCollectionSource_daspw")
+sources/18 = SubResource("TileSetScenesCollectionSource_8l2s8")
+sources/19 = SubResource("TileSetScenesCollectionSource_nd4vr")
+sources/20 = SubResource("TileSetScenesCollectionSource_8pw7d")
+sources/21 = SubResource("TileSetScenesCollectionSource_crrb0")
+sources/22 = SubResource("TileSetScenesCollectionSource_1q0q1")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_osvrc"]
 size = Vector2(149.5, 285.5)
@@ -5243,7 +5782,7 @@ layer_3/name = "Furniture to walk under"
 layer_3/z_index = 999
 layer_3/tile_data = PackedInt32Array(65546, 655369, 7)
 layer_4/name = "garbage"
-layer_4/tile_data = PackedInt32Array(7, 16, 327680, 196606, 16, 393216, 327675, 16, 720896, 327680, 16, 917504, -131077, 16, 983040, 327677, 13, 262144, 131080, 11, 196608, 327685, 11, 196608, -262146, 11, 262144, 327694, 11, 327680, 3, 14, 196608, 65531, 14, 65536, -262147, 14, 262144, -65532, 12, 131072)
+layer_4/tile_data = PackedInt32Array(393209, 22, 327680, 131081, 22, 262144, 131073, 22, 196608, 4, 21, 131072, -65526, 20, 262144, -65525, 20, 458752, 327696, 20, 327680, 327685, 20, 327680, -262147, 19, 262144, 393211, 19, 393216, -327679, 18, 131072, -131077, 17, 196608, 131068, 17, 262144, 196606, 17, 589824, -196596, 19, 65536, -5, 19, 65536, 65549, 19, 589824)
 layer_5/name = "fence"
 layer_5/tile_data = PackedInt32Array(-262128, 720896, 14, -196592, 589824, 14, -131056, 589824, 14, -65520, 589824, 14, 16, 589824, 14, 65552, 589824, 14, 131088, 589824, 14, 196624, 589824, 14, 262160, 589824, 14, 327696, 589824, 14, 393232, 458752, 15, 393233, 393216, 15, 393234, 393216, 15, 393235, 393216, 15, 393236, 393216, 15, 393237, 393216, 15, 393238, 393216, 15, 393239, 393216, 15, 393240, 393216, 15, 393241, 393216, 15, 393242, 393216, 15, 393243, 393216, 15, 393244, 393216, 15, 393245, 393216, 15, 458746, 393216, 15, 458747, 393216, 15, 458748, 393216, 15, 458750, 393216, 15, 458751, 393216, 15, 393217, 393216, 15, 393218, 393216, 15, 393219, 393216, 15, 393220, 393216, 15, 393221, 393216, 15, 393222, 393216, 15, 393223, 393216, 15, 393224, 393216, 15, 393225, 393216, 15, 393226, 393216, 15, 393227, 393216, 15, 393228, 393216, 15, 393229, 393216, 15, 393230, 393216, 15, 393231, 393216, 15, 458739, 393216, 15, 458740, 393216, 15, 458741, 393216, 15, 458742, 393216, 15, 458743, 393216, 15, 458744, 393216, 15, 458745, 327680, 15, -393200, 720896, 12, 458738, 393216, 15, 393216, 393216, 15, -393201, 393225, 2, 458749, 393216, 15, -393202, 393225, 2, -393203, 393225, 2, -393204, 393225, 2, -393205, 393225, 2, -393206, 393225, 2, -393207, 393225, 2, -393208, 393225, 2, -393209, 393225, 2, -393210, 393225, 2, -393211, 393225, 2, -393212, 393225, 2, -393213, 393225, 2, -393214, 393225, 2, -393215, 393225, 2, -393216, 393225, 2, -327681, 393225, 2, -327682, 393225, 2, -327683, 393225, 2, -327684, 458761, 3, -393220, 393225, 4, -393221, 393225, 2, -393222, 393225, 2, -393223, 393225, 2)
 layer_6/name = "walls"
@@ -5338,31 +5877,37 @@ shape = SubResource("RectangleShape2D_osvrc")
 
 [connection signal="body_entered" from="TileMap2/Collectable" to="TileMap2/Collectable" method="_on_body_entered"]
 [connection signal="body_exited" from="TileMap2/Collectable" to="TileMap2/Collectable" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap2/@Area2D@42028" to="TileMap2/@Area2D@42028" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap2/@Area2D@42028" to="TileMap2/@Area2D@42028" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap2/@Area2D@42029" to="TileMap2/@Area2D@42029" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap2/@Area2D@42029" to="TileMap2/@Area2D@42029" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap2/@Area2D@42030" to="TileMap2/@Area2D@42030" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap2/@Area2D@42030" to="TileMap2/@Area2D@42030" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap2/@Area2D@42031" to="TileMap2/@Area2D@42031" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap2/@Area2D@42031" to="TileMap2/@Area2D@42031" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap2/@Area2D@42032" to="TileMap2/@Area2D@42032" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap2/@Area2D@42032" to="TileMap2/@Area2D@42032" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap2/@Area2D@42033" to="TileMap2/@Area2D@42033" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap2/@Area2D@42033" to="TileMap2/@Area2D@42033" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap2/@Area2D@42034" to="TileMap2/@Area2D@42034" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap2/@Area2D@42034" to="TileMap2/@Area2D@42034" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap2/@Area2D@42035" to="TileMap2/@Area2D@42035" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap2/@Area2D@42035" to="TileMap2/@Area2D@42035" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap2/@Area2D@42036" to="TileMap2/@Area2D@42036" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap2/@Area2D@42036" to="TileMap2/@Area2D@42036" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap2/@Area2D@42037" to="TileMap2/@Area2D@42037" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap2/@Area2D@42037" to="TileMap2/@Area2D@42037" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap2/@Area2D@42038" to="TileMap2/@Area2D@42038" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap2/@Area2D@42038" to="TileMap2/@Area2D@42038" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap2/@Area2D@42039" to="TileMap2/@Area2D@42039" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap2/@Area2D@42039" to="TileMap2/@Area2D@42039" method="_on_body_exited"]
-[connection signal="body_entered" from="TileMap2/@Area2D@42040" to="TileMap2/@Area2D@42040" method="_on_body_entered"]
-[connection signal="body_exited" from="TileMap2/@Area2D@42040" to="TileMap2/@Area2D@42040" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap2/@Area2D@197248" to="TileMap2/@Area2D@197248" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap2/@Area2D@197248" to="TileMap2/@Area2D@197248" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap2/@Area2D@197249" to="TileMap2/@Area2D@197249" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap2/@Area2D@197249" to="TileMap2/@Area2D@197249" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap2/@Area2D@197250" to="TileMap2/@Area2D@197250" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap2/@Area2D@197250" to="TileMap2/@Area2D@197250" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap2/@Area2D@197251" to="TileMap2/@Area2D@197251" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap2/@Area2D@197251" to="TileMap2/@Area2D@197251" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap2/@Area2D@197252" to="TileMap2/@Area2D@197252" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap2/@Area2D@197252" to="TileMap2/@Area2D@197252" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap2/@Area2D@197253" to="TileMap2/@Area2D@197253" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap2/@Area2D@197253" to="TileMap2/@Area2D@197253" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap2/@Area2D@197254" to="TileMap2/@Area2D@197254" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap2/@Area2D@197254" to="TileMap2/@Area2D@197254" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap2/@Area2D@197255" to="TileMap2/@Area2D@197255" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap2/@Area2D@197255" to="TileMap2/@Area2D@197255" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap2/@Area2D@197256" to="TileMap2/@Area2D@197256" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap2/@Area2D@197256" to="TileMap2/@Area2D@197256" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap2/@Area2D@197257" to="TileMap2/@Area2D@197257" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap2/@Area2D@197257" to="TileMap2/@Area2D@197257" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap2/@Area2D@197258" to="TileMap2/@Area2D@197258" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap2/@Area2D@197258" to="TileMap2/@Area2D@197258" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap2/@Area2D@197259" to="TileMap2/@Area2D@197259" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap2/@Area2D@197259" to="TileMap2/@Area2D@197259" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap2/@Area2D@197260" to="TileMap2/@Area2D@197260" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap2/@Area2D@197260" to="TileMap2/@Area2D@197260" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap2/@Area2D@197261" to="TileMap2/@Area2D@197261" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap2/@Area2D@197261" to="TileMap2/@Area2D@197261" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap2/@Area2D@197262" to="TileMap2/@Area2D@197262" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap2/@Area2D@197262" to="TileMap2/@Area2D@197262" method="_on_body_exited"]
+[connection signal="body_entered" from="TileMap2/@Area2D@197263" to="TileMap2/@Area2D@197263" method="_on_body_entered"]
+[connection signal="body_exited" from="TileMap2/@Area2D@197263" to="TileMap2/@Area2D@197263" method="_on_body_exited"]
 [connection signal="closed" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_closed"]
 [connection signal="opened" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_opened"]

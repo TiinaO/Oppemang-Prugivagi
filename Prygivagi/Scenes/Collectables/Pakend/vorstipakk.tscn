@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8s3g4uksluwr"]
+
+[ext_resource type="PackedScene" uid="uid://dggc5mowrx8qb" path="res://Scenes/Collectables/collectable.tscn" id="1_cm0e7"]
+[ext_resource type="Resource" uid="uid://b2nd6lq4vn8c1" path="res://Data/Items/Pakend/keeduvorst.tres" id="2_8juxp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cdyuj"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d7lx6"]
+resource_local_to_scene = true
+radius = 42.0
+
+[node name="Collectable" instance=ExtResource("1_cm0e7")]
+itemRes = ExtResource("2_8juxp")
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("CircleShape2D_cdyuj")
+
+[node name="CollisionShape2D" parent="StaticBody2D" index="0"]
+shape = SubResource("CircleShape2D_d7lx6")

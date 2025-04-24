@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://celn61br0orqh"]
+
+[ext_resource type="PackedScene" uid="uid://dggc5mowrx8qb" path="res://Scenes/Collectables/collectable.tscn" id="1_xp3hn"]
+[ext_resource type="Resource" uid="uid://barhux58vui2y" path="res://Data/Items/Bio/pkoored.tres" id="2_5nh4o"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_85mcf"]
+resource_local_to_scene = true
+radius = 64.0078
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0nllr"]
+resource_local_to_scene = true
+radius = 42.0
+
+[node name="Collectable" instance=ExtResource("1_xp3hn")]
+itemRes = ExtResource("2_5nh4o")
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("CircleShape2D_85mcf")
+
+[node name="Sprite2D" parent="." index="1"]
+scale = Vector2(0.7, 0.7)
+
+[node name="CollisionShape2D" parent="StaticBody2D" index="0"]
+shape = SubResource("CircleShape2D_0nllr")

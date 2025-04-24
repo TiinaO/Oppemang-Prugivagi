@@ -52,8 +52,19 @@ func _process(_delta):
 		
 	if player_in_area and player:
 		var direction = (player.global_position - global_position).normalized()
-		var opposite_direction = -direction  # Vastupidine suund
-		var final_position = global_position + (opposite_direction * (label_offset + min_distance))
-		label.global_position = final_position   - (label.size * 0.35) #Labeli asukoht
+		var opposite_direction = -direction
 
+		# Labeli keskele asetsemine
+		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+
+		#Määratud labeli suurus | Aitab pikemate tekstide eseme ligidal kuvamisega
+		var label_set_size = Vector2(128, 81) 
+
+		# Positsioneeri label eseme ümber, vastassuunas mängijast
+		var base_offset = (label_offset + min_distance)
+		var label_pos = global_position + (opposite_direction * base_offset) - label_set_size
+		print("label position ", label_pos)
+
+		label.global_position = label_pos
 
